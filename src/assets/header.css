@@ -1,0 +1,30 @@
+.nav {
+  background-color: #5f0000;
+  /* height: 12vh; */
+}
+#nav-link {
+  color: #fff;
+  font-size: 15px;
+  padding: 10px 24px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 15px;
+}
+.nav-link:hover {
+  /* border-bottom: 1px solid #db9a02; */
+  cursor: pointer;
+}
+
+button {
+  background: #db9a02;
+  border-radius: 10px;
+  padding: 7px 14px;
+  margin: 0px 15px 0px 15px;
+  outline: none;
+  border: none;
+  color: #fff;
+  font-size: 18px;
+  line-height: 10px;
+}
+button:hover {
+  color: #5f0000;
+}

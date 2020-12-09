@@ -1,0 +1,21 @@
+footer {
+  background-image: url(../img/waves-bg.png);
+}
+.footer-content {
+  padding: 20px;
+  color: #fff;
+}
+.link-to {
+  color: #fff;
+}
+.title {
+  font-weight: 900;
+  font-size: 20px;
+}
+.social {
+  padding-right: 18px;
+  font-size: 20px;
+}
+.social:hover {
+  color: #db9a02;
+}

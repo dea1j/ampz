@@ -1,0 +1,40 @@
+/* .hero-ab {
+  background-image: url("../img/ampztv_no_just.jpg");
+  background-size: cover;
+  object-fit: cover;
+  opacity: 0.4;
+} */
+.team {
+  border-radius: 50%;
+  height: "20vh";
+}
+.caro-h3 {
+  font-size: 14px;
+  color: #db9a02;
+  letter-spacing: 2px;
+}
+.caro-h2 {
+  font-weight: 900;
+}
+.abt-hero {
+  height: 80vh;
+  background-image: url("../img/Rectangle.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  /* opacity: 0.5; */
+}
+/* .hero-text {
+    background-color: #5F0000;
+} */
+/* .ovrlay {
+  background-color: #5f0000;
+  height: 80vh;
+  opacity: 0.2;
+  position: relative;
+} */
+/* .problems {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+} */

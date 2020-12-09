@@ -1,0 +1,30 @@
+.hero {
+  background-image: url("../img/bubble1-bg.png");
+  background-size: contain;
+}
+#matchmania {
+  background-image: url("../img/programme1.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+#prog2 {
+  background-image: url("../img/programme2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+.caro-h3 {
+  font-size: 14px;
+  color: #db9a02;
+  letter-spacing: 2px;
+}
+.caro-h2 {
+  font-weight: 900;
+}
+.white_test {
+  font-size: 30px;
+  color: #eff4fd;
+  font-family: font1;
+}
+.gold_test {
+  color: #db9a02;
+}
