@@ -121,32 +121,41 @@ const GetStarted = () => {
               {/*  */}
               <div data-aos="flip-down" className="m-3 text-center">
                 <Card style={{ width: "19rem", height: "18rem" }}>
-                  <FcSportsMode
-                    style={{
-                      justifyContent: "center",
-                      fontSize: "70px",
-                      padding: "5px",
-                      marginTop: "7px",
-                      color: "#db9a02",
-                      margin: "0 auto",
-                    }}
-                  />
                   <Card.Body>
-                    <Card.Title style={{ fontSize: "30px", fontWeight: "900" }}>
+                    <FcSportsMode
+                      style={{
+                        justifyContent: "center",
+                        fontSize: "70px",
+                        padding: "5px",
+                        marginTop: "7px",
+                        color: "#db9a02",
+                        margin: "0 auto",
+                      }}
+                    />
+                    <Card.Title
+                      style={{
+                        fontSize: "30px",
+                        fontWeight: "900",
+                        paddingTop: "5px",
+                      }}
+                    >
                       Talent
                     </Card.Title>
-                    <Card.Text>
+                    <Card.Text
+                      className="d-flex"
+                      style={{ flexDirection: "column" }}
+                    >
                       Create your own sports profile and easily apply to
                       verified opportunities
+                      <button
+                        className="mt-5"
+                        id="btn"
+                        onClick={() => setModalOpen(true)}
+                        variant="primary"
+                      >
+                        Get Started
+                      </button>
                     </Card.Text>
-                    <button
-                      className="mt-3"
-                      id="btn"
-                      onClick={() => setModalOpen(true)}
-                      variant="primary"
-                    >
-                      Get Started
-                    </button>
                   </Card.Body>
                 </Card>
               </div>
@@ -172,20 +181,25 @@ const GetStarted = () => {
                     <Card.Title style={{ fontSize: "30px", fontWeight: "900" }}>
                       Fan
                     </Card.Title>
-                    <Card.Text>
-                      Connect with a vibrant grassroot community
-                    </Card.Text>
-                    <button
-                      className="mt-3"
-                      id="btn"
-                      onClick={() => setModalOpen(true)}
-                      variant="primary"
-                      style={{
-                        marginTop: "10px !important",
-                      }}
+                    <Card.Text
+                      className="d-flex"
+                      style={{ flexDirection: "column" }}
                     >
-                      Get Started
-                    </button>
+                      <p style={{ paddingBottom: "10px" }}>
+                        Connect with a vibrant grassroot community
+                      </p>
+                      <button
+                        className="mt-5"
+                        id="btn"
+                        onClick={() => setModalOpen(true)}
+                        variant="primary"
+                        style={{
+                          marginTop: "10px !important",
+                        }}
+                      >
+                        Get Started
+                      </button>
+                    </Card.Text>
                   </Card.Body>
                 </Card>
               </div>
@@ -196,30 +210,41 @@ const GetStarted = () => {
                 className="m-3 text-center"
               >
                 <Card style={{ width: "19rem", height: "18rem" }}>
-                  <FaSearch
-                    style={{
-                      fontSize: "55px",
-                      padding: "5px",
-                      marginTop: "10px",
-                      color: "#db9a02",
-                      margin: "0 auto",
-                    }}
-                  />
                   <Card.Body>
-                    <Card.Title style={{ fontSize: "30px", fontWeight: "900" }}>
+                    <FaSearch
+                      style={{
+                        fontSize: "50px",
+                        // padding: "5px",
+                        // marginTop: "10px",
+                        color: "#db9a02",
+                        margin: "0 auto",
+                      }}
+                    />
+                    <Card.Title
+                      style={{
+                        fontSize: "25px",
+                        // padding: "25px",
+                        paddingTop: "30px",
+                        fontWeight: "900",
+                      }}
+                    >
                       Scout & Club
                     </Card.Title>
-                    <Card.Text>
-                      Explore Africa's talent pool from your convinience
-                    </Card.Text>
-                    <button
-                      className="mt-5"
-                      id="btn"
-                      onClick={() => setModalOpen(true)}
-                      variant="primary"
+                    <Card.Text
+                      className="d-flex"
+                      style={{ flexDirection: "column" }}
                     >
-                      Get Started
-                    </button>
+                      Explore Africa's talent pool from your convinience
+                      <button
+                        className="mt-5"
+                        id="btn"
+                        onClick={() => setModalOpen(true)}
+                        variant="primary"
+                        // style={{ marginBottom: "50px" }}
+                      >
+                        Get Started
+                      </button>
+                    </Card.Text>
                   </Card.Body>
                 </Card>
               </div>
@@ -233,30 +258,38 @@ const GetStarted = () => {
                   <GiWhistle
                     style={{
                       fontSize: "70px",
-                      padding: "5px",
-                      marginTop: "6px",
+                      // padding: "2px",
+                      marginTop: "15px",
                       color: "#db9a02",
                       margin: "0 auto",
                     }}
                   />
                   <Card.Body>
-                    <Card.Title style={{ fontSize: "26px", fontWeight: "900" }}>
-                      Coach & Academy
-                    </Card.Title>
-                    <Card.Text>
-                      Expand your reach and keep your dream team organized in
-                      one space
-                    </Card.Text>
-                    <button
-                      id="btn"
-                      onClick={() => setModalOpen(true)}
-                      variant="primary"
+                    <Card.Title
                       style={{
-                        marginTop: "47px",
+                        // padding: "10px",
+                        fontWeight: "900",
                       }}
                     >
-                      Get Started
-                    </button>
+                      Coach & Academy
+                    </Card.Title>
+                    <Card.Text
+                      className="d-flex"
+                      style={{ flexDirection: "column" }}
+                    >
+                      Expand your reach and keep your dream team organized in
+                      one space.
+                      <button
+                        id="btn"
+                        onClick={() => setModalOpen(true)}
+                        variant="primary"
+                        style={{
+                          marginTop: "50px",
+                        }}
+                      >
+                        Get Started
+                      </button>
+                    </Card.Text>
                   </Card.Body>
                 </Card>
               </div>

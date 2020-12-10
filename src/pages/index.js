@@ -110,7 +110,6 @@ const IndexPage = ({ data }) => {
             <div className="slide1">
               {/* <Carousel.Caption> */}
               <div className="hero-text text-center">
-                <h3 className="caro-h3">CONNECTING TALENTS</h3>
                 <h2 className="caro-h2">Welcome to AMPZ</h2>
                 <p className="caro-p container-fluid">
                   Your dream opportunity is just a profile and a click away.
@@ -122,7 +121,6 @@ const IndexPage = ({ data }) => {
             <div className="slide4">
               {/* <Carousel.Caption> */}
               <div className="hero-text text-center">
-                <h3 className="caro-h3">SPORTING OPPORTUNITIES</h3>
                 <h2 className="caro-h2">Talent</h2>
                 <p className="caro-p container-fluid">
                   Showcase and apply for opportunities with ease
@@ -134,7 +132,6 @@ const IndexPage = ({ data }) => {
             <div className="slide2">
               {/* <Carousel.Caption> */}
               <div className="hero-text text-center">
-                <h3 className="caro-h3">BOOSTING ACADEMIES</h3>
                 <h2 className="caro-h2">Academy</h2>
                 <p className="caro-p container-fluid">
                   Amplify your reach and organise your dream team
@@ -147,7 +144,6 @@ const IndexPage = ({ data }) => {
             <div className="slide5">
               {/* <Carousel.Caption> */}
               <div className="hero-text text-center">
-                <h3 className="caro-h3">SIMPLIFYING SCOUTING</h3>
                 <h2 className="caro-h2">Scout</h2>
                 <p className="caro-p container-fluid">
                   We are making scouting in africa easy. Now you can own your
@@ -160,7 +156,6 @@ const IndexPage = ({ data }) => {
             <div className="slide3">
               {/* <Carousel.Caption> */}
               <div className="hero-text text-center">
-                <h3 className="caro-h3">COMPREHENSIVE CONTENT</h3>
                 <h2 className="caro-h2">Fan</h2>
                 <p className="caro-p container-fluid">
                   Connect and enjoy authentic sports content.
@@ -170,55 +165,6 @@ const IndexPage = ({ data }) => {
           </Carousel.Item>
         </Carousel>
 
-        {/* <Timer /> */}
-
-        {/* <div className="d-flex justify-content-center m-5"> */}
-        {/* <div className="day">00</div>
-            <div className="hour">00</div>
-            <div className="mins">00</div>
-            <div className="sec">00</div> */}
-        {/* <div id="countdown-container">
-              <div id="countdown">
-                <span id="days">0d</span> : <span id="hours">0h</span> :
-                <span id="minutes">0m</span> : <span id="seconds">0s</span>
-              </div>
-            </div> */}
-
-        {/* <div>
-              <div id="countdown">
-                <div class="cd-box">
-                  <p class="numbers days">00</p>
-                  <p class="strings timeRefDays">Days</p>
-                </div>
-                <div class="cd-box">
-                  <p class="numbers hours">00</p>
-                  <p class="strings timeRefHours">Hours</p>
-                </div>
-                <div class="cd-box">
-                  <p class="numbers minutes">00</p>
-                  <p class="strings timeRefMinutes">Minutes</p>
-                </div>
-                <div class="cd-box">
-                  <p class="numbers seconds">00</p>
-                  <p class="strings timeRefSeconds">Seconds</p>
-                </div>
-              </div>
-            </div> */}
-        {/* <!-- end div#countdown --> */}
-        {/* <div class="rounded bg-gradient-1 text-white shadow p-5 text-center mb-5">
-              <p class="mb-4 font-weight-bold text-uppercase">
-                Countdown to App Launch
-              </p>
-              <div
-                id="clock-b"
-                class="countdown-circles d-flex flex-wrap justify-content-center pt-4"
-              >
-                00 d: 00 hr : 00 m : 00 s
-              </div>
-            </div> */}
-        {/* </div> */}
-        {/* Partners */}
-
         <main className="container">
           {/* Products */}
           <section id="careers" className="careers">
@@ -226,6 +172,43 @@ const IndexPage = ({ data }) => {
               <div className="text-center">
                 <div className="mx-auto gold_test mb-1">LET'S WIN TOGETHER</div>
                 <div className="mx-auto white_test">Join The Tribe</div>
+              </div>
+
+              {/* Talents */}
+              <div className="row abt">
+                <div
+                  id="talents"
+                  data-aos="fade-right"
+                  className="col-lg-6 col-md-6 col-sm-12"
+                >
+                  {/* <img src={talents} alt="talents" /> */}
+                </div>
+                <div
+                  data-aos="fade-left"
+                  className="col-lg-6 col-md-6 col-sm-12 about-a"
+                >
+                  <h3 className="white_test">Talents</h3>
+                  <p className="about_part" style={{ fontSize: "17px" }}>
+                    We are connecting African sports talents to a world of
+                    verified opportunities by leveraging on technology.
+                  </p>
+                  <div id="lists">
+                    <ul className="list">
+                      <li>Create your sports profile</li>
+                      <li>Showcase your skills</li>
+                      <li>Apply to opportunities with ease</li>
+                    </ul>
+                  </div>
+                  <div
+                    data-aos="fade-up"
+                    data-aos-delay="010"
+                    data-aos-anchor-placement="center-bottom"
+                  >
+                    <button onClick={() => setModalOpen(true)}>
+                      Get Started
+                    </button>
+                  </div>
+                </div>
               </div>
 
               {/* The Fan */}
@@ -265,42 +248,6 @@ const IndexPage = ({ data }) => {
                 </div>
               </div>
 
-              {/* Talents */}
-              <div className="row abt">
-                <div
-                  id="talents"
-                  data-aos="fade-right"
-                  className="col-lg-6 col-md-6 col-sm-12"
-                >
-                  {/* <img src={talents} alt="talents" /> */}
-                </div>
-                <div
-                  data-aos="fade-left"
-                  className="col-lg-6 col-md-6 col-sm-12 about-a"
-                >
-                  <h3 className="white_test">Talents</h3>
-                  <p className="about_part" style={{ fontSize: "17px" }}>
-                    We are connecting African sports talents to a world of
-                    verified opportunities by leveraging on technology.
-                  </p>
-                  <div id="lists">
-                    <ul className="list">
-                      <li>Create your sports profile</li>
-                      <li>Showcase your skills</li>
-                      <li>Apply to opportunities with ease</li>
-                    </ul>
-                  </div>
-                  <div
-                    data-aos="fade-up"
-                    data-aos-delay="010"
-                    data-aos-anchor-placement="center-bottom"
-                  >
-                    <button onClick={() => setModalOpen(true)}>
-                      Get Started
-                    </button>
-                  </div>
-                </div>
-              </div>
               {/* Coach & Academy */}
               <div className="row abt">
                 <div
@@ -377,31 +324,35 @@ const IndexPage = ({ data }) => {
             </div>
           </section>
         </main>
-        <div
-          style={{ width: "100%", height: "100px", backgroundColor: "#222" }}
-        ></div>
-        <div>
-          <p>PARTNERS</p>
-          <div className="d-flex justify-content-center p-5 testing bg2">
-            <div className="p-3 par1">
-              <img src={par1} alt="Juventus Academy Nigeria" />
-            </div>
-            <div className="p-3 par1">
-              <img src={par2} alt="par1" />
-            </div>
-            <div className="p-3 par1">
-              <img src={par4} alt="par1" />
-            </div>
-            <div className="p-3 par1">
-              <img
-                src={par5}
-                alt="mpac sports
+        <div style={{ width: "100%", backgroundColor: "#222" }}>
+          <div>
+            <p
+              className="d-flex justify-content-center pt-5"
+              style={{ fontSize: "30px" }}
+            >
+              PARTNERS
+            </p>
+            <div className="d-flex justify-content-center p-5 testing bg2">
+              <div className="p-3 par1">
+                <img src={par1} alt="Juventus Academy Nigeria" />
+              </div>
+              <div className="p-3 par1">
+                <img src={par2} alt="par1" />
+              </div>
+              <div className="p-3 par1">
+                <img src={par4} alt="par1" />
+              </div>
+              <div className="p-3 par1">
+                <img
+                  src={par5}
+                  alt="mpac sports
 "
-              />
-            </div>
+                />
+              </div>
 
-            <div className="p-3 par1">
-              <img src={par3} alt="The Future Academy" />
+              <div className="p-3 par1">
+                <img src={par3} alt="The Future Academy" />
+              </div>
             </div>
           </div>
         </div>
