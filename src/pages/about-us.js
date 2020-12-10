@@ -85,6 +85,14 @@ const AboutUs = () => {
             height="300px"
           ></iframe>
         </div> */}
+        <div className="d-flex container justify-content-center">
+          {/* style={{ height: "62vh" }} */}
+          <iframe
+            width="70%"
+            height="345"
+            src="https://www.youtube.com/embed/NPl88MhJeIM&t=1s"
+          ></iframe>
+        </div>
         {/* Team */}
         <div className="team">
           <div className="text-center m-5">
