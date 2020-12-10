@@ -12,30 +12,10 @@ import yinka from "../img/Adeyinka_Aderombi.jpg";
 import nicole from "../img/Nichole Yembra.jpg";
 import ayo from "../img/Alfonso.jpg";
 import "../../node_modules/react-image-gallery/styles/css/image-gallery.css";
-import ImageGallery from "react-image-gallery";
-import { image1 } from "../img/IMG_9504.jpg";
+// import ImageGallery from "react-image-gallery";
+// import { image1 } from "../img/IMG_9504.jpg";
 
 const AboutUs = () => {
-  const images = [
-    {
-      original:
-        "https://res.cloudinary.com/diubyoojw/image/upload/v1607584411/MatchMania_Finals_Photo.jpg",
-      thumbnail:
-        "https://res.cloudinary.com/diubyoojw/image/upload/v1607584411/MatchMania_Finals_Photo.jpg",
-    },
-    {
-      original:
-        "https://res.cloudinary.com/diubyoojw/image/upload/v1607584218/IMG_9504.jpg",
-      thumbnail:
-        "https://res.cloudinary.com/diubyoojw/image/upload/v1607584218/IMG_9504.jpg",
-    },
-    {
-      original:
-        "https://res.cloudinary.com/diubyoojw/image/upload/v1607584197/card_image_2.png",
-      thumbnail:
-        "https://res.cloudinary.com/diubyoojw/image/upload/v1607584197/card_image_2.png",
-    },
-  ];
   return (
     <Layout>
       <SEO title="About Us" />
@@ -96,7 +76,7 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-        <ImageGallery items={images} />
+        {/* <ImageGallery items={images} /> */}
         {/* <div className="vid">
           <iframe
             style={{ margin: "0 auto" }}

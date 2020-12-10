@@ -92,7 +92,7 @@ const Products = () => {
                       fontWeight: "900",
                     }}
                   >
-                    Ampz Online
+                    Ampz Mobile
                   </Card.Title>
                   <Card.Text>
                     Our mobile and web platform designed to help African sports
@@ -142,7 +142,10 @@ const Products = () => {
                     We offer a range of scouting support services including;
                     <ul>
                       <li>Talent hunting: to meet your specification.</li>
-                      <li>Talent hunting: to meet your specification.</li>
+                      <li>
+                        Verification: of talent data, abilities and due
+                        diligence.
+                      </li>
                       <li> Event Management: for meet-ups and trials.</li>
                       <li>
                         Opportunity promotion: to reach your target audience.
@@ -195,10 +198,9 @@ const Products = () => {
                         Talent Incubation Program: is where we groom talents
                         alongside our development partners.
                       </li>
-                      <li>Due diligence and verification services</li>
                       <li>
                         Talent Marketing: is how we package, promote and match
-                        talents to institutions.{" "}
+                        talents to institutions.
                       </li>
                     </ul>
                   </Card.Text>

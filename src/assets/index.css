@@ -55,11 +55,26 @@
 }
 .slide3 {
   height: 80vh;
+  background-image: url("../img/Group49.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+.slide4 {
+  height: 80vh;
   background-image: url("../img/Group50.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
 }
+.slide5 {
+  height: 80vh;
+  background-image: url("../img/Group50.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
+
 .hero-text {
   padding-top: 40vh;
 }

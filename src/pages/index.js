@@ -119,13 +119,39 @@ const IndexPage = ({ data }) => {
             </div>
           </Carousel.Item>
           <Carousel.Item>
+            <div className="slide4">
+              {/* <Carousel.Caption> */}
+              <div className="hero-text text-center">
+                <h3 className="caro-h3">SPORTING OPPORTUNITIES</h3>
+                <h2 className="caro-h2">Talent</h2>
+                <p className="caro-p container-fluid">
+                  Showcase and apply for opportunities with ease
+                </p>
+              </div>
+            </div>
+          </Carousel.Item>
+          <Carousel.Item>
             <div className="slide2">
               {/* <Carousel.Caption> */}
               <div className="hero-text text-center">
-                <h3 className="caro-h3">BOOSTING ACADEMICS</h3>
-                <h2 className="caro-h2">Promote your programmes!</h2>
+                <h3 className="caro-h3">BOOSTING ACADEMIES</h3>
+                <h2 className="caro-h2">Academy</h2>
                 <p className="caro-p container-fluid">
-                  Attract more promising talents from our fast-growing pool.
+                  Amplify your reach and organise your dream team
+                </p>
+              </div>
+            </div>
+          </Carousel.Item>
+
+          <Carousel.Item>
+            <div className="slide5">
+              {/* <Carousel.Caption> */}
+              <div className="hero-text text-center">
+                <h3 className="caro-h3">SIMPLIFYING SCOUTING</h3>
+                <h2 className="caro-h2">Scout</h2>
+                <p className="caro-p container-fluid">
+                  We are making scouting in africa easy. Now you can own your
+                  process
                 </p>
               </div>
             </div>
@@ -134,11 +160,10 @@ const IndexPage = ({ data }) => {
             <div className="slide3">
               {/* <Carousel.Caption> */}
               <div className="hero-text text-center">
-                <h3 className="caro-h3">SIMPLIFYING SCOUTING</h3>
-                <h2 className="caro-h2">Recruit from Africa!</h2>
+                <h3 className="caro-h3">COMPREHENSIVE CONTENT</h3>
+                <h2 className="caro-h2">Fan</h2>
                 <p className="caro-p container-fluid">
-                  Let's help you find your next top-shot using data driven
-                  processess.
+                  Connect and enjoy authentic sports content.
                 </p>
               </div>
             </div>
@@ -193,32 +218,6 @@ const IndexPage = ({ data }) => {
             </div> */}
         {/* </div> */}
         {/* Partners */}
-
-        <div
-          style={{ width: "100%", height: "100px", backgroundColor: "#222" }}
-        ></div>
-        <div className="d-flex justify-content-center p-5 testing bg2">
-          <div className="p-3 par1">
-            <img src={par1} alt="Juventus Academy Nigeria" />
-          </div>
-          <div className="p-3 par1">
-            <img src={par2} alt="par1" />
-          </div>
-          <div className="p-3 par1">
-            <img src={par4} alt="par1" />
-          </div>
-          <div className="p-3 par1">
-            <img
-              src={par5}
-              alt="mpac sports
-"
-            />
-          </div>
-
-          <div className="p-3 par1">
-            <img src={par3} alt="The Future Academy" />
-          </div>
-        </div>
 
         <main className="container">
           {/* Products */}
@@ -378,6 +377,34 @@ const IndexPage = ({ data }) => {
             </div>
           </section>
         </main>
+        <div
+          style={{ width: "100%", height: "100px", backgroundColor: "#222" }}
+        ></div>
+        <div>
+          <p>PARTNERS</p>
+          <div className="d-flex justify-content-center p-5 testing bg2">
+            <div className="p-3 par1">
+              <img src={par1} alt="Juventus Academy Nigeria" />
+            </div>
+            <div className="p-3 par1">
+              <img src={par2} alt="par1" />
+            </div>
+            <div className="p-3 par1">
+              <img src={par4} alt="par1" />
+            </div>
+            <div className="p-3 par1">
+              <img
+                src={par5}
+                alt="mpac sports
+"
+              />
+            </div>
+
+            <div className="p-3 par1">
+              <img src={par3} alt="The Future Academy" />
+            </div>
+          </div>
+        </div>
       </Layout>
     </Fragment>
   );

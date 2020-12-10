@@ -121,41 +121,6 @@ const GetStarted = () => {
               {/*  */}
               <div data-aos="flip-down" className="m-3 text-center">
                 <Card style={{ width: "19rem", height: "18rem" }}>
-                  <FaPeopleCarry
-                    style={{
-                      justifyContent: "center",
-                      fontSize: "70px",
-                      padding: "5px",
-                      marginTop: "5px",
-                      color: "#db9a02",
-                      margin: "0 auto",
-                    }}
-                  />
-                  <Card.Body>
-                    <Card.Title style={{ fontSize: "30px", fontWeight: "900" }}>
-                      Fan
-                    </Card.Title>
-                    <Card.Text>
-                      Showcase and apply for opportunities with ease
-                    </Card.Text>
-                    <button
-                      className="mt-3"
-                      id="btn"
-                      onClick={() => setModalOpen(true)}
-                      variant="primary"
-                      style={{
-                        marginTop: "10px !important",
-                      }}
-                    >
-                      Get Started
-                    </button>
-                  </Card.Body>
-                </Card>
-              </div>
-
-              {/*  */}
-              <div data-aos="flip-down" className="m-3 text-center">
-                <Card style={{ width: "19rem", height: "18rem" }}>
                   <FcSportsMode
                     style={{
                       justifyContent: "center",
@@ -179,6 +144,45 @@ const GetStarted = () => {
                       id="btn"
                       onClick={() => setModalOpen(true)}
                       variant="primary"
+                    >
+                      Get Started
+                    </button>
+                  </Card.Body>
+                </Card>
+              </div>
+
+              {/*  */}
+              <div data-aos="flip-down" className="m-3 text-center">
+                <Card
+                  className="d-flex align-items-center"
+                  style={{ width: "19rem", height: "18rem" }}
+                >
+                  <Card.Body>
+                    <FaPeopleCarry
+                      style={{
+                        justifyContent: "center",
+                        fontSize: "70px",
+                        padding: "7px",
+                        marginTop: "5px",
+                        marginBottom: "20px",
+                        color: "#db9a02",
+                        margin: "0 auto",
+                      }}
+                    />
+                    <Card.Title style={{ fontSize: "30px", fontWeight: "900" }}>
+                      Fan
+                    </Card.Title>
+                    <Card.Text>
+                      Connect with a vibrant grassroot community
+                    </Card.Text>
+                    <button
+                      className="mt-3"
+                      id="btn"
+                      onClick={() => setModalOpen(true)}
+                      variant="primary"
+                      style={{
+                        marginTop: "10px !important",
+                      }}
                     >
                       Get Started
                     </button>
