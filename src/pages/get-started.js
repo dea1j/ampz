@@ -1,54 +1,55 @@
-import React, { useState, useEffect, Fragment } from "react"
-import { Link } from "gatsby"
+import React, { useState, useEffect, Fragment } from "react";
+import { Link } from "gatsby";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { Card, Button, Modal } from "react-bootstrap"
-import { FaSearch } from "@react-icons/all-files/fa/FaSearch"
-import { GiWhistle } from "@react-icons/all-files/gi/GiWhistle"
-import { FcSportsMode } from "@react-icons/all-files/fc/FcSportsMode"
-import "../../node_modules/aos/dist/aos.css"
-import AOS from "aos"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { Card, Button, Modal } from "react-bootstrap";
+import { FaSearch } from "@react-icons/all-files/fa/FaSearch";
+import { GiWhistle } from "@react-icons/all-files/gi/GiWhistle";
+import { FcSportsMode } from "@react-icons/all-files/fc/FcSportsMode";
+import { FaPeopleCarry } from "@react-icons/all-files/fa/FaPeopleCarry";
+import "../../node_modules/aos/dist/aos.css";
+import AOS from "aos";
 
 const GetStarted = () => {
-  const [modalOpen, setModalOpen] = useState(false)
+  const [modalOpen, setModalOpen] = useState(false);
 
   const closeForm = () => {
-    setModalOpen(false)
-  }
+    setModalOpen(false);
+  };
 
   useEffect(() => {
     AOS.init({
       duration: 2000,
-    })
-  }, [])
+    });
+  }, []);
   return (
     <Fragment>
       <Modal show={modalOpen} onHide={() => closeForm()}>
         <Modal.Header closeButton>
           <Modal.Title>
-            <h5
-              style={{ color: "gray", fontSize: "30px" }}
-              className="text-center"
-            >
-              Hey Champ
+            <h5 style={{ color: "#000", fontSize: "30px" }} className="">
+              Hey champ!
             </h5>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div>
-            <p style={{ color: "gray" }} className="text-center">
-              We are currently in Beta Test and can't wait to have you on-board.
-              Be the first to know when we roll-out.
+            <p style={{ color: "#000" }} className="">
+              We are currently in beta phase and can't wait to have you onboard,
+              signup to be the first to know when we go live. Better still,
+              stand a chance to be part our test community and gain exclusive
+              access! Note: By completing the short form below, you agree to
+              receive electronic notifications from AMPZ.
             </p>
-            <p style={{ color: "#DB9A02" }} className="text-center">
+            <p style={{ color: "#DB9A02" }} className="">
               By completing the short form below, you agree to receive
               electronic notifications from AMPZ.
             </p>
             <form>
               <div className="form-group">
                 <input
-                  placeholder="Fullname"
+                  placeholder="Full name"
                   className="form-control"
                   type="text"
                 />
@@ -62,17 +63,22 @@ const GetStarted = () => {
               </div>
               <div className="form-group">
                 <input
-                  placeholder="Phone Number"
+                  placeholder="Phone number"
                   className="form-control"
                   type="number"
                 />
               </div>
               <div className="form-group">
                 <select class="custom-select">
-                  <option selected>Sport Category</option>
-                  <option value="1">Talent</option>
-                  <option value="2">Scout & Club</option>
-                  <option value="3">Coach & Academy</option>
+                  <option selected>Sports interest</option>
+                  <option value="1">Football</option>
+                  <option value="2">Basketball</option>
+                  <option value="3">Athletics (Track & Field)</option>
+                  <option value="4">Boxing</option>
+                  <option value="5">Rugby</option>
+                  <option value="6">Cricket</option>
+                  <option value="7">Table tennis</option>
+                  <option value="8">Others</option>
                 </select>
               </div>
               <div className="form-group">
@@ -90,7 +96,10 @@ const GetStarted = () => {
       <Layout>
         <SEO title="Page two" />
         {/* prod */}
-        <section className="container" style={{ padding: "70px 0 70px 0" }}>
+        <section
+          className="container container-fluid p-4"
+          style={{ padding: "70px 0 70px 0" }}
+        >
           <div className="text-center p-3">
             <div
               data-aos="fade-down"
@@ -108,16 +117,51 @@ const GetStarted = () => {
             </div>
           </div>
           <div style={{ color: "#000" }}>
-            <div className="row">
+            <div className="row d-flex justify-content-center">
               {/*  */}
-              <div data-aos="flip-down" className="col-sm-4 m-2 text-center">
-                <Card style={{ width: "15rem", height: "18rem" }}>
+              <div data-aos="flip-down" className="m-3 text-center">
+                <Card style={{ width: "19rem", height: "18rem" }}>
+                  <FaPeopleCarry
+                    style={{
+                      justifyContent: "center",
+                      fontSize: "70px",
+                      padding: "5px",
+                      marginTop: "5px",
+                      color: "#db9a02",
+                      margin: "0 auto",
+                    }}
+                  />
+                  <Card.Body>
+                    <Card.Title style={{ fontSize: "30px", fontWeight: "900" }}>
+                      Fan
+                    </Card.Title>
+                    <Card.Text>
+                      Showcase and apply for opportunities with ease
+                    </Card.Text>
+                    <button
+                      className="mt-3"
+                      id="btn"
+                      onClick={() => setModalOpen(true)}
+                      variant="primary"
+                      style={{
+                        marginTop: "10px !important",
+                      }}
+                    >
+                      Get Started
+                    </button>
+                  </Card.Body>
+                </Card>
+              </div>
+
+              {/*  */}
+              <div data-aos="flip-down" className="m-3 text-center">
+                <Card style={{ width: "19rem", height: "18rem" }}>
                   <FcSportsMode
                     style={{
                       justifyContent: "center",
                       fontSize: "70px",
                       padding: "5px",
-                      marginTop: "10px",
+                      marginTop: "7px",
                       color: "#db9a02",
                       margin: "0 auto",
                     }}
@@ -145,12 +189,12 @@ const GetStarted = () => {
               <div
                 data-aos="flip-down"
                 data-aos-delay="200"
-                className="col-sm-4 m-2 text-center"
+                className="m-3 text-center"
               >
-                <Card style={{ width: "15rem", height: "18rem" }}>
+                <Card style={{ width: "19rem", height: "18rem" }}>
                   <FaSearch
                     style={{
-                      fontSize: "60px",
+                      fontSize: "55px",
                       padding: "5px",
                       marginTop: "10px",
                       color: "#db9a02",
@@ -159,7 +203,7 @@ const GetStarted = () => {
                   />
                   <Card.Body>
                     <Card.Title style={{ fontSize: "30px", fontWeight: "900" }}>
-                      Scout and Club
+                      Scout & Club
                     </Card.Title>
                     <Card.Text>
                       Explore Africa's talent pool from your convinience
@@ -179,21 +223,21 @@ const GetStarted = () => {
               <div
                 data-aos="flip-down"
                 data-aos-delay="400"
-                class="col-sm-3 m-2 text-center"
+                class="m-3 text-center"
               >
-                <Card style={{ width: "15rem", height: "18rem" }}>
+                <Card style={{ width: "19rem", height: "18rem" }}>
                   <GiWhistle
                     style={{
                       fontSize: "70px",
                       padding: "5px",
-                      // marginTop: "5px",
+                      marginTop: "6px",
                       color: "#db9a02",
                       margin: "0 auto",
                     }}
                   />
                   <Card.Body>
                     <Card.Title style={{ fontSize: "26px", fontWeight: "900" }}>
-                      Coach and Academy
+                      Coach & Academy
                     </Card.Title>
                     <Card.Text>
                       Expand your reach and keep your dream team organized in
@@ -203,6 +247,9 @@ const GetStarted = () => {
                       id="btn"
                       onClick={() => setModalOpen(true)}
                       variant="primary"
+                      style={{
+                        marginTop: "47px",
+                      }}
                     >
                       Get Started
                     </button>
@@ -214,7 +261,7 @@ const GetStarted = () => {
         </section>
       </Layout>
     </Fragment>
-  )
-}
+  );
+};
 
-export default GetStarted
+export default GetStarted;

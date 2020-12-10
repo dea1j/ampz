@@ -79,6 +79,12 @@
   background-repeat: no-repeat;
   background-position-x: center;
 }
+#fan {
+  background-image: url("../img/AMPZTV\(283\).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+}
 .caro-p {
   font-size: 16px;
   font-weight: 600;
@@ -172,4 +178,15 @@ body {
 }
 #clock-b {
   font-size: 50px;
+}
+
+.par1 {
+  width: 120px;
+  height: 120px;
+  background-color: #fff;
+  margin: 15px 30px;
+  border-radius: 20px;
+}
+.bg2 {
+  background-color: #222;
 }

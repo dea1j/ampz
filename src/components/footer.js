@@ -1,11 +1,11 @@
-import { Link } from "gatsby"
+import { Link } from "gatsby";
 // import PropTypes from "prop-types"
-import React from "react"
-import "../assets/footer.css"
-import { FaFacebookF } from "@react-icons/all-files/fa/FaFacebookF"
-import { FaTwitter } from "@react-icons/all-files/fa/FaTwitter"
-import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn"
-import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram"
+import React from "react";
+import "../assets/footer.css";
+import { FaFacebookF } from "@react-icons/all-files/fa/FaFacebookF";
+import { FaTwitter } from "@react-icons/all-files/fa/FaTwitter";
+import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
+import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
 
 const Footer = () => (
   <footer style={{ backgroundColor: "#5F0000" }}>
@@ -18,21 +18,6 @@ const Footer = () => (
               About Us
             </Link>
           </p>
-          <p>
-            <Link className="link-to" to="/about-us#team">
-              Team
-            </Link>
-          </p>
-          <p>
-            <Link
-              className="link-to"
-              to="/#careers"
-              data-toggle="modal"
-              data-target="#careers"
-            >
-              Careers
-            </Link>
-          </p>{" "}
         </div>
         <div className="col">
           <p className="title">Products</p>
@@ -47,14 +32,7 @@ const Footer = () => (
             </Link>
           </p>
         </div>
-        <div className="col">
-          <p className="title">Legal</p>
-          <p>
-            <Link to="/terms" className="link-to">
-              Terms and Conditions
-            </Link>
-          </p>
-        </div>
+
         <div className="col">
           <p className="title">Contact</p>
           <p>
@@ -66,7 +44,7 @@ const Footer = () => (
               <FaFacebookF />
             </Link>
             <Link
-              to="https://twitter.com/ampz_tv"
+              to="https://twitter.com/ampzsports"
               target="_blank"
               className="link-to social"
             >
@@ -81,7 +59,7 @@ const Footer = () => (
             </Link>
 
             <Link
-              to="https://www.instagram.com/ampz.tv/"
+              to="https://www.instagram.com/ampzsports/"
               target="_blank"
               className="link-to social"
             >
@@ -92,13 +70,14 @@ const Footer = () => (
               <Link className="link-to" to="mailto:info@ampz.tv">
                 info@ampz.tv
               </Link>
-              © {new Date().getFullYear()}
+              <br />© Copyright {new Date().getFullYear()} AMPZ Sports.
+              <br /> All rights reserved.
             </p>
           </p>
         </div>
       </div>
     </div>
   </footer>
-)
+);
 
-export default Footer
+export default Footer;
