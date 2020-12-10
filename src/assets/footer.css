@@ -19,3 +19,7 @@ footer {
 .social:hover {
   color: #db9a02;
 }
+p a:hover {
+  text-decoration: none;
+  color: #fff;
+}

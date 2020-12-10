@@ -71,7 +71,7 @@ const AboutUs = () => {
               opportunities by leveraging on technology. Our platform enables
               talents to profile themselves, log their stats, and share their
               content. With this, verified recruiters all over the world can
-              access African talents and make informed decisions using
+              access Africa's talent pool and make informed decisions using
               comprehensive data.
             </p>
           </div>
@@ -85,6 +85,20 @@ const AboutUs = () => {
             height="300px"
           ></iframe>
         </div> */}
+        <div className="d-flex container justify-content-center">
+          {/* style={{ height: "62vh" }} */}
+          <iframe
+            width="70%"
+            height="345"
+            src="https://www.youtube.com/embed/jipj_g27xis"
+          ></iframe>
+          {/* <video width="300px" height="250px">
+            <source
+              src="https://www.youtube.com/embed/NPl88MhJeIM&t=1s"
+              type="mp4"
+            ></source>
+          </video> */}
+        </div>
         {/* Team */}
         <div className="team">
           <div className="text-center m-5">
@@ -114,7 +128,7 @@ const AboutUs = () => {
               <div className="team-name">Brenda Nwagwu</div>
               <p>Co-Founder/CMO</p>
             </div>
-            <div className="col-sm-6 col-md-4 text-center">
+            {/* <div className="col-sm-6 col-md-4 text-center">
               <img
                 src={ayo}
                 alt="team"
@@ -123,7 +137,7 @@ const AboutUs = () => {
               />
               <div className="team-name">Ayooluwa Alfonso</div>
               <p>Engineering Lead</p>
-            </div>
+            </div> */}
             <div className="col-sm-6 col-md-4 text-center">
               <img
                 src={yinka}

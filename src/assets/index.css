@@ -55,14 +55,14 @@
 }
 .slide3 {
   height: 80vh;
-  background-image: url("../img/Group49.png");
+  background-image: url("../img/Fan\ image\ blurred.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
 }
 .slide4 {
   height: 80vh;
-  background-image: url("../img/Group50.png");
+  background-image: url("../img/Talent\ image\ blurred.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -95,7 +95,7 @@
   background-position-x: center;
 }
 #fan {
-  background-image: url("../img/AMPZTV\(283\).jpg");
+  background-image: url("../img/fan.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;

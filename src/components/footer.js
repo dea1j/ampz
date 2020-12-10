@@ -12,22 +12,23 @@ const Footer = () => (
     <div className="container">
       <div className="footer-content row">
         <div className="col">
-          <p className="title">Company</p>
           <p>
             <Link className="link-to" to="/about-us">
               About Us
             </Link>
           </p>
-        </div>
-        <div className="col">
-          <p className="title">Products</p>
           <p>
-            <Link to="/product#services" className="link-to">
-              Platforms and Services
+            <Link to="/" className="link-to">
+              Product and Services
             </Link>
           </p>
           <p>
-            <Link to="/product#products" className="link-to">
+            <Link to="/" className="link-to">
+              Careers
+            </Link>
+          </p>
+          <p>
+            <Link to="/" className="link-to">
               Programs
             </Link>
           </p>

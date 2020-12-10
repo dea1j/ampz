@@ -1,6 +1,6 @@
 .hero {
-  background-image: url("../img/bubble1-bg.png");
-  background-size: contain;
+  background-image: url("../img/Products\ page\ header\ blurred.png");
+  background-size: cover;
 }
 #matchmania {
   background-image: url("../img/Digital Slideshow.00_00_02_10.Still045.jpg");
@@ -10,7 +10,7 @@
   border-radius: 20px;
 }
 #prog2 {
-  background-image: url("../img/IMG_1046.jpg");
+  background-image: url("../img/TIP.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-size: cover;
@@ -31,4 +31,8 @@
 }
 .gold_test {
   color: #db9a02;
+}
+ul {
+  padding: 0;
+  padding-left: 20px;
 }

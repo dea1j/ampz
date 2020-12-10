@@ -12,8 +12,8 @@ import { FaBriefcase } from "@react-icons/all-files/fa/FaBriefcase";
 import { FaMobileAlt } from "@react-icons/all-files/fa/FaMobileAlt";
 import "../../node_modules/aos/dist/aos.css";
 
-import desktop from "../img/ampz/screens/desktop.png";
-import mobile from "../img/ampz/screens/mobile.png";
+import desktop from "../img/dayo.png";
+// import mobile from "../img/ampz/screens/mobile.png";
 
 const Products = () => {
   useEffect(() => {
@@ -45,12 +45,12 @@ const Products = () => {
           style={{ height: "62vh" }}
           alt="app"
         />
-        <img
+        {/* <img
           src={mobile}
           className="m-5"
           style={{ height: "62vh" }}
           alt="app"
-        />
+        /> */}
       </div>
 
       {/* prod */}
@@ -70,8 +70,8 @@ const Products = () => {
             >
               <Card
                 style={{
-                  width: "15rem",
-                  height: "26rem",
+                  width: "16rem",
+                  height: "27rem",
                   marginRight: "15px",
                 }}
               >
@@ -92,7 +92,7 @@ const Products = () => {
                       fontWeight: "900",
                     }}
                   >
-                    Ampz Mobile
+                    Platform
                   </Card.Title>
                   <Card.Text>
                     Our mobile and web platform designed to help African sports
@@ -114,8 +114,8 @@ const Products = () => {
             >
               <Card
                 style={{
-                  width: "15rem",
-                  height: "26rem",
+                  width: "16rem",
+                  height: "27rem",
                   marginRight: "15px",
                 }}
               >
@@ -136,7 +136,7 @@ const Products = () => {
                       fontWeight: "900",
                     }}
                   >
-                    Ampz Scout
+                    Scouting Services
                   </Card.Title>
                   <Card.Text>
                     We offer a range of scouting support services including;
@@ -166,8 +166,8 @@ const Products = () => {
             >
               <Card
                 style={{
-                  width: "15rem",
-                  height: "26rem",
+                  width: "16rem",
+                  height: "27rem",
                   marginRight: "15px",
                 }}
               >
@@ -188,7 +188,7 @@ const Products = () => {
                       fontWeight: "900",
                     }}
                   >
-                    Ampz Manager
+                    Talent Management
                   </Card.Title>
                   <Card.Text>
                     Helping sports talents unlock the most of their potential is
@@ -302,6 +302,15 @@ const Products = () => {
           </div>
         </section>
       </main>
+      <div
+        className="d-flex justify-content-center p-3"
+        style={{ backgroundColor: "#222", height: "150px" }}
+      >
+        <p style={{ fontSize: "50px" }}>Partner with us</p>
+        <div className="p-4">
+          <button style={{ padding: "10px 50px" }}>Partner</button>
+        </div>
+      </div>
     </Layout>
   );
 };
