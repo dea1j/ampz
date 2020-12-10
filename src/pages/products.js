@@ -12,8 +12,8 @@ import { FaBriefcase } from "@react-icons/all-files/fa/FaBriefcase";
 import { FaMobileAlt } from "@react-icons/all-files/fa/FaMobileAlt";
 import "../../node_modules/aos/dist/aos.css";
 
-import desktop from "../img/ampz/screens/desktop.png";
-import mobile from "../img/ampz/screens/mobile.png";
+import desktop from "../img/dayo.png";
+// import mobile from "../img/ampz/screens/mobile.png";
 
 const Products = () => {
   useEffect(() => {
@@ -45,12 +45,12 @@ const Products = () => {
           style={{ height: "62vh" }}
           alt="app"
         />
-        <img
+        {/* <img
           src={mobile}
           className="m-5"
           style={{ height: "62vh" }}
           alt="app"
-        />
+        /> */}
       </div>
 
       {/* prod */}
