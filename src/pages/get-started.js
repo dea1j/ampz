@@ -39,8 +39,7 @@ const GetStarted = () => {
               We are currently in beta phase and can't wait to have you onboard,
               signup to be the first to know when we go live. Better still,
               stand a chance to be part our test community and gain exclusive
-              access! Note: By completing the short form below, you agree to
-              receive electronic notifications from AMPZ.
+              access!
             </p>
             <p style={{ color: "#DB9A02" }} className="">
               By completing the short form below, you agree to receive
@@ -145,8 +144,7 @@ const GetStarted = () => {
                       className="d-flex"
                       style={{ flexDirection: "column" }}
                     >
-                      Create your own sports profile and easily apply to
-                      verified opportunities
+                      Showcase and apply for opportunities with ease
                       <button
                         className="mt-5"
                         id="btn"
@@ -161,7 +159,11 @@ const GetStarted = () => {
               </div>
 
               {/*  */}
-              <div data-aos="flip-down" className="m-3 text-center">
+              <div
+                data-aos="flip-down"
+                data-aos-delay="100"
+                className="m-3 text-center"
+              >
                 <Card
                   className="d-flex align-items-center"
                   style={{ width: "19rem", height: "18rem" }}
@@ -186,7 +188,7 @@ const GetStarted = () => {
                       style={{ flexDirection: "column" }}
                     >
                       <p style={{ paddingBottom: "10px" }}>
-                        Connect with a vibrant grassroot community
+                        Connect and enjoy authentic sports content
                       </p>
                       <button
                         className="mt-5"
@@ -222,7 +224,7 @@ const GetStarted = () => {
                     />
                     <Card.Title
                       style={{
-                        fontSize: "25px",
+                        fontSize: "30px",
                         // padding: "25px",
                         paddingTop: "30px",
                         fontWeight: "900",
@@ -234,7 +236,8 @@ const GetStarted = () => {
                       className="d-flex"
                       style={{ flexDirection: "column" }}
                     >
-                      Explore Africa's talent pool from your convinience
+                      We are making scouting in Africa easy. Now you can own
+                      your process.
                       <button
                         className="mt-5"
                         id="btn"
@@ -259,7 +262,7 @@ const GetStarted = () => {
                     style={{
                       fontSize: "70px",
                       // padding: "2px",
-                      marginTop: "15px",
+                      marginTop: "17px",
                       color: "#db9a02",
                       margin: "0 auto",
                     }}
@@ -269,6 +272,7 @@ const GetStarted = () => {
                       style={{
                         // padding: "10px",
                         fontWeight: "900",
+                        fontSize: "30px",
                       }}
                     >
                       Coach & Academy
@@ -277,8 +281,7 @@ const GetStarted = () => {
                       className="d-flex"
                       style={{ flexDirection: "column" }}
                     >
-                      Expand your reach and keep your dream team organized in
-                      one space.
+                      Amplify your reach and organize your dream team.
                       <button
                         id="btn"
                         onClick={() => setModalOpen(true)}

@@ -46,8 +46,7 @@ const IndexPage = ({ data }) => {
               We are currently in beta phase and can't wait to have you onboard,
               signup to be the first to know when we go live. Better still,
               stand a chance to be part our test community and gain exclusive
-              access! Note: By completing the short form below, you agree to
-              receive electronic notifications from AMPZ.
+              access!
             </p>
             <p style={{ color: "#DB9A02" }} className="">
               By completing the short form below, you agree to receive

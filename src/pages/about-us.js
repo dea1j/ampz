@@ -71,7 +71,7 @@ const AboutUs = () => {
               opportunities by leveraging on technology. Our platform enables
               talents to profile themselves, log their stats, and share their
               content. With this, verified recruiters all over the world can
-              access African talents and make informed decisions using
+              access Africa's talent pool and make informed decisions using
               comprehensive data.
             </p>
           </div>
