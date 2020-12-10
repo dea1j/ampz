@@ -1,23 +1,26 @@
-import React, { useEffect } from "react"
-import { Link } from "gatsby"
-import AOS from "aos"
+import React, { useEffect } from "react";
+import { Link } from "gatsby";
+import AOS from "aos";
 
-import "../assets/products.css"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import mockup from "../img/mockup.png"
-import { Card } from "react-bootstrap"
-import { FaSearch } from "@react-icons/all-files/fa/FaSearch"
-import { FaBriefcase } from "@react-icons/all-files/fa/FaBriefcase"
-import { FaMobileAlt } from "@react-icons/all-files/fa/FaMobileAlt"
-import "../../node_modules/aos/dist/aos.css"
+import "../assets/products.css";
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+
+import { Card } from "react-bootstrap";
+import { FaSearch } from "@react-icons/all-files/fa/FaSearch";
+import { FaBriefcase } from "@react-icons/all-files/fa/FaBriefcase";
+import { FaMobileAlt } from "@react-icons/all-files/fa/FaMobileAlt";
+import "../../node_modules/aos/dist/aos.css";
+
+import desktop from "../img/ampz/screens/desktop.png";
+import mobile from "../img/ampz/screens/mobile.png";
 
 const Products = () => {
   useEffect(() => {
     AOS.init({
       duration: 2000,
-    })
-  }, [])
+    });
+  }, []);
   return (
     <Layout>
       <SEO title="products" />
@@ -33,7 +36,18 @@ const Products = () => {
       </div>
       <main className="container">
         <div data-aos="zoom-in" className="d-flex justify-content-center">
-          <img src={mockup} style={{ height: "62vh" }} alt="app" />
+          <img
+            src={desktop}
+            className="m-5"
+            style={{ height: "62vh" }}
+            alt="app"
+          />
+          <img
+            src={mobile}
+            className="m-5"
+            style={{ height: "62vh" }}
+            alt="app"
+          />
         </div>
 
         {/* prod */}
@@ -53,7 +67,7 @@ const Products = () => {
               >
                 <Card
                   style={{
-                    width: "18rem",
+                    width: "15rem",
                     height: "26rem",
                     marginRight: "15px",
                   }}
@@ -97,7 +111,7 @@ const Products = () => {
               >
                 <Card
                   style={{
-                    width: "18rem",
+                    width: "15rem",
                     height: "26rem",
                     marginRight: "15px",
                   }}
@@ -146,7 +160,7 @@ const Products = () => {
               >
                 <Card
                   style={{
-                    width: "18rem",
+                    width: "15rem",
                     height: "26rem",
                     marginRight: "15px",
                   }}
@@ -200,24 +214,29 @@ const Products = () => {
               <div className="mx-auto gold_test">BE PART OF OUR STORY</div>
               <div className="mx-auto white_test">Our Programmes</div>
             </div>
-            {/* Match Mania */}
-            <div className="row mt-5 mb-5">
+
+            {/* Scouts */}
+            <div className="row abt">
               <div
                 data-aos="fade-right"
-                id="matchmania"
                 className="col-lg-6 col-md-6 col-sm-12"
+                id="matchmania"
               >
-                {/* <img src="" alt="talents" /> */}
+                {/* <img src={scout} alt="talents" /> */}
               </div>
-              <div data-aos="fade-left" className="col-lg-6 col-md-6 col-sm-12">
-                <h3>MatchaMania</h3>
-                <p>
+              <div
+                data-aos="fade-left"
+                data-aos-delay="050"
+                className="col-lg-6 col-md-6 col-sm-12 about-a"
+              >
+                <h3 className="white_test">MatchaMania</h3>
+                <p className="about_part" style={{ fontSize: "17px" }}>
                   Be part of our annual talent hunt event where we identify
                   young future champions to join our incubation programme. Want
                   some live grassroots sports action.
                 </p>
                 <div id="lists">
-                  <ul style={{ listStyleImage: "url('../img/tick.png')" }}>
+                  <ul className="list">
                     <li>150+ Applicants</li>
                     <li>10+ Incubated</li>
                     <li>200+ Attendees</li>
@@ -226,24 +245,29 @@ const Products = () => {
                   </ul>
                 </div>
 
-                {/* <button>Partner</button> */}
+                <div
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="center-bottom"
+                ></div>
               </div>
             </div>
-            {/* Coach & Accademy */}
-            <div className="row m-5" style={{ margin: "30px 0px" }}>
+
+            {/* TIP */}
+            <div className="row abt">
               <div
                 data-aos="fade-right"
-                className="col-lg-6 col-md-6 col-sm-12 "
+                data-aos-delay="050"
+                className="col-lg-6 col-md-6 col-sm-12 about-a"
               >
-                <h3>Talent Incubation Programme</h3>
-                <p>
+                <h3 className="white_test">Talent Incubation Programme</h3>
+                <p className="about_part" style={{ fontSize: "17px" }}>
                   As part of our contribution to sports development, talents
                   selected in our annual talent hunt (MatchMania) are placed
                   with top tier development institutions on a minimum one-year
                   scholarship to build their potential.
                 </p>
                 <div id="lists">
-                  <ul style={{ listStyleImage: "url('../img/tick.png')" }}>
+                  <ul className="list">
                     <li>One year sports development scholarship</li>
                     <li>Profile building</li>
                     <li>Free kits</li>
@@ -252,21 +276,24 @@ const Products = () => {
                   </ul>
                 </div>
 
-                {/* <button>Partner</button> */}
+                <div
+                  data-aos="fade-up"
+                  data-aos-anchor-placement="center-bottom"
+                ></div>
               </div>
               <div
-                id="prog2"
                 data-aos="fade-left"
                 className="col-lg-6 col-md-6 col-sm-12"
+                id="prog2"
               >
-                {/* <img src="" alt="talents" /> */}
+                {/* <img src={scout} alt="talents" /> */}
               </div>
             </div>
           </div>
         </section>
       </main>
     </Layout>
-  )
-}
+  );
+};
 
-export default Products
+export default Products;

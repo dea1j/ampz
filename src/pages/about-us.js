@@ -1,34 +1,41 @@
-import React from "react"
-import { Link } from "gatsby"
-import "../assets/about-us.css"
+import React from "react";
+import { Link } from "gatsby";
+import "../assets/about-us.css";
 
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import line from "../img/straight_line.png"
-import noJust from "../img/ampztv_no_just.jpg"
-import jabbar from "../img/abdul_jabbar.jpg"
-import brenda from "../img/Brenda_Nwagwu.jpg"
-import yinka from "../img/Adeyinka_Aderombi.jpg"
-import nicole from "../img/Nichole Yembra.jpg"
-import ayo from "../img/Alfonso.jpg"
-import "../../node_modules/react-image-gallery/styles/css/image-gallery.css"
-import ImageGallery from "react-image-gallery"
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import line from "../img/straight_line.png";
+import noJust from "../img/ampztv_no_just.jpg";
+import jabbar from "../img/abdul_jabbar.jpg";
+import brenda from "../img/Brenda_Nwagwu.jpg";
+import yinka from "../img/Adeyinka_Aderombi.jpg";
+import nicole from "../img/Nichole Yembra.jpg";
+import ayo from "../img/Alfonso.jpg";
+import "../../node_modules/react-image-gallery/styles/css/image-gallery.css";
+import ImageGallery from "react-image-gallery";
+import { image1 } from "../img/IMG_9504.jpg";
 
 const AboutUs = () => {
   const images = [
     {
-      original: "http://lorempixel.com/1000/600/nature/1/",
-      thumbnail: "http://lorempixel.com/250/150/nature/1/",
+      original:
+        "https://res.cloudinary.com/diubyoojw/image/upload/v1607584411/MatchMania_Finals_Photo.jpg",
+      thumbnail:
+        "https://res.cloudinary.com/diubyoojw/image/upload/v1607584411/MatchMania_Finals_Photo.jpg",
     },
     {
-      original: "http://lorempixel.com/1000/600/nature/2/",
-      thumbnail: "http://lorempixel.com/250/150/nature/2/",
+      original:
+        "https://res.cloudinary.com/diubyoojw/image/upload/v1607584218/IMG_9504.jpg",
+      thumbnail:
+        "https://res.cloudinary.com/diubyoojw/image/upload/v1607584218/IMG_9504.jpg",
     },
     {
-      original: "http://lorempixel.com/1000/600/nature/3/",
-      thumbnail: "http://lorempixel.com/250/150/nature/3/",
+      original:
+        "https://res.cloudinary.com/diubyoojw/image/upload/v1607584197/card_image_2.png",
+      thumbnail:
+        "https://res.cloudinary.com/diubyoojw/image/upload/v1607584197/card_image_2.png",
     },
-  ]
+  ];
   return (
     <Layout>
       <SEO title="About Us" />
@@ -58,7 +65,7 @@ const AboutUs = () => {
             >
               THE PROBLEM
             </h4>
-            <p style={{ fontSize: "20px" }}>
+            <p style={{ fontSize: "18px" }}>
               Over 9 million Africans are in modern slavery and sports is one of
               the lures for trafficking. Despite Africa leading in sports
               participation, over 200 million sports talents within a viable age
@@ -79,7 +86,7 @@ const AboutUs = () => {
             >
               OUR SOLUTION
             </h4>
-            <p style={{ fontSize: "20px" }}>
+            <p style={{ fontSize: "18px" }}>
               AMPZ is connecting African sports talents to a world of verified
               opportunities by leveraging on technology. Our platform enables
               talents to profile themselves, log their stats, and share their
@@ -161,7 +168,7 @@ const AboutUs = () => {
         </div>
       </main>
     </Layout>
-  )
-}
+  );
+};
 
-export default AboutUs
+export default AboutUs;

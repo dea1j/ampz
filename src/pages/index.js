@@ -237,7 +237,7 @@ const IndexPage = ({ data }) => {
                   className="col-lg-6 col-md-6 col-sm-12"
                 >
                   <h3 className="white_test">Fan</h3>
-                  <p className="about_part">
+                  <p className="about_part" style={{ fontSize: "17px" }}>
                     Showcase and apply for opportunities with ease
                   </p>
                   <div id="lists">
@@ -280,7 +280,7 @@ const IndexPage = ({ data }) => {
                   className="col-lg-6 col-md-6 col-sm-12 about-a"
                 >
                   <h3 className="white_test">Talents</h3>
-                  <p className="about_part">
+                  <p className="about_part" style={{ fontSize: "17px" }}>
                     We are connecting African sports talents to a world of
                     verified opportunities by leveraging on technology.
                   </p>
@@ -310,7 +310,7 @@ const IndexPage = ({ data }) => {
                   className="col-lg-6 col-md-6 col-sm-12"
                 >
                   <h3 className="white_test">Coach & Academy</h3>
-                  <p className="about_part">
+                  <p className="about_part" style={{ fontSize: "17px" }}>
                     Do you want to amplify your reach and get your dream team
                     organized?
                   </p>
@@ -353,7 +353,7 @@ const IndexPage = ({ data }) => {
                   className="col-lg-6 col-md-6 col-sm-12 about-a"
                 >
                   <h3 className="white_test">Scout & Club</h3>
-                  <p className="about_part">
+                  <p className="about_part" style={{ fontSize: "17px" }}>
                     We are making scouting in Africa easier. Now you can own
                     your process.
                   </p>
