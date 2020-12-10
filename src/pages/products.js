@@ -6,7 +6,7 @@ import "../assets/products.css";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 
-import { Card } from "react-bootstrap";
+import { Card, Button } from "react-bootstrap";
 import { FaSearch } from "@react-icons/all-files/fa/FaSearch";
 import { FaBriefcase } from "@react-icons/all-files/fa/FaBriefcase";
 import { FaMobileAlt } from "@react-icons/all-files/fa/FaMobileAlt";
@@ -34,179 +34,187 @@ const Products = () => {
         <p>“There's a way to do it better, find it“</p>
         <span>-Thomas Edison</span>
       </div>
-      <main className="container">
-        <div data-aos="zoom-in" className="d-flex justify-content-center">
-          <img
-            src={desktop}
-            className="m-5"
-            style={{ height: "62vh" }}
-            alt="app"
-          />
-          <img
-            src={mobile}
-            className="m-5"
-            style={{ height: "62vh" }}
-            alt="app"
-          />
+
+      <div
+        data-aos="zoom-in"
+        className="d-flex container justify-content-center"
+      >
+        <img
+          src={desktop}
+          className="m-5"
+          style={{ height: "62vh" }}
+          alt="app"
+        />
+        <img
+          src={mobile}
+          className="m-5"
+          style={{ height: "62vh" }}
+          alt="app"
+        />
+      </div>
+
+      {/* prod */}
+      <section style={{ paddingBottom: "50px", backgroundColor: "#222" }}>
+        <div className="text-center p-3 mb-3">
+          <div className="mx-auto gold_test">REACH YOUR GOALS</div>
+          <div className="mx-auto white_test">Our Services</div>
         </div>
-
-        {/* prod */}
-        <section style={{ paddingBottom: "50px" }}>
-          <div className="text-center p-3 mb-3">
-            <div className="mx-auto gold_test">REACH YOUR GOALS</div>
-            <div className="mx-auto white_test">Our Services</div>
-          </div>
-          <div style={{ color: "#000" }}>
-            <div className="rowclassName d-flex flex-wrap justify-content-center">
-              {/*  */}
-              <div
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
-                // className="col-sm-4 m-2 text-center"
-                className="mt-4"
+        <div style={{ color: "#000" }}>
+          <div className="rowclassName d-flex flex-wrap justify-content-center">
+            {/*  */}
+            <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              // className="col-sm-4 m-2 text-center"
+              className="mt-4"
+            >
+              <Card
+                style={{
+                  width: "15rem",
+                  height: "26rem",
+                  marginRight: "15px",
+                }}
               >
-                <Card
+                <FaMobileAlt
                   style={{
-                    width: "15rem",
-                    height: "26rem",
-                    marginRight: "15px",
+                    fontSize: "50px",
+                    color: "#db9a02",
+                    margin: "0 auto",
+                    marginTop: "10px",
                   }}
-                >
-                  <FaMobileAlt
+                />
+                <Card.Body>
+                  <Card.Title
+                    className="text-center"
                     style={{
-                      fontSize: "50px",
-                      color: "#db9a02",
-                      margin: "0 auto",
-                      marginTop: "10px",
+                      fontSize: "30px",
+                      fontFamily: "font1",
+                      fontWeight: "900",
                     }}
-                  />
-                  <Card.Body>
-                    <Card.Title
-                      className="text-center"
-                      style={{
-                        fontSize: "30px",
-                        fontFamily: "font1",
-                        fontWeight: "900",
-                      }}
-                    >
-                      Ampz Online
-                    </Card.Title>
-                    <Card.Text>
-                      Our mobile and web platform designed to help African
-                      sports talents build their profiles by curating their data
-                      and content while recruiters utilize this data and tools
-                      on the platform for recruitment processes.
-                    </Card.Text>
-                    {/* <Button variant="primary">Go somewhere</Button> */}
-                  </Card.Body>
-                </Card>
-              </div>
+                  >
+                    Ampz Online
+                  </Card.Title>
+                  <Card.Text>
+                    Our mobile and web platform designed to help African sports
+                    talents build their profiles by curating their data and
+                    content while recruiters utilize this data and tools on the
+                    platform for recruitment processes.
+                  </Card.Text>
+                  {/* <Button variant="primary">Go somewhere</Button> */}
+                </Card.Body>
+              </Card>
+            </div>
 
-              <div
-                data-aos="fade-up"
-                data-aos-anchor-placement="top-bottom"
-                data-aos-delay="100"
-                // className="col-sm-4 m-2 text-center"
-                className="mt-4"
+            <div
+              data-aos="fade-up"
+              data-aos-anchor-placement="top-bottom"
+              data-aos-delay="100"
+              // className="col-sm-4 m-2 text-center"
+              className="mt-4"
+            >
+              <Card
+                style={{
+                  width: "15rem",
+                  height: "26rem",
+                  marginRight: "15px",
+                }}
               >
-                <Card
+                <FaSearch
                   style={{
-                    width: "15rem",
-                    height: "26rem",
-                    marginRight: "15px",
+                    fontSize: "50px",
+                    color: "#db9a02",
+                    margin: "0 auto",
+                    marginTop: "10px",
                   }}
-                >
-                  <FaSearch
+                />
+                <Card.Body>
+                  <Card.Title
+                    className="text-center"
                     style={{
-                      fontSize: "50px",
-                      color: "#db9a02",
-                      margin: "0 auto",
-                      marginTop: "10px",
+                      fontSize: "30px",
+                      fontFamily: "font1",
+                      fontWeight: "900",
                     }}
-                  />
-                  <Card.Body>
-                    <Card.Title
-                      className="text-center"
-                      style={{
-                        fontSize: "30px",
-                        fontFamily: "font1",
-                        fontWeight: "900",
-                      }}
-                    >
-                      Ampz Scout
-                    </Card.Title>
-                    <Card.Text>
-                      We offer a range of scouting support services including;
-                      <ul>
-                        <li>Talent hunting: to meet your specification.</li>
-                        <li>Talent hunting: to meet your specification.</li>
-                        <li> Event Management: for meet-ups and trials.</li>
-                        <li>
-                          Opportunity promotion: to reach your target audience.
-                        </li>
-                      </ul>
-                    </Card.Text>
-                    {/* <Button variant="primary">Go somewhere</Button> */}
-                  </Card.Body>
-                </Card>
-              </div>
+                  >
+                    Ampz Scout
+                  </Card.Title>
+                  <Card.Text>
+                    We offer a range of scouting support services including;
+                    <ul>
+                      <li>Talent hunting: to meet your specification.</li>
+                      <li>Talent hunting: to meet your specification.</li>
+                      <li> Event Management: for meet-ups and trials.</li>
+                      <li>
+                        Opportunity promotion: to reach your target audience.
+                      </li>
+                    </ul>
+                  </Card.Text>
+                  {/* <Button variant="primary">Go somewhere</Button> */}
+                </Card.Body>
+              </Card>
+            </div>
 
-              <div
-                data-aos="fade-up"
-                data-aos-delay="300"
-                data-aos-anchor-placement="top-bottom"
-                // class="col-sm-3 m-2 text-center"
-                className="mt-4"
+            <div
+              data-aos="fade-up"
+              data-aos-delay="300"
+              data-aos-anchor-placement="top-bottom"
+              // class="col-sm-3 m-2 text-center"
+              className="mt-4"
+            >
+              <Card
+                style={{
+                  width: "15rem",
+                  height: "26rem",
+                  marginRight: "15px",
+                }}
               >
-                <Card
+                <FaBriefcase
                   style={{
-                    width: "15rem",
-                    height: "26rem",
-                    marginRight: "15px",
+                    fontSize: "50px",
+                    color: "#db9a02",
+                    margin: "0 auto",
+                    marginTop: "10px",
                   }}
-                >
-                  <FaBriefcase
+                />
+                <Card.Body>
+                  <Card.Title
+                    className="text-center"
                     style={{
-                      fontSize: "50px",
-                      color: "#db9a02",
-                      margin: "0 auto",
-                      marginTop: "10px",
+                      fontSize: "30px",
+                      fontFamily: "font1",
+                      fontWeight: "900",
                     }}
-                  />
-                  <Card.Body>
-                    <Card.Title
-                      className="text-center"
-                      style={{
-                        fontSize: "30px",
-                        fontFamily: "font1",
-                        fontWeight: "900",
-                      }}
-                    >
-                      Ampz Manager
-                    </Card.Title>
-                    <Card.Text>
-                      Helping sports talents unlock the most of their potential
-                      is part of our DNA.
-                      <ul>
-                        <li>
-                          Talent Incubation Program: is where we groom talents
-                          alongside our development partners.
-                        </li>
-                        <li>Due diligence and verification services</li>
-                        <li>
-                          Talent Marketing: is how we package, promote and match
-                          talents to institutions.{" "}
-                        </li>
-                      </ul>
-                    </Card.Text>
-                    {/* <Button variant="primary">Go somewhere</Button> */}
-                  </Card.Body>
-                </Card>
-              </div>
+                  >
+                    Ampz Manager
+                  </Card.Title>
+                  <Card.Text>
+                    Helping sports talents unlock the most of their potential is
+                    part of our DNA.
+                    <ul>
+                      <li>
+                        Talent Incubation Program: is where we groom talents
+                        alongside our development partners.
+                      </li>
+                      <li>Due diligence and verification services</li>
+                      <li>
+                        Talent Marketing: is how we package, promote and match
+                        talents to institutions.{" "}
+                      </li>
+                    </ul>
+                  </Card.Text>
+                  {/* <Button variant="primary">Go somewhere</Button> */}
+                </Card.Body>
+              </Card>
             </div>
           </div>
-        </section>
+        </div>
+        <div className="m-3 d-flex justify-content-center">
+          {/* <Button>Partner</Button> */}
+          <button style={{ width: "20%", padding: "10px" }}>Partner</button>
+        </div>
+      </section>
 
+      <main className="container">
         {/* !!! PRODUCTS */}
         <section id="products" className="products">
           <div className="container">

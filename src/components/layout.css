@@ -72,7 +72,7 @@ img {
 button {
   font: inherit;
   margin: 0;
-  outline: none;
+  outline: none !important;
 }
 
 h3 {
