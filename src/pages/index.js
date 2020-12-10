@@ -1,17 +1,9 @@
 import React, { Fragment, useState, useEffect } from "react";
-import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 // import Image from "../components/img"
 import SEO from "../components/seo";
-import {
-  Modal,
-  Carousel,
-  Row,
-  Col,
-  Dropdown,
-  DropdownButton,
-} from "react-bootstrap";
+import { Modal, Carousel } from "react-bootstrap";
 import { graphql } from "gatsby";
 // import Image from "gatsby-image"
 import "../assets/index.css";
