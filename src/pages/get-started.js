@@ -12,10 +12,15 @@ import "../../node_modules/aos/dist/aos.css";
 import AOS from "aos";
 
 const GetStarted = () => {
-  const [modalOpen, setModalOpen] = useState(false);
+  const [formOne, setFormOne] = useState(false);
+  const [formTwo, setFormTwo] = useState(false);
 
   const closeForm = () => {
-    setModalOpen(false);
+    setFormOne(false);
+  };
+
+  const closeForm2 = () => {
+    setFormTwo(false);
   };
 
   useEffect(() => {
@@ -25,7 +30,8 @@ const GetStarted = () => {
   }, []);
   return (
     <Fragment>
-      <Modal show={modalOpen} onHide={() => closeForm()}>
+      {/* Form 1 */}
+      <Modal show={formOne} onHide={() => closeForm()}>
         <Modal.Header closeButton>
           <Modal.Title>
             <h5 style={{ color: "#000", fontSize: "30px" }} className="">
@@ -92,6 +98,83 @@ const GetStarted = () => {
           </div>
         </Modal.Body>
       </Modal>
+
+      {/* Form 2 */}
+      <Modal show={formTwo} onHide={() => closeForm2()}>
+        <Modal.Header closeButton>
+          <Modal.Title>
+            <h5 style={{ color: "#000", fontSize: "30px" }} className="">
+              Hey champ!
+            </h5>
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div>
+            <p style={{ color: "#000" }} className="">
+              We are currently in beta phase and can't wait to have you onboard,
+              signup to be the first to know when we go live. Better still,
+              stand a chance to be part our test community and gain exclusive
+              access!
+            </p>
+            <p style={{ color: "#DB9A02" }} className="">
+              By completing the short form below, you agree to receive
+              electronic notifications from AMPZ.
+            </p>
+            <form>
+              <div className="form-group">
+                <input
+                  placeholder="Full name"
+                  className="form-control"
+                  type="text"
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  placeholder="Name of academy / organization"
+                  className="form-control"
+                  type="text"
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  placeholder="Email"
+                  className="form-control"
+                  type="email"
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  placeholder="Phone number"
+                  className="form-control"
+                  type="number"
+                />
+              </div>
+              <div className="form-group">
+                <select class="custom-select">
+                  <option selected>Sports interest</option>
+                  <option value="1">Football</option>
+                  <option value="2">Basketball</option>
+                  <option value="3">Athletics (Track & Field)</option>
+                  <option value="4">Boxing</option>
+                  <option value="5">Rugby</option>
+                  <option value="6">Cricket</option>
+                  <option value="7">Table tennis</option>
+                  <option value="8">Others</option>
+                </select>
+              </div>
+              <div className="form-group">
+                <button
+                  style={{ backgroundColor: "#DB9A02", color: "#fff" }}
+                  className="btn btn-block"
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </Modal.Body>
+      </Modal>
+
       <Layout>
         <SEO title="Page two" />
         {/* prod */}
@@ -148,7 +231,7 @@ const GetStarted = () => {
                       <button
                         className="mt-5"
                         id="btn"
-                        onClick={() => setModalOpen(true)}
+                        onClick={() => setFormOne(true)}
                         variant="primary"
                       >
                         Get Started
@@ -193,7 +276,7 @@ const GetStarted = () => {
                       <button
                         className="mt-5"
                         id="btn"
-                        onClick={() => setModalOpen(true)}
+                        onClick={() => setFormOne(true)}
                         variant="primary"
                         style={{
                           marginTop: "10px !important",
@@ -241,7 +324,7 @@ const GetStarted = () => {
                       <button
                         className="mt-5"
                         id="btn"
-                        onClick={() => setModalOpen(true)}
+                        onClick={() => setFormTwo(true)}
                         variant="primary"
                         // style={{ marginBottom: "50px" }}
                       >
@@ -274,6 +357,7 @@ const GetStarted = () => {
                         fontWeight: "900",
                         fontSize: "30px",
                       }}
+                      className="mt-3"
                     >
                       Coach & Academy
                     </Card.Title>
@@ -284,7 +368,7 @@ const GetStarted = () => {
                       Amplify your reach and organize your dream team.
                       <button
                         id="btn"
-                        onClick={() => setModalOpen(true)}
+                        onClick={() => setFormTwo(true)}
                         variant="primary"
                         style={{
                           marginTop: "50px",
