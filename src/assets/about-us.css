@@ -3,11 +3,12 @@
   height: "20vh";
 }
 .caro-h3 {
-  font-size: 14px;
+  font-size: 20px !important;
   color: #db9a02;
   letter-spacing: 2px;
 }
 .caro-h2 {
+  font-size: 35px !important;
   font-weight: 900;
 }
 .abt-hero {

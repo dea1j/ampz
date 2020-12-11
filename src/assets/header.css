@@ -1,5 +1,6 @@
 .nav {
   background-color: #5f0000;
+  padding: 0 30px !important;
 }
 #nav-link {
   color: #fff;

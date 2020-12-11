@@ -1,8 +1,8 @@
 var plugins = [{
-      plugin: require('C:/Users/User/Desktop/AMPZ FRONTEND/ampz/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('/Users/mac/Developer/ProjectAMPZ/ampzWebsite/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('C:/Users/User/Desktop/AMPZ FRONTEND/ampz/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      plugin: require('/Users/mac/Developer/ProjectAMPZ/ampzWebsite/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
       options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/img/ampz_logo.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"be395d55e0fc50add0f73a1f2d42a2a6"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:

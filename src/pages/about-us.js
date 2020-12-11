@@ -10,7 +10,7 @@ import jabbar from "../img/abdul_jabbar.jpg";
 import brenda from "../img/Brenda_Nwagwu.jpg";
 import yinka from "../img/Adeyinka_Aderombi.jpg";
 import nicole from "../img/Nichole Yembra.jpg";
-import ayo from "../img/Alfonso.jpg";
+// import ayo from "../img/Alfonso.jpg";
 import "../../node_modules/react-image-gallery/styles/css/image-gallery.css";
 // import ImageGallery from "react-image-gallery";
 // import { image1 } from "../img/IMG_9504.jpg";
@@ -90,7 +90,8 @@ const AboutUs = () => {
           <iframe
             width="70%"
             height="345"
-            src="https://www.youtube.com/embed/jipj_g27xis"
+            // src="https://www.youtube.com/embed/jipj_g27xis"
+            src="https://www.youtube.com/embed/NPl88MhJeIM"
           ></iframe>
           {/* <video width="300px" height="250px">
             <source
@@ -115,7 +116,7 @@ const AboutUs = () => {
                 className="team"
                 style={{ height: "20vh" }}
               />
-              <div className="team-name">Abdul-Jabbal Momoh</div>
+              <div className="team-name">Abdul-Jabbar Momoh</div>
               <p>Co-Founder/CEO</p>
             </div>
             <div className="col-sm-6 col-md-4 text-center">

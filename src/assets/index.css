@@ -29,12 +29,14 @@
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
+  border-radius: 20px;
 }
 .abt {
   padding: 50px 0;
 }
 .scout {
   background-image: url("../img/Rectangle54.png");
+  border-radius: 20px;
 }
 .nxt {
   padding-right: 30px;
@@ -86,22 +88,32 @@
 .caro-h2 {
   font-weight: 900;
   font-family: "font1";
-  font-size: 30px;
+  font-size: 35px !important;
 }
 #coaches {
   background-image: url("../img/mya.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
+  border-radius: 20px;
 }
 #fan {
   background-image: url("../img/fan.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
+  border-radius: 20px;
+  height: 40vh;
 }
+
+@media only screen and (max-width: 765px) {
+  #fan {
+    display: none;
+  }
+}
+
 .caro-p {
-  font-size: 16px;
+  font-size: 17px;
   font-weight: 600;
 }
 
@@ -198,6 +210,14 @@ body {
 .par1 {
   width: 120px;
   height: 120px;
+  background-color: #fff;
+  /* margin: 15px 30px; */
+  border-radius: 20px;
+  opacity: 0.9;
+}
+.par2 {
+  width: 100px;
+  height: 100px;
   background-color: #fff;
   margin: 15px 30px;
   border-radius: 20px;

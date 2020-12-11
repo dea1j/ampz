@@ -1,17 +1,11 @@
 import { Link } from "gatsby";
-// import PropTypes from "prop-types"
 import React from "react";
 import "../assets/header.css";
 import { Navbar, Nav, Button } from "react-bootstrap";
 import logo from "../img/ampz_logo.png";
 
 const Header = () => (
-  // <div style={{ position: "fixed", zIndex: "1000", width: "100%" }}>
-  <Navbar
-    // style={{ position: "fixed", zIndex: "1000", width: "100%" }}
-    expand="md"
-    className="nav"
-  >
+  <Navbar expand="md" className="nav">
     <Navbar.Brand href="#home">
       <Link to="/">
         <img src={logo} alt="logo" />

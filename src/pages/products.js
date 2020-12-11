@@ -1,10 +1,11 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { Link } from "gatsby";
 import AOS from "aos";
 
 import "../assets/products.css";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import { Modal } from "react-bootstrap";
 
 import { Card, Button } from "react-bootstrap";
 import { FaSearch } from "@react-icons/all-files/fa/FaSearch";
@@ -13,9 +14,14 @@ import { FaMobileAlt } from "@react-icons/all-files/fa/FaMobileAlt";
 import "../../node_modules/aos/dist/aos.css";
 
 import desktop from "../img/dayo.png";
-// import mobile from "../img/ampz/screens/mobile.png";
 
 const Products = () => {
+  const [modalOpen, setModalOpen] = useState(false);
+
+  const closeForm = () => {
+    setModalOpen(false);
+  };
+
   useEffect(() => {
     AOS.init({
       duration: 2000,
@@ -23,6 +29,83 @@ const Products = () => {
   }, []);
   return (
     <Layout>
+      <Modal show={modalOpen} onHide={() => closeForm()}>
+        <Modal.Header closeButton>
+          <Modal.Title>
+            <h5 style={{ color: "#000", fontSize: "30px" }} className="">
+              Hey champ!
+            </h5>
+          </Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
+          <div>
+            <p style={{ color: "#000" }} className="">
+              Our products and services are designed to continuously improve
+              talent scouting, management, and value exchange in sports. As a
+              front runner in the African sports technology and innovation
+              scene, we are combining the power of data, content, and
+              communities to drive the much-needed change in processes as well
+              as impact lives.
+            </p>
+            <p style={{ color: "#DB9A02" }} className="">
+              Wish to partner with us on this exciting journey? Leave your
+              details below and we would be in touch!
+            </p>
+            <form>
+              <div className="form-group">
+                <input
+                  placeholder="Full name"
+                  className="form-control"
+                  type="text"
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  placeholder=" Name of Organization/Company"
+                  className="form-control"
+                  type="text"
+                />
+              </div>
+
+              <div className="form-group">
+                <input
+                  placeholder="Email Address"
+                  className="form-control"
+                  type="email"
+                />
+              </div>
+              <div className="form-group">
+                <input
+                  placeholder="Phone Number (please include country code)"
+                  className="form-control"
+                  type="number"
+                />
+              </div>
+              <div className="form-group">
+                <select class="custom-select">
+                  <option selected>Partnership Interest</option>
+
+                  <option value="1">Technology/Platform</option>
+                  <option value="2">Scouting Services</option>
+                  <option value="3">Talent Management/Incubation</option>
+                  <option value="4">MatchMania/Events</option>
+                  <option value="4">Others</option>
+                </select>
+              </div>
+              <div className="form-group">
+                <button
+                  style={{ backgroundColor: "#DB9A02", color: "#fff" }}
+                  className="btn btn-block"
+                  onClick={() => setModalOpen(true)}
+                >
+                  Submit
+                </button>
+              </div>
+            </form>
+          </div>
+        </Modal.Body>
+      </Modal>
+
       <SEO title="products" />
 
       <div
@@ -39,18 +122,7 @@ const Products = () => {
         data-aos="zoom-in"
         className="d-flex container justify-content-center"
       >
-        <img
-          src={desktop}
-          className="m-5"
-          style={{ height: "62vh" }}
-          alt="app"
-        />
-        {/* <img
-          src={mobile}
-          className="m-5"
-          style={{ height: "62vh" }}
-          alt="app"
-        /> */}
+        <img src={desktop} className="m-3" alt="app" />
       </div>
 
       {/* prod */}
@@ -70,20 +142,20 @@ const Products = () => {
             >
               <Card
                 style={{
-                  width: "16rem",
-                  height: "27rem",
+                  width: "18rem",
+                  height: "30rem",
                   marginRight: "15px",
                 }}
               >
                 <FaMobileAlt
                   style={{
-                    fontSize: "50px",
+                    fontSize: "60px",
                     color: "#db9a02",
                     margin: "0 auto",
-                    marginTop: "10px",
+                    marginTop: "20px",
                   }}
                 />
-                <Card.Body>
+                <Card.Body className="card-bdy">
                   <Card.Title
                     className="text-center"
                     style={{
@@ -92,13 +164,17 @@ const Products = () => {
                       fontWeight: "900",
                     }}
                   >
-                    Platform
+                    Platform & Technology
                   </Card.Title>
-                  <Card.Text>
-                    Our mobile and web platform designed to help African sports
-                    talents build their profiles by curating their data and
-                    content while recruiters utilize this data and tools on the
-                    platform for recruitment processes.
+                  <Card.Text style={{ lineHeight: "1.7" }}>
+                    Our mobile and web platform is designed to help African
+                    sports talents build their profiles by curating their data
+                    and content while recruiters can utilize this data and tools
+                    on the platform to optimize their recruitment processes. We
+                    are leveling the playing field and creating equal access for
+                    all stakeholders in a safe environment. Now everyone can be
+                    more effective and efficient at what they do best! Note:
+                    This product is still in beta phase.
                   </Card.Text>
                   {/* <Button variant="primary">Go somewhere</Button> */}
                 </Card.Body>
@@ -114,20 +190,20 @@ const Products = () => {
             >
               <Card
                 style={{
-                  width: "16rem",
-                  height: "27rem",
+                  width: "18rem",
+                  height: "30rem",
                   marginRight: "15px",
                 }}
               >
                 <FaSearch
                   style={{
-                    fontSize: "50px",
+                    fontSize: "60px",
                     color: "#db9a02",
                     margin: "0 auto",
-                    marginTop: "10px",
+                    marginTop: "20px",
                   }}
                 />
-                <Card.Body>
+                <Card.Body className="card-bdy">
                   <Card.Title
                     className="text-center"
                     style={{
@@ -138,9 +214,9 @@ const Products = () => {
                   >
                     Scouting Services
                   </Card.Title>
-                  <Card.Text>
+                  <Card.Text style={{ lineHeight: "1.7" }}>
                     We offer a range of scouting support services including;
-                    <ul>
+                    <ul className="cu-ul">
                       <li>Talent hunting: to meet your specification.</li>
                       <li>
                         Verification: of talent data, abilities and due
@@ -166,20 +242,20 @@ const Products = () => {
             >
               <Card
                 style={{
-                  width: "16rem",
-                  height: "27rem",
+                  width: "18rem",
+                  height: "30rem",
                   marginRight: "15px",
                 }}
               >
                 <FaBriefcase
                   style={{
-                    fontSize: "50px",
+                    fontSize: "60px",
                     color: "#db9a02",
                     margin: "0 auto",
-                    marginTop: "10px",
+                    marginTop: "20px",
                   }}
                 />
-                <Card.Body>
+                <Card.Body className="card-bdy">
                   <Card.Title
                     className="text-center"
                     style={{
@@ -190,8 +266,8 @@ const Products = () => {
                   >
                     Talent Management
                   </Card.Title>
-                  <Card.Text>
-                    Helping sports talents unlock the most of their potential is
+                  <Card.Text style={{ lineHeight: "1.7" }}>
+                    Helping sports talents make the best of their potential is
                     part of our DNA.
                     <ul>
                       <li>
@@ -210,9 +286,14 @@ const Products = () => {
             </div>
           </div>
         </div>
-        <div className="m-3 d-flex justify-content-center">
+        <div className="m-5 d-flex justify-content-center">
           {/* <Button>Partner</Button> */}
-          <button style={{ width: "20%", padding: "10px" }}>Partner</button>
+          <button
+            style={{ width: "250px", padding: "10px" }}
+            onClick={() => setModalOpen(true)}
+          >
+            Partner
+          </button>
         </div>
       </section>
 
@@ -306,9 +387,14 @@ const Products = () => {
         className="d-flex justify-content-center p-3"
         style={{ backgroundColor: "#222", height: "150px" }}
       >
-        <p style={{ fontSize: "50px" }}>Partner with us</p>
-        <div className="p-4">
-          <button style={{ padding: "10px 50px" }}>Partner</button>
+        <p style={{ fontSize: "40px" }}>Partner with us</p>
+        <div style={{ padding: "10px" }}>
+          <button
+            style={{ padding: "10px 50px" }}
+            onClick={() => setModalOpen(true)}
+          >
+            Partner
+          </button>
         </div>
       </div>
     </Layout>
