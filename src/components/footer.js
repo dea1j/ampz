@@ -70,7 +70,10 @@ const Footer = () => (
             </Link>
 
             <p className="mt-3">
-              <Link className="link-to" to="mailto:info@ampz.tv">
+              <Link
+                className="link-to"
+                //  to="mailto:info@ampz.tv"
+              >
                 info@ampz.tv
               </Link>
               <br />© Copyright {new Date().getFullYear()} AMPZ Sports.
