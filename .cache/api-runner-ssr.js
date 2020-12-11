@@ -1,9 +1,9 @@
 var plugins = [{
-      plugin: require('/Users/mac/Developer/ProjectAMPZ/ampzWebsite/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
+      plugin: require('C:/Users/User/Desktop/AMPZ FRONTEND/ampznew/ampz/node_modules/gatsby-plugin-react-helmet/gatsby-ssr'),
       options: {"plugins":[]},
     },{
-      plugin: require('/Users/mac/Developer/ProjectAMPZ/ampzWebsite/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
-      options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/img/logo.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"50156df38e446d35d0a6a12ca86ff89a"},
+      plugin: require('C:/Users/User/Desktop/AMPZ FRONTEND/ampznew/ampz/node_modules/gatsby-plugin-manifest/gatsby-ssr'),
+      options: {"plugins":[],"name":"gatsby-starter-default","short_name":"starter","start_url":"/","background_color":"#663399","theme_color":"#663399","display":"minimal-ui","icon":"src/img/logo.png","legacy":true,"theme_color_in_head":true,"cache_busting_mode":"query","crossOrigin":"anonymous","include_favicon":true,"cacheDigest":"00802e290a48b5458a4e15081f70bfe7"},
     }]
 // During bootstrap, we write requires at top of this file which looks like:
 // var plugins = [
