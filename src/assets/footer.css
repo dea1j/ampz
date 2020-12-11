@@ -1,5 +1,6 @@
 footer {
   background-image: url(../img/waves-bg.png);
+  height: 35vh;
 }
 .footer-content {
   padding: 20px;

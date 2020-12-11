@@ -9,9 +9,9 @@ import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
 
 const Footer = () => (
   <footer style={{ backgroundColor: "#5F0000" }}>
-    <div className="container">
+    <div className="d-flex justify-content-center">
       <div className="footer-content row">
-        <div className="col">
+        <div className="col" style={{ margin: "0 30px" }}>
           <p>
             <Link className="link-to" to="/about-us">
               About Us
@@ -34,8 +34,10 @@ const Footer = () => (
           </p>
         </div>
 
-        <div className="col">
-          <p className="title">Contact</p>
+        <div className="col" style={{ margin: "0 30px" }}>
+          <p className="title" style={{ fontSize: "900" }}>
+            Contact
+          </p>
           <p>
             <Link
               to="https://web.facebook.com/ampz.tv/"
