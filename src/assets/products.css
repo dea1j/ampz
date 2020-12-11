@@ -1,7 +1,3 @@
-.hero {
-  background-image: url("../img/Products\ page\ header\ blurred.png");
-  background-size: cover;
-}
 #matchmania {
   background-image: url("../img/Digital Slideshow.00_00_02_10.Still045.jpg");
   background-size: contain;
@@ -10,7 +6,7 @@
   border-radius: 20px;
 }
 #prog2 {
-  background-image: url("../img/TIP.jpg");
+  background-image: url("../img/TIP-talent.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-size: cover;
@@ -41,4 +37,11 @@ ul {
 }
 .cu-ul li {
   margin-bottom: 3px;
+}
+.pdt-hero {
+  height: 80vh;
+  background-image: url("../img/Products\ page\ header\ blurred.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
 }

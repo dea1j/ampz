@@ -1,4 +1,5 @@
 import React, { Fragment, useState, useEffect } from "react";
+// import { useForm, handleSubmit, Input } from "react-hook-form";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
@@ -56,26 +57,33 @@ const IndexPage = ({ data }) => {
               By completing the short form below, you agree to receive
               electronic notifications from AMPZ.
             </p>
+
             <form>
               <div className="form-group">
                 <input
                   placeholder="Full name"
+                  name="Fullname"
                   className="form-control"
                   type="text"
+                  required="true"
                 />
               </div>
               <div className="form-group">
                 <input
                   placeholder="Email"
+                  name="email"
                   className="form-control"
                   type="email"
+                  required="true"
                 />
               </div>
               <div className="form-group">
                 <input
                   placeholder="Phone number"
+                  name="phone"
                   className="form-control"
                   type="number"
+                  required="true"
                 />
               </div>
               <div className="form-group">
@@ -281,7 +289,9 @@ const IndexPage = ({ data }) => {
                     data-aos-delay="010"
                     data-aos-anchor-placement="center-bottom"
                   >
-                    <button onClick={() => setFormOne(true)}>
+                    <button
+                      onClick={() => setFormOne(true) && alert("Submitted")}
+                    >
                       Get Started
                     </button>
                   </div>

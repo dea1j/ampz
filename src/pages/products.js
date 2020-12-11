@@ -55,30 +55,38 @@ const Products = () => {
               <div className="form-group">
                 <input
                   placeholder="Full name"
+                  name="fullname"
                   className="form-control"
                   type="text"
+                  required="true"
                 />
               </div>
               <div className="form-group">
                 <input
                   placeholder=" Name of Organization/Company"
+                  name="organization"
                   className="form-control"
                   type="text"
+                  required="true"
                 />
               </div>
 
               <div className="form-group">
                 <input
                   placeholder="Email Address"
+                  name="email"
                   className="form-control"
                   type="email"
+                  required="true"
                 />
               </div>
               <div className="form-group">
                 <input
                   placeholder="Phone Number (please include country code)"
+                  name="phone"
                   className="form-control"
                   type="number"
+                  required="true"
                 />
               </div>
               <div className="form-group">
@@ -108,7 +116,24 @@ const Products = () => {
 
       <SEO title="products" />
 
-      <div
+      {/*  */}
+
+      {/*  */}
+      <div className="pdt-hero">
+        <div className="ovrlay"></div>
+        {/* Caption */}
+        <div className="hero-text text-center">
+          <h3 className="caro-h3">SPORT TECHNOLOGY</h3>
+          <h2 className="caro-h2">Innovating for Africa.</h2>
+          <p className="caro-p container-fluid">
+            “There's a way to do it better, find it“
+          </p>
+          <span>Thomas Edison</span>
+        </div>
+      </div>
+      {/*  */}
+      {/*  */}
+      {/* <div
         className="hero text-center"
         style={{ minHeight: "50vh", paddingTop: "50px" }}
       >
@@ -116,7 +141,7 @@ const Products = () => {
         <h3 className="caro-h2">Innovating for Africa.</h3>
         <p>“There's a way to do it better, find it“</p>
         <span>-Thomas Edison</span>
-      </div>
+      </div> */}
 
       <div
         data-aos="zoom-in"
@@ -299,7 +324,7 @@ const Products = () => {
 
       <main className="container">
         {/* !!! PRODUCTS */}
-        <section id="products" className="products">
+        <section id="programmes" className="products">
           <div className="container">
             <div className="text-center p-3">
               <div className="mx-auto gold_test">BE PART OF OUR STORY</div>
@@ -384,13 +409,12 @@ const Products = () => {
         </section>
       </main>
       <div
-        className="d-flex justify-content-center p-3"
-        style={{ backgroundColor: "#222", height: "150px" }}
+        className="d-flex justify-content-center p-5"
+        // style={{ backgroundColor: "#222", height: "150px" }}
       >
-        <p style={{ fontSize: "40px" }}>Partner with us</p>
         <div style={{ padding: "10px" }}>
           <button
-            style={{ padding: "10px 50px" }}
+            style={{ padding: "10px 50px", width: "250px" }}
             onClick={() => setModalOpen(true)}
           >
             Partner

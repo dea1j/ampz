@@ -18,7 +18,7 @@ const Footer = () => (
             </Link>
           </p>
           <p>
-            <Link to="/" className="link-to">
+            <Link to="/products" className="link-to">
               Product and Services
             </Link>
           </p>
@@ -28,7 +28,7 @@ const Footer = () => (
             </Link>
           </p>
           <p>
-            <Link to="/" className="link-to">
+            <Link to="/products#programmes" className="link-to">
               Programs
             </Link>
           </p>

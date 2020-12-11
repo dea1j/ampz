@@ -188,7 +188,7 @@ const GetStarted = () => {
               className="mx-auto banner_p_l_r_10"
               style={{ fontWeight: "800", fontSize: "30px" }}
             >
-              Select Profile
+              Select profile
             </div>
             <div
               data-aos="fade-up"
@@ -229,7 +229,7 @@ const GetStarted = () => {
                     >
                       Showcase and apply for opportunities with ease
                       <button
-                        className="mt-5"
+                        className="mt-1"
                         id="btn"
                         onClick={() => setFormOne(true)}
                         variant="primary"
@@ -270,7 +270,7 @@ const GetStarted = () => {
                       className="d-flex"
                       style={{ flexDirection: "column" }}
                     >
-                      <p style={{ paddingBottom: "10px" }}>
+                      <p style={{ paddingBottom: "7px" }}>
                         Connect and enjoy authentic sports content
                       </p>
                       <button
@@ -278,9 +278,7 @@ const GetStarted = () => {
                         id="btn"
                         onClick={() => setFormOne(true)}
                         variant="primary"
-                        style={{
-                          marginTop: "10px !important",
-                        }}
+                        className="mt-1"
                       >
                         Get Started
                       </button>
@@ -337,27 +335,27 @@ const GetStarted = () => {
 
               <div
                 data-aos="flip-down"
-                data-aos-delay="400"
-                class="m-3 text-center"
+                data-aos-delay="300"
+                className="m-3 text-center"
               >
                 <Card style={{ width: "19rem", height: "18rem" }}>
-                  <GiWhistle
-                    style={{
-                      fontSize: "70px",
-                      // padding: "2px",
-                      marginTop: "17px",
-                      color: "#db9a02",
-                      margin: "0 auto",
-                    }}
-                  />
                   <Card.Body>
+                    <GiWhistle
+                      style={{
+                        fontSize: "60px",
+                        // padding: "5px",
+                        // marginTop: "10px",
+                        color: "#db9a02",
+                        margin: "0 auto",
+                      }}
+                    />
                     <Card.Title
                       style={{
-                        // padding: "10px",
-                        fontWeight: "900",
                         fontSize: "30px",
+                        // padding: "25px",
+                        paddingTop: "30px",
+                        fontWeight: "900",
                       }}
-                      className="mt-3"
                     >
                       Coach & Academy
                     </Card.Title>
@@ -367,12 +365,11 @@ const GetStarted = () => {
                     >
                       Amplify your reach and organize your dream team.
                       <button
+                        className="mt-5"
                         id="btn"
                         onClick={() => setFormTwo(true)}
                         variant="primary"
-                        style={{
-                          marginTop: "50px",
-                        }}
+                        // style={{ marginBottom: "50px" }}
                       >
                         Get Started
                       </button>
@@ -380,6 +377,9 @@ const GetStarted = () => {
                   </Card.Body>
                 </Card>
               </div>
+
+              {/*  */}
+              {/*  */}
             </div>
           </div>
         </section>
