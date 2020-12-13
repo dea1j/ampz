@@ -1,6 +1,10 @@
 .nav {
   background-color: #5f0000;
   padding: 0 30px !important;
+  width: 100vw;
+  position: fixed;
+  z-index: 100;
+  /* width: -webkit-fill-available */
 }
 #nav-link {
   color: #fff;

@@ -1,11 +1,11 @@
 import { Link } from "gatsby";
-// import PropTypes from "prop-types"
 import React from "react";
 import "../assets/footer.css";
 import { FaFacebookF } from "@react-icons/all-files/fa/FaFacebookF";
 import { FaTwitter } from "@react-icons/all-files/fa/FaTwitter";
 import { FaLinkedinIn } from "@react-icons/all-files/fa/FaLinkedinIn";
 import { FaInstagram } from "@react-icons/all-files/fa/FaInstagram";
+import { HiOutlineMailOpen } from "@react-icons/all-files/hi/HiOutlineMailOpen";
 
 const Footer = () => (
   <footer style={{ backgroundColor: "#5F0000" }}>
@@ -34,52 +34,51 @@ const Footer = () => (
           </p>
         </div>
 
-        <div className="col" style={{ margin: "0 30px" }}>
+        <div className="col" style={{ margin: "0 30px", width: "310px" }}>
           <p className="title" style={{ fontSize: "900" }}>
             Contact
           </p>
-          <p>
-            <Link
-              to="https://web.facebook.com/ampz.tv/"
+          <div>
+            <a
+              href="https://web.facebook.com/ampz.tv/"
               className="link-to social"
+              rel="noopener noreferrer"
               target="_blank"
             >
               <FaFacebookF />
-            </Link>
-            <Link
-              to="https://twitter.com/ampzsports"
+            </a>
+            <a
+              href="https://twitter.com/ampzsports"
               target="_blank"
+              rel="noopener noreferrer"
               className="link-to social"
             >
               <FaTwitter />
-            </Link>
-            <Link
-              to="https://www.linkedin.com/company/ampz-tv/"
+            </a>
+            <a
+              href="https://www.linkedin.com/company/ampz-tv/"
               className="link-to social"
               target="_blank"
+              rel="noopener noreferrer"
             >
               <FaLinkedinIn />
-            </Link>
+            </a>
 
-            <Link
-              to="https://www.instagram.com/ampzsports/"
+            <a
+              href="https://www.instagram.com/ampzsports/"
               target="_blank"
+              rel="noopener noreferrer"
               className="link-to social"
             >
               <FaInstagram />
-            </Link>
+            </a>
 
             <p className="mt-3">
-              <Link
-                className="link-to"
-                //  to="mailto:info@ampz.tv"
-              >
-                info@ampz.tv
-              </Link>
+              <HiOutlineMailOpen style={{ margin: "0 0 4px 0" }} /> info@ampz.tv
               <br />© Copyright {new Date().getFullYear()} AMPZ Sports.
               <br /> All rights reserved.
             </p>
-          </p>
+          </div>
         </div>
       </div>
     </div>

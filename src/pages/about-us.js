@@ -1,19 +1,15 @@
 import React from "react";
-import { Link } from "gatsby";
 import "../assets/about-us.css";
 
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import line from "../img/straight_line.png";
-import noJust from "../img/ampztv_no_just.jpg";
 import jabbar from "../img/abdul_jabbar.jpg";
 import brenda from "../img/Brenda_Nwagwu.jpg";
 import yinka from "../img/Adeyinka_Aderombi.jpg";
 import nicole from "../img/Nichole Yembra.jpg";
 // import ayo from "../img/Alfonso.jpg";
 import "../../node_modules/react-image-gallery/styles/css/image-gallery.css";
-// import ImageGallery from "react-image-gallery";
-// import { image1 } from "../img/IMG_9504.jpg";
 
 const AboutUs = () => {
   return (
@@ -76,29 +72,14 @@ const AboutUs = () => {
             </p>
           </div>
         </div>
-        {/* <ImageGallery items={images} /> */}
-        {/* <div className="vid">
-          <iframe
-            style={{ margin: "0 auto" }}
-            src="https://media.w3.org/2010/05/sintel/trailer_hd.mp4"
-            width="50%"
-            height="300px"
-          ></iframe>
-        </div> */}
+
         <div className="d-flex container justify-content-center">
-          {/* style={{ height: "62vh" }} */}
           <iframe
+            title="youTubeVideo"
             width="70%"
             height="345"
-            // src="https://www.youtube.com/embed/jipj_g27xis"
             src="https://www.youtube.com/embed/NPl88MhJeIM"
           ></iframe>
-          {/* <video width="300px" height="250px">
-            <source
-              src="https://www.youtube.com/embed/NPl88MhJeIM&t=1s"
-              type="mp4"
-            ></source>
-          </video> */}
         </div>
         {/* Team */}
         <div className="team">
