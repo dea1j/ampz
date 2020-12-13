@@ -131,7 +131,6 @@ const TalentModal = ({ formOne, setFormOne }) => {
               <button
                 style={{ backgroundColor: "#DB9A02", color: "#fff" }}
                 className="btn btn-block"
-                // onClick={() => setFormOne(true)}
               >
                 Submit
               </button>
