@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import { Modal } from "react-bootstrap";
+import React, { useState } from 'react';
+import { Modal } from 'react-bootstrap';
 
 const CoachModal = ({ formThree, setFormThree }) => {
   const closeForm = () => {
@@ -7,11 +7,11 @@ const CoachModal = ({ formThree, setFormThree }) => {
   };
 
   const [data, setData] = useState({
-    fullname: "",
-    organization: "",
-    email: "",
-    phone: "",
-    interest: "",
+    fullname: '',
+    organization: '',
+    email: '',
+    phone: '',
+    interest: '',
   });
 
   const handleChange = (e) => {
@@ -30,30 +30,30 @@ const CoachModal = ({ formThree, setFormThree }) => {
 
     try {
       const response = await fetch(
-        "https://v1.nocodeapi.com/dea1j/google_sheets/nzdOHasxVHWBWBuO?tabId=Sheet1",
+        'https://v1.nocodeapi.com/dea1j/google_sheets/nzdOHasxVHWBWBuO?tabId=Sheet1',
         {
-          method: "post",
+          method: 'post',
           body: JSON.stringify([
             [fullname, organization, email, phone, interest],
           ]),
           headers: {
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json',
           },
         }
       );
       const json = await response.json();
-      console.log("Success:", JSON.stringify(json));
+      console.log('Success:', JSON.stringify(json));
       setData({
-        fullname: "",
-        organization: "",
-        email: "",
-        phone: "",
-        interest: "",
+        fullname: '',
+        organization: '',
+        email: '',
+        phone: '',
+        interest: '',
       });
       setFormThree(false);
-      window.alert("Submitted");
+      window.alert('Submitted');
     } catch (error) {
-      console.error("Error:", error);
+      console.error('Error:', error);
     }
   };
 
@@ -61,19 +61,19 @@ const CoachModal = ({ formThree, setFormThree }) => {
     <Modal show={formThree} onHide={() => closeForm()}>
       <Modal.Header closeButton>
         <Modal.Title>
-          <h5 style={{ color: "#000", fontSize: "30px" }} className="">
+          <h5 style={{ color: '#000', fontSize: '30px' }} className="">
             Thank you for your interest!
           </h5>
         </Modal.Title>
       </Modal.Header>
       <Modal.Body>
         <div>
-          <p style={{ color: "#000" }} className="">
+          <p style={{ color: '#000' }} className="">
             We are currently in beta phase and can't wait to have you onboard,
             signup to be the first to know when we go live. Better still, stand
             a chance to be part our test community and gain exclusive access!
           </p>
-          <p style={{ color: "#DB9A02" }} className="">
+          <p style={{ color: '#DB9A02' }} className="">
             By completing the short form below, you agree to receive electronic
             notifications from AMPZ.
           </p>
@@ -92,7 +92,7 @@ const CoachModal = ({ formThree, setFormThree }) => {
             </div>
             <div className="form-group">
               <input
-                placeholder="Name of academy/organization"
+                placeholder="Name of club/organization"
                 name="organization"
                 className="form-control"
                 type="text"
@@ -144,7 +144,7 @@ const CoachModal = ({ formThree, setFormThree }) => {
             </div>
             <div className="form-group">
               <button
-                style={{ backgroundColor: "#DB9A02", color: "#fff" }}
+                style={{ backgroundColor: '#DB9A02', color: '#fff' }}
                 className="btn btn-block"
                 // onClick={() => setFormThree(true)}
               >

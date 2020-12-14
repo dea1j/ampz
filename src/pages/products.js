@@ -1,74 +1,65 @@
 import React, { useEffect, useState } from 'react';
 import Layout from '../components/layout';
 import { Modal } from 'react-bootstrap';
-// import axios from "axios";
-
-// REACT BOOTSTRAP COMPONENTS
 import { Card } from 'react-bootstrap';
 import { FaSearch } from '@react-icons/all-files/fa/FaSearch';
 import { FaBriefcase } from '@react-icons/all-files/fa/FaBriefcase';
 import { FaMobileAlt } from '@react-icons/all-files/fa/FaMobileAlt';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
-// CSS
+import desktop from '../img/dayo.png';
 import '../assets/products.css';
 
-// AOS LIBRARY
-import AOS from 'aos';
-import 'aos/dist/aos.css'; // You can also use  for styles
-// import '../../node_modules/aos/dist/aos.css';
+import { useForm } from 'react-hook-form';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from 'yup';
 
-// IMAGE
-import desktop from '../img/dayo.png';
+const schema = yup.object().shape({
+  fullName: yup.string().required(),
+  organization: yup.string().required(),
+  email: yup.string().email().required('Email is required'),
+  phone: yup.string().required(),
+  interest: yup
+    .string()
+    .oneOf([
+      'Technology/Platform',
+      'Scouting Services',
+      'Talent Management/Incubation',
+      'MatchMania/Events',
+      'Others',
+    ])
+    .required('Please indicate your primary interest'),
+  details: yup.string().required(),
+});
 
 const Products = () => {
   const [modalOpen, setModalOpen] = useState(false);
-  const [data, setData] = useState({
-    fullname: '',
-    organization: '',
-    email: '',
-    phone: '',
-    interest: '',
-    details: '',
+
+  const { register, handleSubmit, errors } = useForm({
+    resolver: yupResolver(schema),
   });
 
-  const handleChange = (e) => {
-    const { name, value } = e.target;
-    setData((prevState) => {
-      return {
-        ...prevState,
-        [name]: value,
-      };
-    });
-  };
+  const onSubmit = async (data) => {
+    const { fullName, organization, email, phone, interest, details } = data;
 
-  const { fullname, organization, email, phone, interest, details } = data;
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+    console.log(data);
 
     try {
-      const response = await fetch(
+      await fetch(
         'https://v1.nocodeapi.com/dea1j/google_sheets/lcKuxwmqEhqYjMCw?tabId=Sheet1',
         {
           method: 'post',
           body: JSON.stringify([
-            [fullname, organization, email, phone, interest, details],
+            [fullName, organization, email, phone, interest, details],
           ]),
           headers: {
             'Content-Type': 'application/json',
           },
         }
       );
-      const json = await response.json();
-      setData({
-        fullname: '',
-        organization: '',
-        email: '',
-        phone: '',
-        interest: '',
-      });
-      // setModalOpen(false);
     } catch (error) {
-      console.error('Error:', error);
+      console.error('Error:', error.message);
     }
   };
 
@@ -106,59 +97,50 @@ const Products = () => {
               Wish to partner with us on this exciting journey? Leave your
               details below and we would be in touch!
             </p>
-            <form onSubmit={handleSubmit}>
+            <form onSubmit={handleSubmit(onSubmit)}>
               <div className="form-group">
                 <input
                   placeholder="Full name"
-                  name="fullname"
                   className="form-control"
                   type="text"
-                  required="true"
-                  value={fullname}
-                  onChange={handleChange}
+                  name="fullName"
+                  ref={register}
                 />
+                <p className="error">{errors.fullName?.message}</p>
               </div>
               <div className="form-group">
                 <input
                   placeholder=" Name of Organization/Company"
-                  name="organization"
                   className="form-control"
                   type="text"
-                  required="true"
-                  value={organization}
-                  onChange={handleChange}
+                  name="organization"
+                  ref={register}
                 />
+                <p className="error">{errors.organization?.message}</p>
               </div>
 
               <div className="form-group">
                 <input
                   placeholder="Email Address"
-                  name="email"
                   className="form-control"
                   type="email"
-                  required="true"
-                  value={email}
-                  onChange={handleChange}
+                  name="email"
+                  ref={register}
                 />
+                <p className="error">{errors.email?.message}</p>
               </div>
               <div className="form-group">
                 <input
                   placeholder="Phone Number (please include country code)"
-                  name="phone"
                   className="form-control"
-                  type="number"
-                  required="true"
-                  value={phone}
-                  onChange={handleChange}
+                  type="text"
+                  name="phone"
+                  ref={register}
                 />
+                <p className="error">{errors.phone?.message}</p>
               </div>
               <div className="form-group">
-                <select
-                  class="custom-select"
-                  name="interest"
-                  value={interest}
-                  onChange={handleChange}
-                >
+                <select class="custom-select" name="interest" ref={register}>
                   <option selected>Partnership Interest</option>
 
                   <option value="Technology/Platform">
@@ -171,6 +153,7 @@ const Products = () => {
                   <option value="MatchMania/Events">MatchMania/Events</option>
                   <option value="Others">Others</option>
                 </select>
+                <p className="error">{errors.interest?.message}</p>
               </div>
               <div>
                 <div style={{ marginBottom: '1rem' }}>
@@ -183,11 +166,11 @@ const Products = () => {
                   <textarea
                     rows="4"
                     name="details"
-                    value={details}
-                    onChange={handleChange}
+                    ref={register}
                     className="form-control"
                     placeholder="please leave a brief description of your interest here"
                   ></textarea>
+                  <p className="error">{errors.details?.message}</p>
                 </div>
               </div>
               <div className="form-group">
@@ -222,12 +205,8 @@ const Products = () => {
       {/* END */}
 
       {/* MOCKUP */}
-      <div
-        data-aos="zoom-in"
-        className="d-flex justify-content-center"
-        // style={{ height: "80vh", width: "60%" }}
-      >
-        <img src={desktop} className="m-3" alt="app" />
+      <div data-aos="zoom-in" className="mockup">
+        <img src={desktop} className="m-3 img-fluid" alt="app" />
       </div>
 
       {/* SERVICES */}

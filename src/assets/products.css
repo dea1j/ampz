@@ -55,3 +55,14 @@ textarea label {
   margin-bottom: 0 !important;
   color: #495057 !important;
 }
+
+.error {
+  color: red;
+  margin-bottom: 0 !important;
+  margin: 2px;
+}
+
+.mockup {
+  width: 60vw;
+  margin: 0 auto;
+}

@@ -1,6 +1,6 @@
 .team {
   border-radius: 50%;
-  height: "20vh";
+  height: '20vh';
 }
 .caro-h3 {
   font-size: 20px !important;
@@ -13,8 +13,21 @@
 }
 .abt-hero {
   height: 80vh;
-  background-image: url("../img/About\ us\ image\ blurred.png");
+  background-image: url('../img/About\ us\ image\ blurred.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
+}
+
+.champions {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 0 5rem;
+}
+
+@media (max-width: 568px) {
+  .champions {
+    flex-direction: row;
+  }
 }

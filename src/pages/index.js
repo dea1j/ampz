@@ -162,7 +162,7 @@ const IndexPage = ({ data }) => {
                   <h3 className="white_test">Fan</h3>
                   <p className="about_part" style={{ fontSize: '17px' }}>
                     Connect with grassroot talents and enjoy authentic sports
-                    content.
+                    content from your convenience.
                   </p>
                   <div id="lists">
                     <ul className="list">

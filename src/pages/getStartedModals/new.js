@@ -6,7 +6,7 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import * as yup from 'yup';
 
 const schema = yup.object().shape({
-  fullname: yup.string().required(),
+  fullName: yup.string().required(),
   organization: yup.string().required(),
   email: yup.string().email().required('Email is required'),
   phone: yup.string().required(),
@@ -23,23 +23,24 @@ const TalentModal = ({ formOne, setFormOne }) => {
   });
 
   const onSubmit = async (data) => {
-    const { fullname, email, phone, interest } = data;
-    console.log(data);
+    // const { fullname, email, phone, interest } = data;
+    console.log('hey');
+    // console.log(data);
 
-    try {
-      await fetch(
-        'https://v1.nocodeapi.com/dea1j/google_sheets/KmZHSmOcIDFkbhkO?tabId=Sheet1',
-        {
-          method: 'post',
-          body: JSON.stringify([[fullname, email, phone, interest]]),
-          headers: {
-            'Content-Type': 'application/json',
-          },
-        }
-      );
-    } catch (error) {
-      console.error('Error:', error.message);
-    }
+    // try {
+    //   await fetch(
+    //     'https://v1.nocodeapi.com/dea1j/google_sheets/KmZHSmOcIDFkbhkO?tabId=Sheet1',
+    //     {
+    //
+    //         'Content-Type': 'application/json',
+    //       },
+    //     }
+    //   );
+
+    // window.alert('Submitted');
+    // } catch (error) {
+    //   console.error('Error:', error);
+    // }
   };
 
   return (
@@ -47,7 +48,7 @@ const TalentModal = ({ formOne, setFormOne }) => {
       <Modal.Header closeButton>
         <Modal.Title>
           <h5 style={{ color: '#000', fontSize: '30px' }} className="">
-            Hey champ
+            Hey champrrrt!
           </h5>
         </Modal.Title>
       </Modal.Header>
@@ -124,5 +125,4 @@ const TalentModal = ({ formOne, setFormOne }) => {
     </Modal>
   );
 };
-
 export default TalentModal;
