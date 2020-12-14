@@ -16,16 +16,17 @@ const Header = () => (
       <Nav className="ml-auto mr-2">
         <Link
           to="/"
+           activeStyle={{fontWeight: 700}}
           className="nav-link ml-2 mr-2"
           id="nav-link"
           style={{ marginLeft: "0 !important" }}
         >
           Home
         </Link>
-        <Link to="/about-us" className="nav-link mr-2" id="nav-link">
-          About Us
+        <Link to="/about-us" activeStyle={{fontWeight: 700}} className="nav-link mr-2" id="nav-link">
+          About us
         </Link>
-        <Link to="/products" className="nav-link mr-2" id="nav-link">
+        <Link to="/products" activeStyle={{fontWeight: 700}} className="nav-link mr-2" id="nav-link">
           Products
         </Link>
         <Link to="/get-started" className=" mr-2">
