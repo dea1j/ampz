@@ -2,9 +2,14 @@ footer {
   background-image: url(../img/waves-bg.png);
   /* height: 35vh; */
 }
-.footer-content {
-  padding: 20px;
+/* .footer-content {
   color: #fff;
+} */
+
+.footer-wrapper {
+  padding: 2rem 10rem 1rem 10rem;
+  display: flex;
+  justify-content: space-between;
 }
 .link-to {
   color: #fff;
@@ -14,7 +19,6 @@ footer {
   font-size: 20px;
 }
 .social {
-  padding-right: 18px;
   font-size: 20px;
 }
 .social:hover {
@@ -24,7 +28,14 @@ p a:hover {
   text-decoration: none;
   color: #fff;
 }
-.foot {
-  flex: auto;
-  padding-left: 150px;
+
+.social-icon a:not(:last-child) {
+  margin-right: 1rem;
+}
+
+@media (max-width: 600px) {
+  .footer-wrapper {
+    padding: 1rem;
+    flex-direction: column;
+  }
 }

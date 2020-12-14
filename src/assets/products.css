@@ -1,12 +1,12 @@
 #matchmania {
-  background-image: url("../img/Digital Slideshow.00_00_02_10.Still045.jpg");
+  background-image: url('../img/Digital Slideshow.00_00_02_10.Still045.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 20px;
 }
 #prog2 {
-  background-image: url("../img/TIP-talent.jpg");
+  background-image: url('../img/TIP-talent.jpg');
   background-size: contain;
   background-repeat: no-repeat;
   background-size: cover;
@@ -40,8 +40,18 @@ ul {
 }
 .pdt-hero {
   height: 80vh;
-  background-image: url("../img/Products\ page\ header\ blurred.png");
+  background-image: url('../img/Products\ page\ header\ blurred.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
+}
+
+textarea {
+  width: 100%;
+  resize: none;
+}
+
+textarea label {
+  margin-bottom: 0 !important;
+  color: #495057 !important;
 }

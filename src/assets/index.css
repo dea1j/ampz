@@ -5,7 +5,7 @@
   padding: 80px 0px;
 }
 #slide1 {
-  background-image: url("../img/Group48.png");
+  background-image: url('../img/Group48.png');
   background-size: contain;
 }
 .white_test {
@@ -25,7 +25,7 @@
   font-weight: 500;
 }
 #talents {
-  background-image: url("../img/Rectangle23.png");
+  background-image: url('../img/Rectangle23.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -35,7 +35,7 @@
   padding: 50px 0;
 }
 .scout {
-  background-image: url("../img/Rectangle54.png");
+  background-image: url('../img/Rectangle54.png');
   border-radius: 20px;
 }
 .nxt {
@@ -43,35 +43,35 @@
 }
 .slide1 {
   height: 100vh;
-  background-image: url("../img/Group48.png");
+  background-image: url('../img/Group48.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
 }
 .slide2 {
   height: 100vh;
-  background-image: url("../img/Group49.png");
+  background-image: url('../img/Group49.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
 }
 .slide3 {
   height: 100vh;
-  background-image: url("../img/Fan\ image\ blurred.png");
+  background-image: url('../img/Fan\ image\ blurred.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
 }
 .slide4 {
   height: 100vh;
-  background-image: url("../img/Talent\ image\ blurred.png");
+  background-image: url('../img/Talent\ image\ blurred.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
 }
 .slide5 {
   height: 100vh;
-  background-image: url("../img/Group50.png");
+  background-image: url('../img/Group50.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -87,23 +87,23 @@
 }
 .caro-h2 {
   font-weight: 900;
-  font-family: "font1";
+  font-family: 'font1';
   font-size: 35px !important;
 }
 #coaches {
-  background-image: url("../img/mya.png");
+  background-image: url('../img/mya.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
   border-radius: 20px;
 }
 #fan {
-  background-image: url("../img/fan.png");
+  background-image: url('../img/fan.png');
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
   border-radius: 20px;
-  height: 40vh;
+  /* height: 33vh; */
 }
 
 @media only screen and (max-width: 765px) {

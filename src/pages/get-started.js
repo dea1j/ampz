@@ -1,21 +1,23 @@
-import React, { useState, useEffect, Fragment } from "react";
+import React, { useState, useEffect, Fragment } from 'react';
 
-import SEO from "../components/seo";
-import Layout from "../components/layout";
+import SEO from '../components/seo';
+import Layout from '../components/layout';
 
-import { Card } from "react-bootstrap";
-import { FaSearch } from "@react-icons/all-files/fa/FaSearch";
-import { GiWhistle } from "@react-icons/all-files/gi/GiWhistle";
-import { FcSportsMode } from "@react-icons/all-files/fc/FcSportsMode";
-import { FaPeopleCarry } from "@react-icons/all-files/fa/FaPeopleCarry";
+import { Card } from 'react-bootstrap';
+import { FaSearch } from '@react-icons/all-files/fa/FaSearch';
+import { GiWhistle } from '@react-icons/all-files/gi/GiWhistle';
+import { FcSportsMode } from '@react-icons/all-files/fc/FcSportsMode';
+import { FaPeopleCarry } from '@react-icons/all-files/fa/FaPeopleCarry';
 
-import AOS from "aos";
-import "../../node_modules/aos/dist/aos.css";
+import AOS from 'aos';
+// import "../../node_modules/aos/dist/aos.css";
+import 'aos/dist/aos.css'; // You can also use  for styles
+
 // Modals
-import TalentModal from "./getStartedModals/talentModalGS";
-import FanModal from "./getStartedModals/fanModalGS";
-import CoachModal from "./getStartedModals/coachModalGS";
-import ScoutModal from "./getStartedModals/scoutModalGS";
+import TalentModal from './getStartedModals/talentModalGS';
+import FanModal from './getStartedModals/fanModalGS';
+import CoachModal from './getStartedModals/coachModalGS';
+import ScoutModal from './getStartedModals/scoutModalGS';
 
 const GetStarted = () => {
   const [formOne, setFormOne] = useState(false);
@@ -44,16 +46,16 @@ const GetStarted = () => {
         {/* prod */}
         <section
           className="container container-fluid p-4"
-          style={{ padding: "70px 0 70px 0" }}
+          style={{ padding: '70px 0 70px 0' }}
         >
           <div
             className="text-center p-3"
-            style={{ padding: "100px 0 30px 0 !important", marginTop: "100px" }}
+            style={{ padding: '100px 0 30px 0 !important', marginTop: '100px' }}
           >
             <div
               data-aos="fade-down"
               className="mx-auto banner_p_l_r_10"
-              style={{ fontWeight: "800", fontSize: "30px" }}
+              style={{ fontWeight: '800', fontSize: '30px' }}
             >
               Select profile
             </div>
@@ -65,37 +67,37 @@ const GetStarted = () => {
               Carefully pick the Profile that best matches you below.
             </div>
           </div>
-          <div style={{ color: "#000" }}>
+          <div style={{ color: '#000' }}>
             <div
               className="row d-flex justify-content-center"
-              style={{ padding: "0 60px" }}
+              style={{ padding: '0 60px' }}
             >
               {/* Talent  */}
               <div data-aos="flip-down" className="m-3 text-center">
-                <Card style={{ width: "19rem", height: "18rem" }}>
-                  <Card.Body style={{ marginTop: "25px" }}>
+                <Card style={{ width: '19rem', height: '18rem' }}>
+                  <Card.Body style={{ marginTop: '25px' }}>
                     <FcSportsMode
                       style={{
-                        justifyContent: "center",
-                        fontSize: "70px",
-                        padding: "5px",
-                        marginTop: "7px",
-                        color: "#db9a02",
-                        margin: "0 auto",
+                        justifyContent: 'center',
+                        fontSize: '70px',
+                        padding: '5px',
+                        marginTop: '7px',
+                        color: '#db9a02',
+                        margin: '0 auto',
                       }}
                     />
                     <Card.Title
                       style={{
-                        fontSize: "30px",
-                        fontWeight: "900",
-                        paddingTop: "5px",
+                        fontSize: '30px',
+                        fontWeight: '900',
+                        paddingTop: '5px',
                       }}
                     >
                       Talent
                     </Card.Title>
                     <Card.Text
                       className="d-flex"
-                      style={{ flexDirection: "column" }}
+                      style={{ flexDirection: 'column' }}
                     >
                       Showcase and apply for opportunities with ease
                       <button
@@ -113,30 +115,30 @@ const GetStarted = () => {
 
               {/* Fan  */}
               <div data-aos="flip-down" className="m-3 text-center">
-                <Card style={{ width: "19rem", height: "18rem" }}>
-                  <Card.Body style={{ marginTop: "25px" }}>
+                <Card style={{ width: '19rem', height: '18rem' }}>
+                  <Card.Body style={{ marginTop: '25px' }}>
                     <FaPeopleCarry
                       style={{
-                        justifyContent: "center",
-                        fontSize: "70px",
-                        padding: "5px",
-                        marginTop: "7px",
-                        color: "#db9a02",
-                        margin: "0 auto",
+                        justifyContent: 'center',
+                        fontSize: '70px',
+                        padding: '5px',
+                        marginTop: '7px',
+                        color: '#db9a02',
+                        margin: '0 auto',
                       }}
                     />
                     <Card.Title
                       style={{
-                        fontSize: "30px",
-                        fontWeight: "900",
-                        paddingTop: "5px",
+                        fontSize: '30px',
+                        fontWeight: '900',
+                        paddingTop: '5px',
                       }}
                     >
                       Fan
                     </Card.Title>
                     <Card.Text
                       className="d-flex"
-                      style={{ flexDirection: "column" }}
+                      style={{ flexDirection: 'column' }}
                     >
                       Connect and enjoy authentic sports content
                       <button
@@ -158,27 +160,27 @@ const GetStarted = () => {
                 data-aos-delay="200"
                 className="m-3 text-center"
               >
-                <Card style={{ width: "19rem", height: "18rem" }}>
-                  <Card.Body style={{ marginTop: "20px" }}>
+                <Card style={{ width: '19rem', height: '18rem' }}>
+                  <Card.Body style={{ marginTop: '20px' }}>
                     <FaSearch
                       style={{
-                        fontSize: "50px",
-                        color: "#db9a02",
-                        margin: "0 auto",
+                        fontSize: '50px',
+                        color: '#db9a02',
+                        margin: '0 auto',
                       }}
                     />
                     <Card.Title
                       style={{
-                        fontSize: "30px",
-                        paddingTop: "30px",
-                        fontWeight: "900",
+                        fontSize: '30px',
+                        paddingTop: '30px',
+                        fontWeight: '900',
                       }}
                     >
                       Scout & Club
                     </Card.Title>
                     <Card.Text
                       className="d-flex"
-                      style={{ flexDirection: "column" }}
+                      style={{ flexDirection: 'column' }}
                     >
                       We are making scouting in Africa easy. Now you can own
                       your process.
@@ -201,27 +203,27 @@ const GetStarted = () => {
                 data-aos-delay="300"
                 className="m-3 text-center"
               >
-                <Card style={{ width: "19rem", height: "18rem" }}>
-                  <Card.Body style={{ marginTop: "20px" }}>
+                <Card style={{ width: '19rem', height: '18rem' }}>
+                  <Card.Body style={{ marginTop: '20px' }}>
                     <GiWhistle
                       style={{
-                        fontSize: "60px",
-                        color: "#db9a02",
-                        margin: "0 auto",
+                        fontSize: '60px',
+                        color: '#db9a02',
+                        margin: '0 auto',
                       }}
                     />
                     <Card.Title
                       style={{
-                        fontSize: "30px",
-                        paddingTop: "20px",
-                        fontWeight: "900",
+                        fontSize: '30px',
+                        paddingTop: '20px',
+                        fontWeight: '900',
                       }}
                     >
                       Coach & Academy
                     </Card.Title>
                     <Card.Text
                       className="d-flex"
-                      style={{ flexDirection: "column" }}
+                      style={{ flexDirection: 'column' }}
                     >
                       Amplify your reach and organize your dream team.
                       <button
