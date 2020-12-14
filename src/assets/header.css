@@ -6,6 +6,10 @@
   z-index: 100;
   /* width: -webkit-fill-available */
 }
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../img/icons8-menu.svg) !important;
+  font-size: 18px;
+}
 #nav-link {
   color: #fff;
   font-size: 15px;

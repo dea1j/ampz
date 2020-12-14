@@ -53,16 +53,20 @@ const GetStarted = () => {
             <div
               data-aos="fade-down"
               className="mx-auto banner_p_l_r_10"
-              style={{ fontWeight: "800", fontSize: "30px" }}
+              style={{
+                fontWeight: "800",
+                fontSize: "30px",
+                fontFamily: "font1",
+              }}
             >
-              Select profile
+              Select Profile
             </div>
             <div
               data-aos="fade-up"
               data-aos-delay="100"
               className="mx-auto gold_test"
             >
-              Carefully pick the Profile that best matches you below.
+              Carefully pick the profile that best matches you below.
             </div>
           </div>
           <div style={{ color: "#000" }}>
