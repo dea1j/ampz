@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Modal } from 'react-bootstrap';
+import { toast } from 'react-toastify';
 
 const ScoutModal = ({ formFour, setFormFour }) => {
   const closeForm = () => {
@@ -42,7 +43,7 @@ const ScoutModal = ({ formFour, setFormFour }) => {
         }
       );
       const json = await response.json();
-      console.log('Success:', JSON.stringify(json));
+     
       setData({
         fullname: '',
         organization: '',
@@ -51,7 +52,7 @@ const ScoutModal = ({ formFour, setFormFour }) => {
         interest: '',
       });
       setFormFour(false);
-      window.alert('Submitted');
+       toast.success('Awesome! We would be getting back to you');
     } catch (error) {
       console.error('Error:', error);
     }

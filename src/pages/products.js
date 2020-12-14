@@ -1,65 +1,78 @@
 import React, { useEffect, useState } from 'react';
 import Layout from '../components/layout';
 import { Modal } from 'react-bootstrap';
+import { toast } from 'react-toastify';
+// import axios from "axios";
+
+// REACT BOOTSTRAP COMPONENTS
 import { Card } from 'react-bootstrap';
 import { FaSearch } from '@react-icons/all-files/fa/FaSearch';
 import { FaBriefcase } from '@react-icons/all-files/fa/FaBriefcase';
 import { FaMobileAlt } from '@react-icons/all-files/fa/FaMobileAlt';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
 
-import desktop from '../img/dayo.png';
+// CSS
 import '../assets/products.css';
 
-import { useForm } from 'react-hook-form';
-import { yupResolver } from '@hookform/resolvers/yup';
-import * as yup from 'yup';
+// AOS LIBRARY
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use  for styles
+// import '../../node_modules/aos/dist/aos.css';
 
-const schema = yup.object().shape({
-  fullName: yup.string().required(),
-  organization: yup.string().required(),
-  email: yup.string().email().required('Email is required'),
-  phone: yup.string().required(),
-  interest: yup
-    .string()
-    .oneOf([
-      'Technology/Platform',
-      'Scouting Services',
-      'Talent Management/Incubation',
-      'MatchMania/Events',
-      'Others',
-    ])
-    .required('Please indicate your primary interest'),
-  details: yup.string().required(),
-});
+// IMAGE
+import desktop from '../img/dayo.png';
 
 const Products = () => {
   const [modalOpen, setModalOpen] = useState(false);
-
-  const { register, handleSubmit, errors } = useForm({
-    resolver: yupResolver(schema),
+  const [data, setData] = useState({
+    fullname: '',
+    organization: '',
+    email: '',
+    phone: '',
+    interest: '',
+    details: '',
   });
 
-  const onSubmit = async (data) => {
-    const { fullName, organization, email, phone, interest, details } = data;
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setData((prevState) => {
+      return {
+        ...prevState,
+        [name]: value,
+      };
+    });
+  };
 
-    console.log(data);
+  const { fullname, organization, email, phone, interest, details } = data;
+  const handleSubmit = async (e) => {
+    e.preventDefault();
 
     try {
-      await fetch(
+      const response = await fetch(
         'https://v1.nocodeapi.com/dea1j/google_sheets/lcKuxwmqEhqYjMCw?tabId=Sheet1',
         {
           method: 'post',
           body: JSON.stringify([
-            [fullName, organization, email, phone, interest, details],
+            [fullname, organization, email, phone, interest, details],
           ]),
           headers: {
             'Content-Type': 'application/json',
           },
         }
       );
+      const json = await response.json();
+      setData({
+        fullname: '',
+        organization: '',
+        email: '',
+        phone: '',
+        interest: '',
+        details:''
+      });
+
+      setModalOpen(false);
+       toast.success('Awesome! We would be getting back to you');
     } catch (error) {
-      console.error('Error:', error.message);
+      console.error('Error:', error);
     }
   };
 
@@ -97,51 +110,61 @@ const Products = () => {
               Wish to partner with us on this exciting journey? Leave your
               details below and we would be in touch!
             </p>
-            <form onSubmit={handleSubmit(onSubmit)}>
+            <form onSubmit={handleSubmit}>
               <div className="form-group">
                 <input
                   placeholder="Full name"
+                  name="fullname"
                   className="form-control"
                   type="text"
-                  name="fullName"
-                  ref={register}
+                  required="true"
+                  value={fullname}
+                  onChange={handleChange}
                 />
-                <p className="error">{errors.fullName?.message}</p>
               </div>
               <div className="form-group">
                 <input
                   placeholder=" Name of Organization/Company"
+                  name="organization"
                   className="form-control"
                   type="text"
-                  name="organization"
-                  ref={register}
+                  required="true"
+                  value={organization}
+                  onChange={handleChange}
                 />
-                <p className="error">{errors.organization?.message}</p>
               </div>
 
               <div className="form-group">
                 <input
                   placeholder="Email Address"
+                  name="email"
                   className="form-control"
                   type="email"
-                  name="email"
-                  ref={register}
+                  required="true"
+                  value={email}
+                  onChange={handleChange}
                 />
-                <p className="error">{errors.email?.message}</p>
               </div>
               <div className="form-group">
                 <input
                   placeholder="Phone Number (please include country code)"
-                  className="form-control"
-                  type="text"
                   name="phone"
-                  ref={register}
+                  className="form-control"
+                  type="number"
+                  required="true"
+                  value={phone}
+                  onChange={handleChange}
                 />
-                <p className="error">{errors.phone?.message}</p>
               </div>
               <div className="form-group">
-                <select class="custom-select" name="interest" ref={register}>
-                  <option selected>Partnership Interest</option>
+                <select
+                  class="custom-select"
+                  name="interest"
+                  value={interest}
+                  required
+                  onChange={handleChange}
+                >
+                  <option defaultValue>Partnership Interest</option>
 
                   <option value="Technology/Platform">
                     Technology/Platform
@@ -153,7 +176,6 @@ const Products = () => {
                   <option value="MatchMania/Events">MatchMania/Events</option>
                   <option value="Others">Others</option>
                 </select>
-                <p className="error">{errors.interest?.message}</p>
               </div>
               <div>
                 <div style={{ marginBottom: '1rem' }}>
@@ -166,11 +188,12 @@ const Products = () => {
                   <textarea
                     rows="4"
                     name="details"
-                    ref={register}
+                    value={details}
+                    onChange={handleChange}
                     className="form-control"
+                    required
                     placeholder="please leave a brief description of your interest here"
                   ></textarea>
-                  <p className="error">{errors.details?.message}</p>
                 </div>
               </div>
               <div className="form-group">
@@ -205,8 +228,12 @@ const Products = () => {
       {/* END */}
 
       {/* MOCKUP */}
-      <div data-aos="zoom-in" className="mockup">
-        <img src={desktop} className="m-3 img-fluid" alt="app" />
+      <div
+        data-aos="zoom-in"
+        className="d-flex justify-content-center mockup"
+        // style={{ height: "80vh", width: "60%" }}
+      >
+        <img src={desktop} className="m-3" alt="app" />
       </div>
 
       {/* SERVICES */}
