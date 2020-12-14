@@ -270,22 +270,22 @@ const IndexPage = ({ data }) => {
             >
               OUR PARTNERS
             </p>
-            <div className="d-flex justify-content-center p-5 testing">
+            <div className=" p-5 testing">
               {/* Start Partner logos */}
-              <div className="col-sm-6 col-md-2 text-center">
+              <div className=" text-center">
                 <img src={par1} alt="team" className="par1" />
               </div>
 
-              <div className="col-sm-6 col-md-2 text-center">
+              <div className="text-center">
                 <img src={par2} alt="team" className="par1" />
               </div>
-              <div className="col-sm-6 col-md-2 text-center">
+              <div className=" text-center">
                 <img src={par4} alt="team" className="par1" />
               </div>
-              <div className="col-sm-6 col-md-2 text-center">
+              <div className="text-center">
                 <img src={par5} alt="team" className="par1" />
               </div>
-              <div className="col-sm-6 col-md-2 text-center">
+              <div className="text-center">
                 <img src={par3} alt="team" className="par1 p-3" />
               </div>
 

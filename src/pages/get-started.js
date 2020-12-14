@@ -55,15 +55,7 @@ const GetStarted = () => {
             <div
               data-aos="fade-down"
               className="mx-auto banner_p_l_r_10"
-<<<<<<< HEAD
               style={{ fontWeight: '800', fontSize: '30px' }}
-=======
-              style={{
-                fontWeight: "800",
-                fontSize: "30px",
-                fontFamily: "font1",
-              }}
->>>>>>> 03175876f61390b14f39c681013101508274ea55
             >
               Select Profile
             </div>

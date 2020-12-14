@@ -227,3 +227,14 @@ body {
 .bg2 {
   background-color: #222;
 }
+
+.testing {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.text-center {
+  margin-bottom: 2rem;
+}
