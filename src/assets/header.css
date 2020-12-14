@@ -4,7 +4,8 @@
   width: 100vw;
   position: fixed;
   z-index: 100;
-  /* width: -webkit-fill-available */
+  display:flex;
+  justify-content:space-between;
 }
 .navbar-light .navbar-toggler-icon {
   background-image: url(../img/icons8-menu.svg) !important;
@@ -35,6 +36,11 @@ button {
 }
 button:hover {
   color: #5f0000;
+}
+
+.logo{
+  position: relative;
+  bottom: 13px;
 }
 
 @media only screen and (max-width: 767px) {

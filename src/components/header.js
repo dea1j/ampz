@@ -6,11 +6,14 @@ import logo from '../img/ampz_logo.png';
 
 const Header = () => (
   <Navbar expand="md" className="nav">
-    <Navbar.Brand>
+  <div>
+  <Navbar.Brand>
       <Link to="/">
-        <img src={logo} alt="logo" />
+        <img className="logo" src={logo} alt="logo" />
       </Link>
     </Navbar.Brand>
+  </div>
+    <div>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="ml-auto mr-2 all-nav">
@@ -44,6 +47,7 @@ const Header = () => (
         </Link>
       </Nav>
     </Navbar.Collapse>
+    </div>
   </Navbar>
 );
 
