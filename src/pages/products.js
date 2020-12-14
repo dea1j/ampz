@@ -205,7 +205,7 @@ const Products = () => {
       {/* MOCKUP */}
       <div
         data-aos="zoom-in"
-        className="d-flex container justify-content-center"
+        className="d-flex justify-content-center"
         // style={{ height: "80vh", width: "60%" }}
       >
         <img src={desktop} className="m-3" alt="app" />
@@ -213,7 +213,7 @@ const Products = () => {
 
       {/* SERVICES */}
       <section style={{ paddingBottom: "50px", backgroundColor: "#222" }}>
-        <div className="text-center p-3 mb-3">
+        <div className="text-center p-5 mb-3">
           <div className="mx-auto gold_test">REACH YOUR GOALS</div>
           <div className="mx-auto white_test">Our Services</div>
         </div>
@@ -237,7 +237,7 @@ const Products = () => {
                     fontSize: "60px",
                     color: "#db9a02",
                     margin: "0 auto",
-                    marginTop: "20px",
+                    marginTop: "35px",
                   }}
                 />
                 <Card.Body className="card-bdy">
@@ -286,7 +286,7 @@ const Products = () => {
                     fontSize: "60px",
                     color: "#db9a02",
                     margin: "0 auto",
-                    marginTop: "20px",
+                    marginTop: "35px",
                   }}
                 />
                 <Card.Body className="card-bdy">
@@ -335,7 +335,7 @@ const Products = () => {
                     fontSize: "60px",
                     color: "#db9a02",
                     margin: "0 auto",
-                    marginTop: "20px",
+                    marginTop: "35px",
                   }}
                 />
                 <Card.Body className="card-bdy">
@@ -381,7 +381,7 @@ const Products = () => {
       {/* PROGRAMMES */}
       <section id="programmes" className="products container">
         <div className="container">
-          <div className="text-center p-3">
+          <div className="text-center p-5">
             <div className="mx-auto gold_test">BE PART OF OUR STORY</div>
             <div className="mx-auto white_test">Our Programmes</div>
           </div>
@@ -460,7 +460,7 @@ const Products = () => {
       </section>
 
       <div className="d-flex justify-content-center p-5">
-        <div style={{ padding: "10px" }}>
+        <div>
           <button
             style={{ padding: "10px 50px", width: "250px" }}
             onClick={() => setModalOpen(true)}

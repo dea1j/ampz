@@ -5,7 +5,7 @@ import { Navbar, Nav } from "react-bootstrap";
 import logo from "../img/ampz_logo.png";
 
 const Header = () => (
-  <Navbar expand="md" className="nav" style={{ height: "10vh" }}>
+  <Navbar expand="md" className="nav">
     <Navbar.Brand>
       <Link to="/">
         <img src={logo} alt="logo" />
@@ -13,7 +13,7 @@ const Header = () => (
     </Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
-      <Nav className="ml-auto mr-2">
+      <Nav className="ml-auto mr-2 all-nav">
         <Link
           to="/"
           className="nav-link ml-2 mr-2"
@@ -25,7 +25,7 @@ const Header = () => (
         <Link to="/about-us" className="nav-link mr-2" id="nav-link">
           About Us
         </Link>
-        <Link to="/products" className="nav-link mr-2" id="nav-link">
+        <Link to="/products" className="nav-link mr-2 mb-1" id="nav-link">
           Products
         </Link>
         <Link to="/get-started" className=" mr-2">

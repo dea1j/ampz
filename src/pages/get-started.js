@@ -185,7 +185,7 @@ const GetStarted = () => {
                       <button
                         className="mt-2"
                         id="btn"
-                        onClick={() => setFormTwo(true)}
+                        onClick={() => setFormFour(true)}
                         variant="primary"
                       >
                         Get Started
@@ -227,7 +227,7 @@ const GetStarted = () => {
                       <button
                         className="mt-2"
                         id="btn"
-                        onClick={() => setFormTwo(true)}
+                        onClick={() => setFormThree(true)}
                         variant="primary"
                       >
                         Get Started

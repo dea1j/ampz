@@ -101,7 +101,8 @@ const IndexPage = ({ data }) => {
               <div className="hero-text text-center">
                 <h2 className="caro-h2">Fan</h2>
                 <p className="caro-p container-fluid">
-                  Connect and enjoy authentic sports content
+                  Connect and enjoy authentic sports content from your
+                  convenience
                 </p>
               </div>
             </div>

@@ -10,6 +10,7 @@
   color: #fff;
   font-size: 15px;
   /* padding: 10px 24px; */
+  /* text-align: center; */
   font-family: "Open Sans", sans-serif;
   line-height: 15px;
 }
@@ -30,4 +31,11 @@ button {
 }
 button:hover {
   color: #5f0000;
+}
+
+@media only screen and (max-width: 767px) {
+  .all-nav {
+    text-align: end;
+    padding-bottom: 10px;
+  }
 }
