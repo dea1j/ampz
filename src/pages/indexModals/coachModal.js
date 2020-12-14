@@ -62,7 +62,7 @@ const CoachModal = ({ formThree, setFormThree }) => {
       <Modal.Header closeButton>
         <Modal.Title>
           <h5 style={{ color: "#000", fontSize: "30px" }} className="">
-            Thank you for your interest
+            Thank you for your interest!
           </h5>
         </Modal.Title>
       </Modal.Header>
