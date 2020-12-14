@@ -42,35 +42,35 @@
   padding-right: 30px;
 }
 .slide1 {
-  height: 80vh;
+  height: 100vh;
   background-image: url("../img/Group48.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
 }
 .slide2 {
-  height: 80vh;
+  height: 100vh;
   background-image: url("../img/Group49.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
 }
 .slide3 {
-  height: 80vh;
+  height: 100vh;
   background-image: url("../img/Fan\ image\ blurred.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
 }
 .slide4 {
-  height: 80vh;
+  height: 100vh;
   background-image: url("../img/Talent\ image\ blurred.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
 }
 .slide5 {
-  height: 80vh;
+  height: 100vh;
   background-image: url("../img/Group50.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -214,6 +214,7 @@ body {
   /* margin: 15px 30px; */
   border-radius: 20px;
   opacity: 0.9;
+  padding: 0px;
 }
 .par2 {
   width: 100px;

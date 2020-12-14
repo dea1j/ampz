@@ -48,14 +48,14 @@ const IndexPage = ({ data }) => {
         <SEO title="Home" />
 
         {/* Carousel  */}
-        <Carousel style={{ minHeight: "80vh" }}>
+        <Carousel style={{ minHeight: "100vh" }}>
           <Carousel.Item>
             <div className="slide1">
               {/* <Carousel.Caption> */}
               <div className="hero-text text-center">
                 <h2 className="caro-h2">Welcome to AMPZ</h2>
                 <p className="caro-p container-fluid">
-                  Discover a world of sporting opportunities.
+                  Discover a world of sporting opportunities
                 </p>
               </div>
             </div>
@@ -101,7 +101,7 @@ const IndexPage = ({ data }) => {
               <div className="hero-text text-center">
                 <h2 className="caro-h2">Fan</h2>
                 <p className="caro-p container-fluid">
-                  Connect and enjoy authentic sports content.
+                  Connect and enjoy authentic sports content
                 </p>
               </div>
             </div>
@@ -113,7 +113,7 @@ const IndexPage = ({ data }) => {
           <section id="careers" className="careers">
             <div className="container">
               <div className="text-center">
-                {/* <div className="mx-auto gold_test mb-1">LET'S WIN TOGETHER</div> */}
+                <div className="mx-auto gold_test mb-1">LET'S WIN TOGETHER</div>
                 <div className="mx-auto white_test">Join The Tribe</div>
               </div>
 
@@ -261,30 +261,30 @@ const IndexPage = ({ data }) => {
             </div>
           </section>
         </main>
-        <div style={{ width: "100%", backgroundColor: "#222" }}>
+        <div style={{ width: "100%" }}>
           <div>
             <p
               className="d-flex justify-content-center pt-5"
-              style={{ fontSize: "30px" }}
+              style={{ fontSize: "30px", fontFamily: "font1" }}
             >
-              PARTNERS
+              OUR PARTNERS
             </p>
-            <div className="d-flex justify-content-center p-5 testing bg2">
+            <div className="d-flex justify-content-center p-5 testing">
               {/* Start Partner logos */}
-              <div className="col-sm-6 col-md-4 text-center">
+              <div className="col-sm-6 col-md-2 text-center">
                 <img src={par1} alt="team" className="par1" />
               </div>
 
-              <div className="col-sm-6 col-md-4 text-center">
+              <div className="col-sm-6 col-md-2 text-center">
                 <img src={par2} alt="team" className="par1" />
               </div>
-              <div className="col-sm-6 col-md-4 text-center">
+              <div className="col-sm-6 col-md-2 text-center">
                 <img src={par4} alt="team" className="par1" />
               </div>
-              <div className="col-sm-6 col-md-4 text-center">
+              <div className="col-sm-6 col-md-2 text-center">
                 <img src={par5} alt="team" className="par1" />
               </div>
-              <div className="col-sm-6 col-md-4 text-center">
+              <div className="col-sm-6 col-md-2 text-center">
                 <img src={par3} alt="team" className="par1 p-3" />
               </div>
 

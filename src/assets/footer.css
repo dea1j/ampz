@@ -24,3 +24,7 @@ p a:hover {
   text-decoration: none;
   color: #fff;
 }
+.foot {
+  flex: auto;
+  padding-left: 150px;
+}

@@ -58,6 +58,14 @@ const Products = () => {
       );
       const json = await response.json();
       console.log("Success:", JSON.stringify(json));
+      setData({
+        fullname: "",
+        organization: "",
+        email: "",
+        phone: "",
+        interest: "",
+      });
+      // setModalOpen(false);
     } catch (error) {
       console.error("Error:", error);
     }
@@ -79,7 +87,7 @@ const Products = () => {
         <Modal.Header closeButton>
           <Modal.Title>
             <h5 style={{ color: "#000", fontSize: "30px" }} className="">
-              Hey champ!
+              Thank you for your interest
             </h5>
           </Modal.Title>
         </Modal.Header>
@@ -184,8 +192,8 @@ const Products = () => {
         <div className="ovrlay"></div>
         {/* Caption */}
         <div className="hero-text text-center">
-          <h3 className="caro-h3">SPORT TECHNOLOGY</h3>
-          <h2 className="caro-h2">Innovating for Africa.</h2>
+          <h3 className="caro-h3">SPORTS TECHNOLOGY</h3>
+          <h2 className="caro-h2">Innovating for Africa</h2>
           <p className="caro-p container-fluid">
             “There's a way to do it better, find it“
           </p>
@@ -198,6 +206,7 @@ const Products = () => {
       <div
         data-aos="zoom-in"
         className="d-flex container justify-content-center"
+        // style={{ height: "80vh", width: "60%" }}
       >
         <img src={desktop} className="m-3" alt="app" />
       </div>
@@ -251,7 +260,7 @@ const Products = () => {
                     all stakeholders in a safe environment. Now everyone can be
                     more effective and efficient at what they do best!
                     <br />{" "}
-                    <span style={{ color: "#db9a02" }}>
+                    <span style={{ color: "#db9a02", marginTop: "30px" }}>
                       Note: This product is still in beta phase.
                     </span>
                   </Card.Text>

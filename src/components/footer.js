@@ -9,22 +9,17 @@ import { HiOutlineMailOpen } from "@react-icons/all-files/hi/HiOutlineMailOpen";
 
 const Footer = () => (
   <footer style={{ backgroundColor: "#5F0000" }}>
-    <div className="d-flex justify-content-center">
-      <div className="footer-content row">
+    <div className="d-flex justify-content-between">
+      <div className="footer-content row foot">
         <div className="col" style={{ margin: "0 30px" }}>
           <p>
             <Link className="link-to" to="/about-us">
-              About Us
+              About us
             </Link>
           </p>
           <p>
             <Link to="/products" className="link-to">
-              Product and Services
-            </Link>
-          </p>
-          <p>
-            <Link to="/" className="link-to">
-              Careers
+              Products and services
             </Link>
           </p>
           <p>
@@ -32,9 +27,18 @@ const Footer = () => (
               Programs
             </Link>
           </p>
+          <p>
+            <Link
+              to="https://docs.google.com/forms/d/1h-_BvIOOObfcXlerfhPDO74mWVGLpIsJKw8V112EEn0/edit?usp=sharing"
+              target="_blank"
+              className="link-to"
+            >
+              Careers
+            </Link>
+          </p>
         </div>
 
-        <div className="col" style={{ margin: "0 30px", width: "310px" }}>
+        <div className="col" style={{ margin: "0 150px", width: "310px" }}>
           <p className="title" style={{ fontSize: "900" }}>
             Contact
           </p>
@@ -73,11 +77,16 @@ const Footer = () => (
               <FaInstagram />
             </a>
 
-            <p className="mt-3">
-              <HiOutlineMailOpen style={{ margin: "0 0 4px 0" }} /> info@ampz.tv
-              <br />© Copyright {new Date().getFullYear()} AMPZ Sports.
-              <br /> All rights reserved.
-            </p>
+            <a
+              href="mailto:info@ampzsports.com?subject=Get%in%touch"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="link-to social"
+            >
+              <HiOutlineMailOpen />
+            </a>
+
+            <p className="mt-3">AMPZ Sports © {new Date().getFullYear()}</p>
           </div>
         </div>
       </div>
