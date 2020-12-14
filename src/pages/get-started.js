@@ -55,16 +55,24 @@ const GetStarted = () => {
             <div
               data-aos="fade-down"
               className="mx-auto banner_p_l_r_10"
+<<<<<<< HEAD
               style={{ fontWeight: '800', fontSize: '30px' }}
+=======
+              style={{
+                fontWeight: "800",
+                fontSize: "30px",
+                fontFamily: "font1",
+              }}
+>>>>>>> 03175876f61390b14f39c681013101508274ea55
             >
-              Select profile
+              Select Profile
             </div>
             <div
               data-aos="fade-up"
               data-aos-delay="100"
               className="mx-auto gold_test"
             >
-              Carefully pick the Profile that best matches you below.
+              Carefully pick the profile that best matches you below.
             </div>
           </div>
           <div style={{ color: '#000' }}>
@@ -187,7 +195,7 @@ const GetStarted = () => {
                       <button
                         className="mt-2"
                         id="btn"
-                        onClick={() => setFormTwo(true)}
+                        onClick={() => setFormFour(true)}
                         variant="primary"
                       >
                         Get Started
@@ -229,7 +237,7 @@ const GetStarted = () => {
                       <button
                         className="mt-2"
                         id="btn"
-                        onClick={() => setFormTwo(true)}
+                        onClick={() => setFormThree(true)}
                         variant="primary"
                       >
                         Get Started

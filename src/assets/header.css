@@ -6,10 +6,15 @@
   z-index: 100;
   /* width: -webkit-fill-available */
 }
+.navbar-light .navbar-toggler-icon {
+  background-image: url(../img/icons8-menu.svg) !important;
+  font-size: 18px;
+}
 #nav-link {
   color: #fff;
   font-size: 15px;
   /* padding: 10px 24px; */
+  /* text-align: center; */
   font-family: "Open Sans", sans-serif;
   line-height: 15px;
 }
@@ -30,4 +35,11 @@ button {
 }
 button:hover {
   color: #5f0000;
+}
+
+@media only screen and (max-width: 767px) {
+  .all-nav {
+    text-align: end;
+    padding-bottom: 10px;
+  }
 }

@@ -224,7 +224,7 @@ const Products = () => {
       {/* MOCKUP */}
       <div
         data-aos="zoom-in"
-        className="d-flex container justify-content-center"
+        className="d-flex justify-content-center"
         // style={{ height: "80vh", width: "60%" }}
       >
         <img src={desktop} className="m-3" alt="app" />
@@ -400,7 +400,7 @@ const Products = () => {
       {/* PROGRAMMES */}
       <section id="programmes" className="products container">
         <div className="container">
-          <div className="text-center p-3">
+          <div className="text-center p-5">
             <div className="mx-auto gold_test">BE PART OF OUR STORY</div>
             <div className="mx-auto white_test">Our Programmes</div>
           </div>
