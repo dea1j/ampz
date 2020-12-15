@@ -35,6 +35,10 @@ ul {
 .card-bdy {
   margin-top: 10px !important;
 }
+
+.card-text{
+  margin-bottom: 0 !important;
+}
 .cu-ul li {
   margin-bottom: 3px;
 }
