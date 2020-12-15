@@ -1,6 +1,8 @@
 .card-body {
-  margin-bottom:  !important;
-  margin-top: 38px !important;
+  display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  margin-top: 18px !important;
 }
 
 .card-title {
@@ -13,7 +15,7 @@
   .card-body {
     padding-top: 0;
      margin-bottom:  !important;
-  margin-top: 38px !important;
+  margin-top: 18px !important;
   }
 
   .card-title {
