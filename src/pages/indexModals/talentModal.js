@@ -119,6 +119,7 @@ const TalentModal = ({ formOne, setFormOne }) => {
                 className="custom-select"
                 name="interest"
                 value={interest}
+                required
                 onChange={handleChange}
               >
                 <option selected>Sports interest</option>

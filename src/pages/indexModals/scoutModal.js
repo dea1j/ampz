@@ -43,7 +43,7 @@ const ScoutModal = ({ formFour, setFormFour }) => {
         }
       );
       const json = await response.json();
-      console.log('Success:', JSON.stringify(json));
+    
       setData({
         fullname: '',
         organization: '',

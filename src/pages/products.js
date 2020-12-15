@@ -412,7 +412,7 @@ const Products = () => {
           </div>
 
           {/* MATCHMANIA */}
-          <div className="row abt">
+          <div className="row abt pb-sm-3">
             <div
               data-aos="fade-right"
               className="col-lg-6 col-md-6 col-sm-12"
@@ -447,7 +447,7 @@ const Products = () => {
           </div>
 
           {/* TIP */}
-          <div className="row abt">
+          <div className="row abt pb-sm-1">
             <div
               data-aos="fade-right"
               data-aos-delay="050"
@@ -484,7 +484,7 @@ const Products = () => {
         </div>
       </section>
 
-      <div className="d-flex justify-content-center p-5">
+      <div className="d-flex justify-content-center p-md-5">
         <div style={{ padding: '10px' }}>
           <button
             style={{ padding: '10px 50px', width: '250px' }}

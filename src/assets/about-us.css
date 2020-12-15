@@ -28,6 +28,7 @@
 
 @media (max-width: 568px) {
   .champions {
-    flex-direction: row;
+  flex-direction: row;
+    justify-content: center;
   }
 }
