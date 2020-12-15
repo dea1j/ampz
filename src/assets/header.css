@@ -31,8 +31,9 @@ button {
   outline: none;
   border: none;
   color: #fff;
-  font-size: 18px;
+  font-size: 14px !important;
   line-height: 10px;
+  font-family: "Open Sans", sans-serif !important;
 }
 button:hover {
   color: #5f0000;
