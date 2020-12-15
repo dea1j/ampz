@@ -87,11 +87,8 @@ const GetStarted = () => {
                       }}
                     />
                     <Card.Title
-                      style={{
-                        fontSize: '30px',
-                        fontWeight: '900',
-                        paddingTop: '5px',
-                      }}
+                     
+                      className="card-title"
                     >
                       Talent
                     </Card.Title>
@@ -127,15 +124,7 @@ const GetStarted = () => {
                         margin: '0 auto',
                       }}
                     />
-                    <Card.Title
-                      style={{
-                        fontSize: '30px',
-                        fontWeight: '900',
-                        paddingTop: '5px',
-                      }}
-                    >
-                      Fan
-                    </Card.Title>
+                    <Card.Title className="card-title">Fan</Card.Title>
                     <Card.Text
                       className="d-flex"
                       style={{ flexDirection: 'column' }}
@@ -169,15 +158,7 @@ const GetStarted = () => {
                         margin: '0 auto',
                       }}
                     />
-                    <Card.Title
-                      style={{
-                        fontSize: '30px',
-                        paddingTop: '30px',
-                        fontWeight: '900',
-                      }}
-                    >
-                      Scout & Club
-                    </Card.Title>
+                    <Card.Title className="card-title">Scout & Club</Card.Title>
                     <Card.Text
                       className="d-flex"
                       style={{ flexDirection: 'column' }}
@@ -212,13 +193,7 @@ const GetStarted = () => {
                         margin: '0 auto',
                       }}
                     />
-                    <Card.Title
-                      style={{
-                        fontSize: '30px',
-                        paddingTop: '20px',
-                        fontWeight: '900',
-                      }}
-                    >
+                    <Card.Title className="card-title">
                       Coach & Academy
                     </Card.Title>
                     <Card.Text

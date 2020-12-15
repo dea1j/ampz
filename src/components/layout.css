@@ -10,9 +10,8 @@
 
 html {
   box-sizing: border-box;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
-
 
 body {
   margin: 0;
@@ -76,13 +75,22 @@ ul li {
 }
 
 .card-body {
-margin-bottom:10px;
-    margin-top: 20px;
+  margin-bottom: 10px;
+  margin-top: 20px;
 }
 
+.card-title {
+  font-size: 30px;
+  font-weight: 900;
+  padding-top: 5px;
+}
 
-@media (max-width:380px){
+@media (max-width: 420px) {
   .card-body {
-padding-top:0
-}
+    padding-top: 0;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
 }
