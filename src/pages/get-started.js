@@ -97,7 +97,10 @@ const GetStarted = () => {
                       style={{ flexDirection: 'column' }}
                     >
                       Showcase and apply for opportunities with ease
-                      <button
+                     
+                    </Card.Text>
+                     <button
+                     style={{width:"100%"}}
                         className="mt-1"
                         id="btn"
                         onClick={() => setFormOne(true)}
@@ -105,7 +108,6 @@ const GetStarted = () => {
                       >
                         Get Started
                       </button>
-                    </Card.Text>
                   </Card.Body>
                 </Card>
               </div>
@@ -130,7 +132,10 @@ const GetStarted = () => {
                       style={{ flexDirection: 'column' }}
                     >
                       Connect and enjoy authentic sports content
-                      <button
+                      
+                    </Card.Text>
+                    <button
+                    style={{width:"100%"}}
                         className="mt-1"
                         id="btn"
                         onClick={() => setFormOne(true)}
@@ -138,7 +143,6 @@ const GetStarted = () => {
                       >
                         Get Started
                       </button>
-                    </Card.Text>
                   </Card.Body>
                 </Card>
               </div>
@@ -165,7 +169,10 @@ const GetStarted = () => {
                     >
                       We are making scouting in Africa easy. Now you can own
                       your process.
-                      <button
+                     
+                    </Card.Text>
+                     <button
+                     style={{width:"100%"}}
                         className="mt-2"
                         id="btn"
                         onClick={() => setFormFour(true)}
@@ -173,7 +180,6 @@ const GetStarted = () => {
                       >
                         Get Started
                       </button>
-                    </Card.Text>
                   </Card.Body>
                 </Card>
               </div>
@@ -201,7 +207,10 @@ const GetStarted = () => {
                       style={{ flexDirection: 'column' }}
                     >
                       Amplify your reach and organize your dream team.
-                      <button
+                     
+                    </Card.Text>
+                     <button
+                     style={{width:"100%"}}
                         className="mt-2"
                         id="btn"
                         onClick={() => setFormThree(true)}
@@ -209,7 +218,6 @@ const GetStarted = () => {
                       >
                         Get Started
                       </button>
-                    </Card.Text>
                   </Card.Body>
                 </Card>
               </div>
