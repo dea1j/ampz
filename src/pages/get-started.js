@@ -13,6 +13,8 @@ import AOS from 'aos';
 // import "../../node_modules/aos/dist/aos.css";
 import 'aos/dist/aos.css'; // You can also use  for styles
 
+import '../assets/get-started.css';
+
 // Modals
 import TalentModal from './getStartedModals/talentModalGS';
 import FanModal from './getStartedModals/fanModalGS';

@@ -71,3 +71,21 @@ textarea label {
   max-width: 100%;
   display: block;
 }
+
+.programmes{
+  padding-top:20px;
+  padding-bottom:25px;
+}
+
+
+
+.programme{
+margin-bottom: 20px;
+}
+
+
+@media (max-width:580px){
+  .programme{
+    margin-bottom: 20px;
+  }
+}

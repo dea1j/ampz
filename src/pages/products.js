@@ -406,13 +406,13 @@ const Products = () => {
       {/* PROGRAMMES */}
       <section id="programmes" className="products container">
         <div className="container">
-          <div className="text-center p-5">
+          <div className="text-center programmes">
             <div className="mx-auto gold_test">BE PART OF OUR STORY</div>
             <div className="mx-auto white_test">Our Programmes</div>
           </div>
 
           {/* MATCHMANIA */}
-          <div className="row abt pb-sm-3">
+          <div className="row programme ">
             <div
               data-aos="fade-right"
               className="col-lg-6 col-md-6 col-sm-12"
@@ -447,7 +447,7 @@ const Products = () => {
           </div>
 
           {/* TIP */}
-          <div className="row abt pb-sm-1">
+          <div className="row programme ">
             <div
               data-aos="fade-right"
               data-aos-delay="050"
