@@ -66,11 +66,11 @@ const Products = () => {
         email: '',
         phone: '',
         interest: '',
-        details:''
+        details: '',
       });
 
       setModalOpen(false);
-       toast.success('Awesome! We would be getting back to you');
+      toast.success('Awesome! We would be getting back to you');
     } catch (error) {
       console.error('Error:', error);
     }
@@ -230,7 +230,7 @@ const Products = () => {
       {/* MOCKUP */}
       <div
         data-aos="zoom-in"
-        className="d-flex justify-content-center mockup"
+        className="mockup"
         // style={{ height: "80vh", width: "60%" }}
       >
         <img src={desktop} className="m-3" alt="app" />
