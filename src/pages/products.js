@@ -9,6 +9,7 @@ import { Card } from 'react-bootstrap';
 import { FaSearch } from '@react-icons/all-files/fa/FaSearch';
 import { FaBriefcase } from '@react-icons/all-files/fa/FaBriefcase';
 import { FaMobileAlt } from '@react-icons/all-files/fa/FaMobileAlt';
+import SEO from '../components/seo';
 
 // CSS
 import '../assets/products.css';
@@ -87,6 +88,7 @@ const Products = () => {
   }, []);
   return (
     <Layout>
+    <SEO title="Products" />
       {/* START OF MODAL */}
       <Modal show={modalOpen} onHide={() => closeForm()}>
         <Modal.Header closeButton>

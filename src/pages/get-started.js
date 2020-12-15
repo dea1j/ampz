@@ -34,6 +34,7 @@ const GetStarted = () => {
   }, []);
   return (
     <Fragment>
+
       {/* Form 1 */}
       <TalentModal setFormOne={setFormOne} formOne={formOne} />
       {/* Form 2 */}
@@ -44,7 +45,7 @@ const GetStarted = () => {
       <ScoutModal setFormFour={setFormFour} formFour={formFour} />
 
       <Layout>
-        <SEO title="Page two" />
+        <SEO title="Get-started" />
         {/* prod */}
         <section
           className="container container-fluid p-4"
