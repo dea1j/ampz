@@ -41,7 +41,7 @@ const Footer = () => (
         <p className="title">Contact</p>
         <div className="social-icon">
           <a
-            href="https://web.facebook.com/ampz.tv/"
+            href="https://www.facebook.com/ampzsports"
             className="link-to social"
             rel="noopener noreferrer"
             target="_blank"
@@ -57,7 +57,7 @@ const Footer = () => (
             <FaTwitter />
           </a>
           <a
-            href="https://www.linkedin.com/company/ampz-tv/"
+            href="https://www.linkedin.com/company/ampzsports"
             className="link-to social"
             target="_blank"
             rel="noopener noreferrer"
