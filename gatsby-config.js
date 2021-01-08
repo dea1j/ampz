@@ -1,13 +1,13 @@
 module.exports = {
   siteMetadata: {
-    title: `Ampz`,
-    description: `Ampz website`,
-    author: `ampz sport`,
-    url: ``,
-    image: ``,
-    twitterUsername: ``,
-    instagramUsername: ``,
-    facebookUsername: ``,
+    title: "AMPZ",
+    description: "Discover a world of sporting opportunities",
+    author: "ampz sports",
+    url: "https://www.ampzsports.com",
+    image: "./src/img/logo.png",
+    twitterUsername: "@ampzsports",
+    instagramUsername: "@ampzsports",
+    facebookUsername: "ampzsports",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

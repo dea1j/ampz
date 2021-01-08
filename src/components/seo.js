@@ -5,12 +5,12 @@
  * See: https://www.gatsbyjs.com/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from "react";
+import PropTypes from "prop-types";
+import { Helmet } from "react-helmet";
+import { useStaticQuery, graphql } from "gatsby";
 
-function SEO({ description, lang, meta, title }) {
+function SEO({ description, keywords, title, lang, image, Url, author }) {
   const { site } = useStaticQuery(
     graphql`
       query {
@@ -19,14 +19,57 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            image
           }
         }
       }
     `
-  )
+  );
 
-  const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
+  const metaDescription = description || site.siteMetadata.description;
+  const defaultTitle = site.siteMetadata?.title;
+  const metaAuthor = author || site.siteMetadata.author;
+  const metaUrl = Url || site.siteMetadata.Url;
+  const metaImage = image || site.siteMetadata.image;
+  const metaKeywords = keywords || [
+    "AMPZ",
+    "AMPZ sports",
+    "sports",
+    "sports opportunities",
+    "LinkedIn for sports",
+    "scouting in Africa",
+    "sports tech",
+    "sports tech in Africa",
+    "sports tech in Nigeria",
+    "football academy",
+    " basketball academy",
+    "sports talents",
+    "Matchmania",
+    "grassroot sports",
+    "sports development",
+    "sports scholarship",
+    "sports profile",
+    "Juventus academy",
+    "Sports technology",
+    "sports recruitment",
+    "trials",
+    "sports competitions",
+    "tournament",
+    "sports league",
+    "sports videos",
+    "scout",
+    "football agent",
+    "sports agent",
+    "football intermediary",
+    "basketball agent",
+    "sports events",
+    "athlete",
+    "track and field",
+    "boxing competition",
+    "FC Bayern youth cup",
+    "FCB Escola",
+    "Barcelona Football Academy",
+  ];
 
   return (
     <Helmet
@@ -85,22 +128,29 @@ function SEO({ description, lang, meta, title }) {
           name: `instagram:description`,
           content: metaDescription,
         },
-      ].concat(meta)}
+      ].concat(
+        metaKeywords && metaKeywords.length > 0
+          ? {
+              name: `keywords`,
+              content: metaKeywords.join(`, `),
+            }
+          : []
+      )}
     />
-  )
+  );
 }
 
 SEO.defaultProps = {
   lang: `en`,
   meta: [],
   description: ``,
-}
+};
 
 SEO.propTypes = {
   description: PropTypes.string,
   lang: PropTypes.string,
   meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
-}
+};
 
-export default SEO
+export default SEO;

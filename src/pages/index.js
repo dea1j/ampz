@@ -1,25 +1,25 @@
-import React, { Fragment, useState, useEffect } from 'react';
+import React, { Fragment, useState, useEffect } from "react";
 
 // Modals
-import TalentModal from './indexModals/talentModal';
-import FanModal from './indexModals/fanModal';
-import CoachModal from './indexModals/coachModal';
-import ScoutModal from './indexModals/scoutModal';
+import TalentModal from "./indexModals/talentModal";
+import FanModal from "./indexModals/fanModal";
+import CoachModal from "./indexModals/coachModal";
+import ScoutModal from "./indexModals/scoutModal";
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import { Carousel } from 'react-bootstrap';
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import { Carousel } from "react-bootstrap";
 // import { graphql } from "gatsby";
-import '../assets/index.css';
-import AOS from 'aos';
-import '../../node_modules/aos/dist/aos.css';
+import "../assets/index.css";
+import AOS from "aos";
+import "../../node_modules/aos/dist/aos.css";
 
 // Partners Images
-import par1 from '../img/ampz/juve-acc-logo.png';
-import par2 from '../img/ampz/partner_logo/image.png';
-import par3 from '../img/ampz/partner_logo/600x600.png';
-import par4 from '../img/ampz/partner_logo/mpac sports.png';
-import par5 from '../img/ampz/partner_logo/The Future Academy.png';
+import par1 from "../img/ampz/juve-acc-logo.png";
+import par2 from "../img/ampz/partner_logo/image.png";
+import par3 from "../img/ampz/partner_logo/600x600.png";
+import par4 from "../img/ampz/partner_logo/mpac sports.png";
+import par5 from "../img/ampz/partner_logo/The Future Academy.png";
 
 const IndexPage = ({ data }) => {
   const [formOne, setFormOne] = useState(false);
@@ -48,7 +48,7 @@ const IndexPage = ({ data }) => {
         <SEO title="Home" />
 
         {/* Carousel  */}
-        <Carousel style={{ minHeight: '100vh' }}>
+        <Carousel style={{ minHeight: "100vh" }}>
           <Carousel.Item>
             <div className="slide1">
               {/* <Carousel.Caption> */}
@@ -101,8 +101,7 @@ const IndexPage = ({ data }) => {
               <div className="hero-text text-center">
                 <h2 className="caro-h2">Fan</h2>
                 <p className="caro-p container-fluid">
-                  Connect and enjoy authentic sports content from your
-                  convenience
+                  Connect and enjoy authentic sports content at your convenience
                 </p>
               </div>
             </div>
@@ -130,7 +129,7 @@ const IndexPage = ({ data }) => {
                   className="col-lg-6 col-md-6 col-sm-12 about-a"
                 >
                   <h3 className="white_test">Talent</h3>
-                  <p className="about_part" style={{ fontSize: '17px' }}>
+                  <p className="about_part" style={{ fontSize: "17px" }}>
                     We are connecting African sports talents to a world of
                     verified opportunities.
                   </p>
@@ -160,9 +159,9 @@ const IndexPage = ({ data }) => {
                   className="col-lg-6 col-md-6 col-sm-12 about-a"
                 >
                   <h3 className="white_test">Fan</h3>
-                  <p className="about_part" style={{ fontSize: '17px' }}>
+                  <p className="about_part" style={{ fontSize: "17px" }}>
                     Connect with grassroot talents and enjoy authentic sports
-                    content from your convenience.
+                    content at your convenience.
                   </p>
                   <div id="lists">
                     <ul className="list">
@@ -202,7 +201,7 @@ const IndexPage = ({ data }) => {
                   className="col-lg-6 col-md-6 col-sm-12 about-a"
                 >
                   <h3 className="white_test">Coach & Academy</h3>
-                  <p className="about_part" style={{ fontSize: '17px' }}>
+                  <p className="about_part" style={{ fontSize: "17px" }}>
                     Do you want to amplify your reach and get your dream team
                     organized?
                   </p>
@@ -233,7 +232,7 @@ const IndexPage = ({ data }) => {
                   className="col-lg-6 col-md-6 col-sm-12 about-a"
                 >
                   <h3 className="white_test">Scout & Club</h3>
-                  <p className="about_part" style={{ fontSize: '17px' }}>
+                  <p className="about_part" style={{ fontSize: "17px" }}>
                     We are making scouting in Africa easier. Now you can own
                     your process.
                   </p>
@@ -262,11 +261,11 @@ const IndexPage = ({ data }) => {
             </div>
           </section>
         </main>
-        <div style={{ width: '100%' }}>
+        <div style={{ width: "100%" }}>
           <div>
             <p
               className="d-flex justify-content-center pt-5"
-              style={{ fontSize: '30px', fontFamily: 'font1' }}
+              style={{ fontSize: "30px", fontFamily: "font1" }}
             >
               OUR PARTNERS
             </p>
