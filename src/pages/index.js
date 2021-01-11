@@ -9,10 +9,12 @@ import ScoutModal from "./indexModals/scoutModal";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Carousel } from "react-bootstrap";
-// import { graphql } from "gatsby";
+import { graphql } from "gatsby";
 import "../assets/index.css";
 import AOS from "aos";
 import "../../node_modules/aos/dist/aos.css";
+
+import Slide1 from "gatsby-image";
 
 // Partners Images
 import par1 from "../img/ampz/juve-acc-logo.png";
@@ -48,6 +50,18 @@ const IndexPage = ({ data }) => {
         <SEO title="Home" />
 
         {/* Carousel  */}
+        {/* <Carousel.Item style={{ minHeight: "100vh" }}>
+          <img
+            className="d-block w-100"
+            src={`<Fan data.fan.childImageSharp.fluid />`}
+            alt="First slide"
+          />
+          <Carousel.Caption>
+            <h3>First slide label</h3>
+            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          </Carousel.Caption>
+        </Carousel.Item> */}
+
         <Carousel style={{ minHeight: "100vh" }}>
           <Carousel.Item>
             <div className="slide1">
@@ -297,16 +311,16 @@ const IndexPage = ({ data }) => {
   );
 };
 
-// export const query = graphql`
-//   {
-//     carousel: file(relativePath: { eq: "Group48.png" }) {
-//       childImageSharp {
-//         fluid {
-//           ...GatsbyImageSharpFluid_withWebp
-//         }
-//       }
-//     }
-//   }
-// `
+export const query = graphql`
+  query {
+    fan: file(relativePath: { eq: "fan.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`;
 
 export default IndexPage;

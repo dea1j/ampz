@@ -1,6 +1,7 @@
 .team {
   border-radius: 50%;
-  height: '20vh';
+  /* height: 15vh;
+  width: 200px; */
 }
 .caro-h3 {
   font-size: 20px !important;
@@ -13,7 +14,7 @@
 }
 .abt-hero {
   height: 80vh;
-  background-image: url('../img/About\ us\ image\ blurred.png');
+  background-image: url("../img/abtUs.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -25,10 +26,15 @@
   flex-wrap: wrap;
   padding: 0 5rem;
 }
+.hero-text {
+  position: absolute;
+  top: 0;
+  left: 35%;
+}
 
 @media (max-width: 568px) {
   .champions {
-  flex-direction: row;
+    flex-direction: row;
     justify-content: center;
   }
 }

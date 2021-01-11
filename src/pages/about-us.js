@@ -1,15 +1,15 @@
-import React from 'react';
-import '../assets/about-us.css';
+import React from "react";
+import "../assets/about-us.css";
 
-import Layout from '../components/layout';
-import SEO from '../components/seo';
-import line from '../img/straight_line.png';
-import jabbar from '../img/abdul_jabbar.jpg';
-import brenda from '../img/Brenda_Nwagwu.jpg';
-import yinka from '../img/Adeyinka_Aderombi.jpg';
-import nicole from '../img/Nichole Yembra.jpg';
+import Layout from "../components/layout";
+import SEO from "../components/seo";
+import line from "../img/straight_line.png";
+import jabbar from "../img/abdul_jabbar.jpg";
+import brenda from "../img/Brenda_Nwagwu.jpg";
+import yinka from "../img/Adeyinka_Aderombi.jpg";
+import nicole from "../img/Nichole Yembra.jpg";
 // import ayo from "../img/Alfonso.jpg";
-import '../../node_modules/react-image-gallery/styles/css/image-gallery.css';
+import "../../node_modules/react-image-gallery/styles/css/image-gallery.css";
 
 const AboutUs = () => {
   return (
@@ -34,14 +34,14 @@ const AboutUs = () => {
           <div className="p-2">
             <h4
               style={{
-                fontFamily: 'font2',
-                fontWeight: '900',
-                color: '#db9a02',
+                fontFamily: "font2",
+                fontWeight: "900",
+                color: "#db9a02",
               }}
             >
               THE PROBLEM
             </h4>
-            <p style={{ fontSize: '18px' }}>
+            <p style={{ fontSize: "18px" }}>
               Over 9 million Africans are in modern slavery and sports is one of
               the lures for trafficking. Despite Africa leading in sports
               participation, over 200 million sports talents within a viable age
@@ -55,14 +55,14 @@ const AboutUs = () => {
           <div className="p-2">
             <h4
               style={{
-                fontFamily: 'font2',
-                fontWeight: '900',
-                color: '#db9a02',
+                fontFamily: "font2",
+                fontWeight: "900",
+                color: "#db9a02",
               }}
             >
               OUR SOLUTION
             </h4>
-            <p style={{ fontSize: '18px' }}>
+            <p style={{ fontSize: "18px" }}>
               AMPZ is connecting African sports talents to a world of verified
               opportunities by leveraging on technology. Our platform enables
               talents to profile themselves, log their stats, and share their
@@ -84,18 +84,18 @@ const AboutUs = () => {
         {/* Team */}
         <div className="team">
           <div className="text-center m-5">
-            <div className="mx-auto gold_test" style={{ fontSize: '18px' }}>
+            <div className="mx-auto gold_test" style={{ fontSize: "18px" }}>
               GAME CHANGERS
             </div>
             <div className="mx-auto white_test">Meet The Champions</div>
           </div>
-          <div className="champions" style={{ fontSize: '18px' }}>
+          <div className="champions" style={{ fontSize: "18px" }}>
             <div className="text-center">
               <img
                 src={jabbar}
                 alt="team"
                 className="team"
-                style={{ height: '20vh' }}
+                style={{ height: "20vh" }}
               />
               <div className="team-name">Abdul-Jabbar Momoh</div>
               <p>Co-Founder/CEO</p>
@@ -105,7 +105,7 @@ const AboutUs = () => {
                 src={brenda}
                 alt="team"
                 className="team"
-                style={{ height: '20vh' }}
+                style={{ height: "20vh" }}
               />
               <div className="team-name">Brenda Nwagwu</div>
               <p>Co-Founder/CMO</p>
@@ -125,7 +125,7 @@ const AboutUs = () => {
                 src={yinka}
                 alt="team"
                 className="team"
-                style={{ height: '20vh' }}
+                style={{ height: "20vh" }}
               />
               <div className="team-name">Adeyinka Aderombi</div>
               <p>Advisor</p>
@@ -135,7 +135,7 @@ const AboutUs = () => {
                 src={nicole}
                 alt="team"
                 className="team"
-                style={{ height: '20vh' }}
+                style={{ height: "20vh" }}
               />
               <div className="team-name">Nicole Yembra</div>
               <p>Advisor</p>
