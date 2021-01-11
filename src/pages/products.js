@@ -10,6 +10,8 @@ import { FaSearch } from "@react-icons/all-files/fa/FaSearch";
 import { FaBriefcase } from "@react-icons/all-files/fa/FaBriefcase";
 import { FaMobileAlt } from "@react-icons/all-files/fa/FaMobileAlt";
 import SEO from "../components/seo";
+import { graphql } from "gatsby";
+// import Producthero from "gatsby-image";
 
 // CSS
 import "../assets/products.css";
@@ -217,6 +219,7 @@ const Products = () => {
       {/* HERO / HEADER */}
       <div className="pdt-hero">
         <div className="ovrlay"></div>
+
         {/* Caption */}
         <div className="hero-text text-center">
           <h3 className="caro-h3">SPORTS TECHNOLOGY</h3>
@@ -499,5 +502,17 @@ const Products = () => {
     </Layout>
   );
 };
+
+export const query = graphql`
+  query {
+    prodhero: file(relativePath: { eq: "ProductsHero.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`;
 
 export default Products;

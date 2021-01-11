@@ -8,16 +8,25 @@ import jabbar from "../img/abdul_jabbar.jpg";
 import brenda from "../img/Brenda_Nwagwu.jpg";
 import yinka from "../img/Adeyinka_Aderombi.jpg";
 import nicole from "../img/Nichole Yembra.jpg";
-// import ayo from "../img/Alfonso.jpg";
 import "../../node_modules/react-image-gallery/styles/css/image-gallery.css";
 
-const AboutUs = () => {
+import { graphql } from "gatsby";
+import Hero from "gatsby-image";
+
+const AboutUs = ({ data }) => {
   return (
     <Layout>
       <SEO title="About Us" />
 
       <div className="abt-hero">
         <div className="ovrlay"></div>
+        <Hero
+          fluid={data.hero.childImageSharp.fluid}
+          alt="About us"
+          style={{
+            height: "80vh",
+          }}
+        />
         {/* Caption */}
         <div className="hero-text text-center">
           <h3 className="caro-h3">BRIDGING THE GAP</h3>
@@ -110,16 +119,6 @@ const AboutUs = () => {
               <div className="team-name">Brenda Nwagwu</div>
               <p>Co-Founder/CMO</p>
             </div>
-            {/* <div className="col-sm-6 col-md-4 text-center">
-              <img
-                src={ayo}
-                alt="team"
-                className="team"
-                style={{ height: "20vh" }}
-              />
-              <div className="team-name">Ayooluwa Alfonso</div>
-              <p>Engineering Lead</p>
-            </div> */}
             <div className="text-center">
               <img
                 src={yinka}
@@ -147,4 +146,15 @@ const AboutUs = () => {
   );
 };
 
+export const query = graphql`
+  query {
+    hero: file(relativePath: { eq: "abtUs.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+  }
+`;
 export default AboutUs;

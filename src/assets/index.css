@@ -25,7 +25,7 @@
   font-weight: 500;
 }
 #talents {
-  background-image: url("../img/Rectangle23.png");
+  /* background-image: url("../img/Rectangle23.png"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -35,7 +35,7 @@
   padding: 50px 0;
 }
 .scout {
-  background-image: url("../img/Rectangle54.png");
+  /* background-image: url("../img/Rectangle54.png"); */
   border-radius: 20px;
 }
 .nxt {
@@ -77,8 +77,11 @@
   background-position-x: center;
 }
 
-.hero-text {
+.hero-text-home {
   padding-top: 40vh;
+  /* position: absolute; */
+  top: 0;
+  left: 35%;
 }
 .caro-h3 {
   font-size: 16px;
@@ -91,23 +94,26 @@
   font-size: 35px !important;
 }
 #coaches {
-  background-image: url("../img/mya.png");
+  /* background-image: url("../img/mya.png"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 #fan {
-  background-image: url("../img/fan.png");
+  /* background-image: url("../img/fan.png"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
-  border-radius: 20px;
+  /* border-radius: 20px; */
   /* height: 33vh; */
 }
 
 @media only screen and (max-width: 765px) {
-  #fan {
+  #fan,
+  #talents,
+  #coaches,
+  .scout {
     display: none;
   }
 }

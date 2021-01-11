@@ -1,12 +1,12 @@
 #matchmania {
-  background-image: url('../img/Digital Slideshow.00_00_02_10.Still045.jpg');
+  background-image: url("../img/Digital Slideshow.00_00_02_10.Still045.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-size: cover;
   border-radius: 20px;
 }
 #prog2 {
-  background-image: url('../img/TIP-talent.jpg');
+  background-image: url("../img/TIP-talent.jpg");
   background-size: contain;
   background-repeat: no-repeat;
   background-size: cover;
@@ -36,7 +36,7 @@ ul {
   margin-top: 10px !important;
 }
 
-.card-text{
+.card-text {
   margin-bottom: 0 !important;
 }
 .cu-ul li {
@@ -44,7 +44,7 @@ ul {
 }
 .pdt-hero {
   height: 80vh;
-  background-image: url('../img/Products\ page\ header\ blurred.png');
+  background-image: url("../img/ProductsHero.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -71,25 +71,22 @@ textarea label {
   margin: 0 auto;
 }
 
-.mockup img{
+.mockup img {
   max-width: 100%;
   display: block;
 }
 
-.programmes{
-  padding-top:20px;
-  padding-bottom:25px;
+.programmes {
+  padding-top: 20px;
+  padding-bottom: 25px;
 }
 
-
-
-.programme{
-margin-bottom: 20px;
+.programme {
+  margin-bottom: 20px;
 }
 
-
-@media (max-width:580px){
-  .programme{
+@media (max-width: 580px) {
+  .programme {
     margin-bottom: 20px;
   }
 }

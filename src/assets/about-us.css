@@ -14,7 +14,7 @@
 }
 .abt-hero {
   height: 80vh;
-  background-image: url("../img/abtUs.png");
+  /* background-image: url("../img/abtUs.png"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -27,14 +27,27 @@
   padding: 0 5rem;
 }
 .hero-text {
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  left: 35%;
+  left: 35%; */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 @media (max-width: 568px) {
   .champions {
     flex-direction: row;
     justify-content: center;
+  }
+}
+
+@media only screen and (max-width: 765px) {
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 34%;
+    transform: translate(-25%, -50%);
   }
 }

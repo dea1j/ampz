@@ -17,11 +17,17 @@ import "../../node_modules/aos/dist/aos.css";
 import Slide1 from "gatsby-image";
 
 // Partners Images
-import par1 from "../img/ampz/juve-acc-logo.png";
-import par2 from "../img/ampz/partner_logo/image.png";
-import par3 from "../img/ampz/partner_logo/600x600.png";
-import par4 from "../img/ampz/partner_logo/mpac sports.png";
-import par5 from "../img/ampz/partner_logo/The Future Academy.png";
+import Partner1 from "gatsby-image";
+import Partner2 from "gatsby-image";
+import Partner3 from "gatsby-image";
+import Partner4 from "gatsby-image";
+import Partner5 from "gatsby-image";
+
+// Products
+import Scout from "gatsby-image";
+import Fan from "gatsby-image";
+import Coach from "gatsby-image";
+import Talent from "gatsby-image";
 
 const IndexPage = ({ data }) => {
   const [formOne, setFormOne] = useState(false);
@@ -50,23 +56,11 @@ const IndexPage = ({ data }) => {
         <SEO title="Home" />
 
         {/* Carousel  */}
-        {/* <Carousel.Item style={{ minHeight: "100vh" }}>
-          <img
-            className="d-block w-100"
-            src={`<Fan data.fan.childImageSharp.fluid />`}
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item> */}
-
         <Carousel style={{ minHeight: "100vh" }}>
           <Carousel.Item>
             <div className="slide1">
               {/* <Carousel.Caption> */}
-              <div className="hero-text text-center">
+              <div className="hero-text-home text-center">
                 <h2 className="caro-h2">Welcome to AMPZ</h2>
                 <p className="caro-p container-fluid">
                   Discover a world of sporting opportunities
@@ -77,7 +71,7 @@ const IndexPage = ({ data }) => {
           <Carousel.Item>
             <div className="slide4">
               {/* <Carousel.Caption> */}
-              <div className="hero-text text-center">
+              <div className="hero-text-home text-center">
                 <h2 className="caro-h2">Talent</h2>
                 <p className="caro-p container-fluid">
                   Showcase and apply for opportunities with ease
@@ -88,7 +82,7 @@ const IndexPage = ({ data }) => {
           <Carousel.Item>
             <div className="slide2">
               {/* <Carousel.Caption> */}
-              <div className="hero-text text-center">
+              <div className="hero-text-home text-center">
                 <h2 className="caro-h2">Academy</h2>
                 <p className="caro-p container-fluid">
                   Amplify your reach and organise your dream team
@@ -100,7 +94,7 @@ const IndexPage = ({ data }) => {
           <Carousel.Item>
             <div className="slide5">
               {/* <Carousel.Caption> */}
-              <div className="hero-text text-center">
+              <div className="hero-text-home text-center">
                 <h2 className="caro-h2">Scout</h2>
                 <p className="caro-p container-fluid">
                   We are making scouting in africa easy. Now you can own your
@@ -112,7 +106,7 @@ const IndexPage = ({ data }) => {
           <Carousel.Item>
             <div className="slide3">
               {/* <Carousel.Caption> */}
-              <div className="hero-text text-center">
+              <div className="hero-text-home text-center">
                 <h2 className="caro-h2">Fan</h2>
                 <p className="caro-p container-fluid">
                   Connect and enjoy authentic sports content at your convenience
@@ -137,7 +131,13 @@ const IndexPage = ({ data }) => {
                   id="talents"
                   data-aos="fade-right"
                   className="col-lg-6 col-md-6 col-sm-12"
-                ></div>
+                >
+                  <Talent
+                    fluid={data.talent.childImageSharp.fluid}
+                    alt="Talent"
+                    style={{ borderRadius: "20px" }}
+                  />
+                </div>
                 <div
                   data-aos="fade-left"
                   className="col-lg-6 col-md-6 col-sm-12 about-a"
@@ -167,7 +167,7 @@ const IndexPage = ({ data }) => {
               </div>
 
               {/* Fan */}
-              <div className="row abt">
+              <div className="row abt mb-4">
                 <div
                   data-aos="fade-right"
                   className="col-lg-6 col-md-6 col-sm-12 about-a"
@@ -199,7 +199,13 @@ const IndexPage = ({ data }) => {
                   data-aos="fade-left"
                   data-aos-delay="050"
                   className="col-lg-6 col-md-6 col-sm-12"
-                ></div>
+                >
+                  <Fan
+                    fluid={data.fan.childImageSharp.fluid}
+                    alt="Fan"
+                    style={{ borderRadius: "20px", Height: "315px" }}
+                  />
+                </div>
               </div>
 
               {/* coach & acc*/}
@@ -209,7 +215,13 @@ const IndexPage = ({ data }) => {
                   data-aos="fade-right"
                   data-aos-delay="050"
                   className="col-lg-6 col-md-6 col-sm-12"
-                ></div>
+                >
+                  <Coach
+                    fluid={data.coach.childImageSharp.fluid}
+                    alt="Coach"
+                    style={{ borderRadius: "20px" }}
+                  />
+                </div>
                 <div
                   data-aos="fade-left"
                   className="col-lg-6 col-md-6 col-sm-12 about-a"
@@ -270,7 +282,13 @@ const IndexPage = ({ data }) => {
                 <div
                   data-aos="fade-left"
                   className="col-lg-6 col-md-6 col-sm-12 scout"
-                ></div>
+                >
+                  <Scout
+                    fluid={data.scout.childImageSharp.fluid}
+                    alt="Scout"
+                    style={{ borderRadius: "20px" }}
+                  />
+                </div>
               </div>
             </div>
           </section>
@@ -286,20 +304,41 @@ const IndexPage = ({ data }) => {
             <div className=" p-5 testing">
               {/* Start Partner logos */}
               <div className=" text-center">
-                <img src={par1} alt="team" className="par1" />
+                <Partner1
+                  fluid={data.partner1.childImageSharp.fluid}
+                  alt="Juventus Academy Nigeria"
+                  className="par1"
+                />
+                {/* <img src={par1} alt="team" className="par1" /> */}
               </div>
 
               <div className="text-center">
-                <img src={par2} alt="team" className="par1" />
+                <Partner2
+                  fluid={data.partner2.childImageSharp.fluid}
+                  alt="VOE Foundation"
+                  className="par1"
+                />
               </div>
               <div className=" text-center">
-                <img src={par4} alt="team" className="par1" />
+                <Partner3
+                  fluid={data.partner3.childImageSharp.fluid}
+                  alt="MPAC Sports"
+                  className="par1"
+                />
               </div>
               <div className="text-center">
-                <img src={par5} alt="team" className="par1" />
+                <Partner4
+                  fluid={data.partner4.childImageSharp.fluid}
+                  alt="The Future Academy Nigeria"
+                  className="par1"
+                />
               </div>
               <div className="text-center">
-                <img src={par3} alt="team" className="par1 p-3" />
+                <Partner5
+                  fluid={data.partner5.childImageSharp.fluid}
+                  alt="OVM Media"
+                  className="par1"
+                />
               </div>
 
               {/* End Partner logos */}
@@ -314,6 +353,62 @@ const IndexPage = ({ data }) => {
 export const query = graphql`
   query {
     fan: file(relativePath: { eq: "fan.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    talent: file(relativePath: { eq: "Rectangle23.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    coach: file(relativePath: { eq: "mya.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    scout: file(relativePath: { eq: "Rectangle54.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    partner1: file(relativePath: { eq: "juve-acc-logo.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    partner2: file(relativePath: { eq: "image.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    partner3: file(relativePath: { eq: "mpac-sports.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    partner4: file(relativePath: { eq: "TFA.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    partner5: file(relativePath: { eq: "600x600.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_withWebp
