@@ -150,7 +150,7 @@ export const query = graphql`
   query {
     hero: file(relativePath: { eq: "abtUs.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 2000) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
