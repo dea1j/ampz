@@ -22,6 +22,11 @@ import Partner2 from "gatsby-image";
 import Partner3 from "gatsby-image";
 import Partner4 from "gatsby-image";
 import Partner5 from "gatsby-image";
+import Carousel1 from "gatsby-image";
+import Carousel2 from "gatsby-image";
+import Carousel3 from "gatsby-image";
+import Carousel4 from "gatsby-image";
+import Carousel5 from "gatsby-image";
 
 // Products
 import Scout from "gatsby-image";
@@ -59,8 +64,13 @@ const IndexPage = ({ data }) => {
         <Carousel style={{ minHeight: "100vh" }}>
           <Carousel.Item>
             <div className="slide1">
+              <Carousel1
+                fluid={data.slide1.childImageSharp.fluid}
+                alt="Welcome"
+                style={{ backgroundSize: "contain", height: "100vh" }}
+              />
               {/* <Carousel.Caption> */}
-              <div className="hero-text-home text-center">
+              <div className="hero-text text-center">
                 <h2 className="caro-h2">Welcome to AMPZ</h2>
                 <p className="caro-p container-fluid">
                   Discover a world of sporting opportunities
@@ -70,8 +80,13 @@ const IndexPage = ({ data }) => {
           </Carousel.Item>
           <Carousel.Item>
             <div className="slide4">
+              <Carousel2
+                fluid={data.slide2.childImageSharp.fluid}
+                alt="Welcome"
+                style={{ backgroundSize: "contain", height: "100vh" }}
+              />
               {/* <Carousel.Caption> */}
-              <div className="hero-text-home text-center">
+              <div className="hero-text text-center">
                 <h2 className="caro-h2">Talent</h2>
                 <p className="caro-p container-fluid">
                   Showcase and apply for opportunities with ease
@@ -81,8 +96,13 @@ const IndexPage = ({ data }) => {
           </Carousel.Item>
           <Carousel.Item>
             <div className="slide2">
+              <Carousel3
+                fluid={data.slide3.childImageSharp.fluid}
+                alt="Welcome"
+                style={{ backgroundSize: "contain", height: "100vh" }}
+              />
               {/* <Carousel.Caption> */}
-              <div className="hero-text-home text-center">
+              <div className="hero-text text-center">
                 <h2 className="caro-h2">Academy</h2>
                 <p className="caro-p container-fluid">
                   Amplify your reach and organise your dream team
@@ -93,8 +113,13 @@ const IndexPage = ({ data }) => {
 
           <Carousel.Item>
             <div className="slide5">
+              <Carousel4
+                fluid={data.slide4.childImageSharp.fluid}
+                alt="Welcome"
+                style={{ backgroundSize: "contain", height: "100vh" }}
+              />
               {/* <Carousel.Caption> */}
-              <div className="hero-text-home text-center">
+              <div className="hero-text text-center">
                 <h2 className="caro-h2">Scout</h2>
                 <p className="caro-p container-fluid">
                   We are making scouting in africa easy. Now you can own your
@@ -105,8 +130,13 @@ const IndexPage = ({ data }) => {
           </Carousel.Item>
           <Carousel.Item>
             <div className="slide3">
+              <Carousel5
+                fluid={data.slide5.childImageSharp.fluid}
+                alt="Welcome"
+                style={{ backgroundSize: "contain", height: "100vh" }}
+              />
               {/* <Carousel.Caption> */}
-              <div className="hero-text-home text-center">
+              <div className="hero-text text-center">
                 <h2 className="caro-h2">Fan</h2>
                 <p className="caro-p container-fluid">
                   Connect and enjoy authentic sports content at your convenience
@@ -411,6 +441,41 @@ export const query = graphql`
     partner5: file(relativePath: { eq: "600x600.png" }) {
       childImageSharp {
         fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    slide1: file(relativePath: { eq: "Group48.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 3080, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    slide2: file(relativePath: { eq: "Group49.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 3080, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    slide3: file(relativePath: { eq: "Fan image blurred.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 3080, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    slide4: file(relativePath: { eq: "Talent image blurred.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 3080, quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    slide5: file(relativePath: { eq: "Group50.png" }) {
+      childImageSharp {
+        fluid(maxWidth: 3080, quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
