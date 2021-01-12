@@ -16,7 +16,7 @@ import "../../node_modules/aos/dist/aos.css";
 
 import Slide1 from "gatsby-image";
 
-// Partners Images
+// Partners Image
 import Partner1 from "gatsby-image";
 import Partner2 from "gatsby-image";
 import Partner3 from "gatsby-image";
@@ -135,7 +135,7 @@ const IndexPage = ({ data }) => {
                   <Talent
                     fluid={data.talent.childImageSharp.fluid}
                     alt="Talent"
-                    style={{ borderRadius: "20px" }}
+                    style={{ borderRadius: "20px", height: "35vh" }}
                   />
                 </div>
                 <div
@@ -203,7 +203,7 @@ const IndexPage = ({ data }) => {
                   <Fan
                     fluid={data.fan.childImageSharp.fluid}
                     alt="Fan"
-                    style={{ borderRadius: "20px", Height: "50px" }}
+                    style={{ borderRadius: "20px", height: "35vh" }}
                   />
                 </div>
               </div>
@@ -219,7 +219,7 @@ const IndexPage = ({ data }) => {
                   <Coach
                     fluid={data.coach.childImageSharp.fluid}
                     alt="Coach"
-                    style={{ borderRadius: "20px" }}
+                    style={{ borderRadius: "20px", height: "35vh" }}
                   />
                 </div>
                 <div
@@ -286,7 +286,7 @@ const IndexPage = ({ data }) => {
                   <Scout
                     fluid={data.scout.childImageSharp.fluid}
                     alt="Scout"
-                    style={{ borderRadius: "20px" }}
+                    style={{ borderRadius: "20px", height: "35vh" }}
                   />
                 </div>
               </div>
@@ -354,64 +354,64 @@ export const query = graphql`
   query {
     fan: file(relativePath: { eq: "fan.png" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
     talent: file(relativePath: { eq: "Rectangle23.png" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
     coach: file(relativePath: { eq: "mya.png" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
     scout: file(relativePath: { eq: "Rectangle54.png" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
     partner1: file(relativePath: { eq: "juve-acc-logo.png" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
     partner2: file(relativePath: { eq: "image.png" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
     partner3: file(relativePath: { eq: "mpac-sports.png" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
     partner4: file(relativePath: { eq: "TFA.png" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
     partner5: file(relativePath: { eq: "600x600.png" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

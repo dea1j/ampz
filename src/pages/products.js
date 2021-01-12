@@ -13,6 +13,8 @@ import SEO from "../components/seo";
 
 import ProductHero from "gatsby-image";
 import Mockup from "gatsby-image";
+import Matchmania from "gatsby-image";
+import TalentInc from "gatsby-image";
 
 // CSS
 import "../assets/products.css";
@@ -433,7 +435,13 @@ const Products = ({ data }) => {
               data-aos="fade-right"
               className="col-lg-6 col-md-6 col-sm-12"
               id="matchmania"
-            ></div>
+            >
+              <Matchmania
+                fluid={data.matchmania.childImageSharp.fluid}
+                alt="Matchmania"
+                style={{ borderRadius: "20px", height: "40vh" }}
+              />
+            </div>
             <div
               data-aos="fade-left"
               data-aos-delay="050"
@@ -495,7 +503,13 @@ const Products = ({ data }) => {
               data-aos="fade-left"
               className="col-lg-6 col-md-6 col-sm-12"
               id="prog2"
-            ></div>
+            >
+              <TalentInc
+                fluid={data.tip.childImageSharp.fluid}
+                alt="Talent Incubation"
+                style={{ borderRadius: "20px", height: "40vh" }}
+              />
+            </div>
           </div>
         </div>
       </section>
@@ -518,15 +532,31 @@ export const query = graphql`
   query {
     prod: file(relativePath: { eq: "ProductsHero.png" }) {
       childImageSharp {
-        fluid {
+        fluid(maxWidth: 3080, quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
     }
     mockup: file(relativePath: { eq: "dayo.png" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    matchmania: file(
+      relativePath: { eq: "Digital Slideshow.00_00_02_10.Still045.jpg" }
+    ) {
+      childImageSharp {
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
+        }
+      }
+    }
+    tip: file(relativePath: { eq: "TIP-talent.jpg" }) {
+      childImageSharp {
+        fluid(quality: 100) {
+          ...GatsbyImageSharpFluid
         }
       }
     }

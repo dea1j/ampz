@@ -1,16 +1,16 @@
 #matchmania {
-  background-image: url("../img/Digital Slideshow.00_00_02_10.Still045.jpg");
+  /* background-image: url("../img/Digital Slideshow.00_00_02_10.Still045.jpg"); */
   background-size: contain;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 #prog2 {
-  background-image: url("../img/TIP-talent.jpg");
+  /* background-image: url("../img/TIP-talent.jpg"); */
   background-size: contain;
   background-repeat: no-repeat;
   background-size: cover;
-  border-radius: 20px;
+  /* border-radius: 20px; */
 }
 .caro-h3 {
   font-size: 14px;
