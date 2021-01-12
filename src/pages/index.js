@@ -354,63 +354,63 @@ export const query = graphql`
   query {
     fan: file(relativePath: { eq: "fan.png" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     talent: file(relativePath: { eq: "Rectangle23.png" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     coach: file(relativePath: { eq: "mya.png" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     scout: file(relativePath: { eq: "Rectangle54.png" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     partner1: file(relativePath: { eq: "juve-acc-logo.png" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     partner2: file(relativePath: { eq: "image.png" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     partner3: file(relativePath: { eq: "mpac-sports.png" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     partner4: file(relativePath: { eq: "TFA.png" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
     }
     partner5: file(relativePath: { eq: "600x600.png" }) {
       childImageSharp {
-        fluid {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid
         }
       }
