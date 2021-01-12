@@ -21,11 +21,7 @@ import "../assets/products.css";
 
 // AOS LIBRARY
 import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use  for styles
-// import '../../node_modules/aos/dist/aos.css';
-
-// IMAGE
-import desktop from "../img/dayo.png";
+import "aos/dist/aos.css";
 
 const Products = ({ data }) => {
   const [modalOpen, setModalOpen] = useState(false);
@@ -532,7 +528,7 @@ export const query = graphql`
   query {
     prod: file(relativePath: { eq: "ProductsHero.png" }) {
       childImageSharp {
-        fluid(maxWidth: 3080, quality: 100) {
+        fluid(quality: 100) {
           ...GatsbyImageSharpFluid_withWebp
         }
       }
