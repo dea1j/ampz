@@ -1,38 +1,38 @@
-import React, { useEffect, useState } from "react";
-import Layout from "../components/layout";
-import { Modal } from "react-bootstrap";
-import { toast } from "react-toastify";
+import React, { useEffect, useState } from 'react';
+import Layout from '../components/layout';
+import { Modal } from 'react-bootstrap';
+import { toast } from 'react-toastify';
 // import axios from "axios";
 
 // REACT BOOTSTRAP COMPONENTS
-import { Card } from "react-bootstrap";
-import { FaSearch } from "@react-icons/all-files/fa/FaSearch";
-import { FaBriefcase } from "@react-icons/all-files/fa/FaBriefcase";
-import { FaMobileAlt } from "@react-icons/all-files/fa/FaMobileAlt";
-import SEO from "../components/seo";
-import { graphql } from "gatsby";
+import { Card } from 'react-bootstrap';
+import { FaSearch } from '@react-icons/all-files/fa/FaSearch';
+import { FaBriefcase } from '@react-icons/all-files/fa/FaBriefcase';
+import { FaMobileAlt } from '@react-icons/all-files/fa/FaMobileAlt';
+import SEO from '../components/seo';
+import { graphql } from 'gatsby';
 // import Producthero from "gatsby-image";
 
 // CSS
-import "../assets/products.css";
+import '../assets/products.css';
 
 // AOS LIBRARY
-import AOS from "aos";
-import "aos/dist/aos.css"; // You can also use  for styles
+import AOS from 'aos';
+import 'aos/dist/aos.css'; // You can also use  for styles
 // import '../../node_modules/aos/dist/aos.css';
 
 // IMAGE
-import desktop from "../img/dayo.png";
+import desktop from '../img/dayo.png';
 
 const Products = () => {
   const [modalOpen, setModalOpen] = useState(false);
   const [data, setData] = useState({
-    fullname: "",
-    organization: "",
-    email: "",
-    phone: "",
-    interest: "",
-    details: "",
+    fullname: '',
+    organization: '',
+    email: '',
+    phone: '',
+    interest: '',
+    details: '',
   });
 
   const handleChange = (e) => {
@@ -51,31 +51,31 @@ const Products = () => {
 
     try {
       const response = await fetch(
-        "https://v1.nocodeapi.com/dea1j/google_sheets/lcKuxwmqEhqYjMCw?tabId=Sheet1",
+        'https://v1.nocodeapi.com/dea1j/google_sheets/lcKuxwmqEhqYjMCw?tabId=Sheet1',
         {
-          method: "post",
+          method: 'post',
           body: JSON.stringify([
             [fullname, organization, email, phone, interest, details],
           ]),
           headers: {
-            "Content-Type": "application/json",
+            'Content-Type': 'application/json',
           },
         }
       );
       const json = await response.json();
       setData({
-        fullname: "",
-        organization: "",
-        email: "",
-        phone: "",
-        interest: "",
-        details: "",
+        fullname: '',
+        organization: '',
+        email: '',
+        phone: '',
+        interest: '',
+        details: '',
       });
 
       setModalOpen(false);
-      toast.success("Awesome! We would be getting back to you");
+      toast.success('Awesome! We would be getting back to you');
     } catch (error) {
-      console.error("Error:", error);
+      console.error('Error:', error);
     }
   };
 
@@ -95,14 +95,14 @@ const Products = () => {
       <Modal show={modalOpen} onHide={() => closeForm()}>
         <Modal.Header closeButton>
           <Modal.Title>
-            <h5 style={{ color: "#000", fontSize: "30px" }} className="">
+            <h5 style={{ color: '#000', fontSize: '30px' }} className="">
               Partner with AMPZ
             </h5>
           </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <div>
-            <p style={{ color: "#000" }} className="">
+            <p style={{ color: '#000' }} className="">
               Our products and services are designed to continuously improve
               talent scouting, management, and value exchange in sports. As a
               front runner in the African sports technology and innovation
@@ -110,7 +110,7 @@ const Products = () => {
               communities to drive the much-needed change in processes as well
               as impact lives.
             </p>
-            <p style={{ color: "#DB9A02" }} className="">
+            <p style={{ color: '#DB9A02' }} className="">
               Wish to partner with us on this exciting journey? Leave your
               details below and we would be in touch!
             </p>
@@ -182,12 +182,12 @@ const Products = () => {
                 </select>
               </div>
               <div>
-                <div style={{ marginBottom: "1rem" }}>
+                <div style={{ marginBottom: '1rem' }}>
                   <label
                     htmlFor="details"
-                    style={{ marginBottom: "0", color: "#495057" }}
+                    style={{ marginBottom: '0', color: '#495057' }}
                   >
-                    Details{" "}
+                    Details{' '}
                   </label>
                   <textarea
                     rows="4"
@@ -202,7 +202,7 @@ const Products = () => {
               </div>
               <div className="form-group">
                 <button
-                  style={{ backgroundColor: "#DB9A02", color: "#fff" }}
+                  style={{ backgroundColor: '#DB9A02', color: '#fff' }}
                   className="btn btn-block"
                   onClick={() => setModalOpen(true)}
                 >
@@ -242,12 +242,12 @@ const Products = () => {
       </div>
 
       {/* SERVICES */}
-      <section style={{ paddingBottom: "50px", backgroundColor: "#222" }}>
+      <section style={{ paddingBottom: '50px', backgroundColor: '#222' }}>
         <div className="text-center p-3 mb-3">
           <div className="mx-auto gold_test">REACH YOUR GOALS</div>
           <div className="mx-auto white_test">Our Services</div>
         </div>
-        <div style={{ color: "#000" }}>
+        <div style={{ color: '#000' }}>
           <div className="rowclassName d-flex flex-wrap justify-content-center">
             {/*  */}
             <div
@@ -257,31 +257,31 @@ const Products = () => {
             >
               <Card
                 style={{
-                  width: "18rem",
-                  height: "34rem",
-                  marginRight: "15px",
+                  width: '18rem',
+                  height: '34rem',
+                  marginRight: '15px',
                 }}
               >
                 <FaMobileAlt
                   style={{
-                    fontSize: "60px",
-                    color: "#db9a02",
-                    margin: "0 auto",
-                    marginTop: "20px",
+                    fontSize: '60px',
+                    color: '#db9a02',
+                    margin: '0 auto',
+                    marginTop: '20px',
                   }}
                 />
                 <Card.Body className="card-bdy">
                   <Card.Title
                     className="text-center"
                     style={{
-                      fontSize: "30px",
-                      fontFamily: "font1",
-                      fontWeight: "900",
+                      fontSize: '30px',
+                      fontFamily: 'font1',
+                      fontWeight: '900',
                     }}
                   >
                     Platform & Technology
                   </Card.Title>
-                  <Card.Text style={{ lineHeight: "1.7" }}>
+                  <Card.Text style={{ lineHeight: '1.7' }}>
                     Our mobile and web platform is designed to help African
                     sports talents build their profiles by curating their data
                     and content while recruiters can utilize this data and tools
@@ -289,8 +289,8 @@ const Products = () => {
                     are leveling the playing field and creating equal access for
                     all stakeholders in a safe environment. Now everyone can be
                     more effective and efficient at what they do best!
-                    <br />{" "}
-                    <span style={{ color: "#db9a02", marginTop: "30px" }}>
+                    <br />{' '}
+                    <span style={{ color: '#db9a02', marginTop: '30px' }}>
                       Note: This product is still in beta phase.
                     </span>
                   </Card.Text>
@@ -306,31 +306,31 @@ const Products = () => {
             >
               <Card
                 style={{
-                  width: "18rem",
-                  height: "34rem",
-                  marginRight: "15px",
+                  width: '18rem',
+                  height: '34rem',
+                  marginRight: '15px',
                 }}
               >
                 <FaSearch
                   style={{
-                    fontSize: "60px",
-                    color: "#db9a02",
-                    margin: "0 auto",
-                    marginTop: "20px",
+                    fontSize: '60px',
+                    color: '#db9a02',
+                    margin: '0 auto',
+                    marginTop: '20px',
                   }}
                 />
                 <Card.Body className="card-bdy">
                   <Card.Title
                     className="text-center"
                     style={{
-                      fontSize: "30px",
-                      fontFamily: "font1",
-                      fontWeight: "900",
+                      fontSize: '30px',
+                      fontFamily: 'font1',
+                      fontWeight: '900',
                     }}
                   >
                     Scouting Services
                   </Card.Title>
-                  <Card.Text style={{ lineHeight: "1.7" }}>
+                  <Card.Text style={{ lineHeight: '1.7' }}>
                     We offer a range of scouting support services including;
                   </Card.Text>
                   <ul className="cu-ul">
@@ -355,31 +355,31 @@ const Products = () => {
             >
               <Card
                 style={{
-                  width: "18rem",
-                  height: "34rem",
-                  marginRight: "15px",
+                  width: '18rem',
+                  height: '34rem',
+                  marginRight: '15px',
                 }}
               >
                 <FaBriefcase
                   style={{
-                    fontSize: "60px",
-                    color: "#db9a02",
-                    margin: "0 auto",
-                    marginTop: "20px",
+                    fontSize: '60px',
+                    color: '#db9a02',
+                    margin: '0 auto',
+                    marginTop: '20px',
                   }}
                 />
                 <Card.Body className="card-bdy">
                   <Card.Title
                     className="text-center"
                     style={{
-                      fontSize: "30px",
-                      fontFamily: "font1",
-                      fontWeight: "900",
+                      fontSize: '30px',
+                      fontFamily: 'font1',
+                      fontWeight: '900',
                     }}
                   >
                     Talent Management
                   </Card.Title>
-                  <Card.Text style={{ lineHeight: "1.5" }}>
+                  <Card.Text style={{ lineHeight: '1.5' }}>
                     Helping sports talents make the best of their potential is
                     part of our DNA.
                   </Card.Text>
@@ -400,7 +400,7 @@ const Products = () => {
         </div>
         <div className="m-5 d-flex justify-content-center">
           <button
-            style={{ width: "250px", padding: "10px" }}
+            style={{ width: '250px', padding: '10px' }}
             onClick={() => setModalOpen(true)}
           >
             Partner
@@ -417,7 +417,7 @@ const Products = () => {
           </div>
 
           {/* MATCHMANIA */}
-          <div className="row programme  " style={{ marginBottom: "6rem" }}>
+          <div className="row programme  " style={{ marginBottom: '6rem' }}>
             <div
               data-aos="fade-right"
               className="col-lg-6 col-md-6 col-sm-12"
@@ -429,7 +429,7 @@ const Products = () => {
               className="col-lg-6 col-md-6 col-sm-12 about-a"
             >
               <h3 className="white_test">MatchMania</h3>
-              <p className="about_part" style={{ fontSize: "17px" }}>
+              <p className="about_part" style={{ fontSize: '17px' }}>
                 Be part of our annual talent hunt event where we identify young
                 future champions to join our incubation programme. Want some
                 live grassroots sports action.
@@ -459,7 +459,7 @@ const Products = () => {
               className="col-lg-6 col-md-6 col-sm-12 about-a"
             >
               <h3 className="white_test">Talent Incubation Programme</h3>
-              <p className="about_part" style={{ fontSize: "17px" }}>
+              <p className="about_part" style={{ fontSize: '17px' }}>
                 As part of our contribution to sports development, talents
                 selected in our annual talent hunt (MatchMania) are placed with
                 top tier development institutions on a minimum one-year
@@ -490,9 +490,9 @@ const Products = () => {
       </section>
 
       <div className="d-flex justify-content-center p-md-5">
-        <div style={{ padding: "10px" }}>
+        <div style={{ padding: '10px' }}>
           <button
-            style={{ padding: "10px 50px", width: "250px" }}
+            style={{ padding: '10px 50px', width: '250px' }}
             onClick={() => setModalOpen(true)}
           >
             Partner
@@ -507,8 +507,8 @@ export const query = graphql`
   query {
     prodhero: file(relativePath: { eq: "ProductsHero.png" }) {
       childImageSharp {
-        fluid {
-          ...GatsbyImageSharpFluid_withWebp
+        fluid(maxWidth: 3080, quality: 100) {
+          ...GatsbyImageSharpFluid
         }
       }
     }
