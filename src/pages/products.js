@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 import Layout from "../components/layout";
+import { graphql } from "gatsby";
 import { Modal } from "react-bootstrap";
 import { toast } from "react-toastify";
-// import axios from "axios";
 
 // REACT BOOTSTRAP COMPONENTS
 import { Card } from "react-bootstrap";
@@ -10,8 +10,9 @@ import { FaSearch } from "@react-icons/all-files/fa/FaSearch";
 import { FaBriefcase } from "@react-icons/all-files/fa/FaBriefcase";
 import { FaMobileAlt } from "@react-icons/all-files/fa/FaMobileAlt";
 import SEO from "../components/seo";
-import { graphql } from "gatsby";
-// import Producthero from "gatsby-image";
+
+import ProductHero from "gatsby-image";
+import Mockup from "gatsby-image";
 
 // CSS
 import "../assets/products.css";
@@ -24,9 +25,9 @@ import "aos/dist/aos.css"; // You can also use  for styles
 // IMAGE
 import desktop from "../img/dayo.png";
 
-const Products = () => {
+const Products = ({ data }) => {
   const [modalOpen, setModalOpen] = useState(false);
-  const [data, setData] = useState({
+  const [datas, setDatas] = useState({
     fullname: "",
     organization: "",
     email: "",
@@ -37,7 +38,7 @@ const Products = () => {
 
   const handleChange = (e) => {
     const { name, value } = e.target;
-    setData((prevState) => {
+    setDatas((prevState) => {
       return {
         ...prevState,
         [name]: value,
@@ -63,7 +64,7 @@ const Products = () => {
         }
       );
       const json = await response.json();
-      setData({
+      setDatas({
         fullname: "",
         organization: "",
         email: "",
@@ -219,7 +220,13 @@ const Products = () => {
       {/* HERO / HEADER */}
       <div className="pdt-hero">
         <div className="ovrlay"></div>
-
+        <ProductHero
+          fluid={data.prod.childImageSharp.fluid}
+          alt="Hero"
+          style={{
+            height: "80vh",
+          }}
+        />
         {/* Caption */}
         <div className="hero-text text-center">
           <h3 className="caro-h3">SPORTS TECHNOLOGY</h3>
@@ -238,7 +245,11 @@ const Products = () => {
         className="mockup"
         // style={{ height: "80vh", width: "60%" }}
       >
-        <img src={desktop} className="m-3" alt="app" />
+        <Mockup
+          fluid={data.mockup.childImageSharp.fluid}
+          alt="Mockup"
+          className="m-3"
+        />
       </div>
 
       {/* SERVICES */}
@@ -505,7 +516,14 @@ const Products = () => {
 
 export const query = graphql`
   query {
-    prodhero: file(relativePath: { eq: "ProductsHero.png" }) {
+    prod: file(relativePath: { eq: "ProductsHero.png" }) {
+      childImageSharp {
+        fluid {
+          ...GatsbyImageSharpFluid_withWebp
+        }
+      }
+    }
+    mockup: file(relativePath: { eq: "dayo.png" }) {
       childImageSharp {
         fluid {
           ...GatsbyImageSharpFluid_withWebp

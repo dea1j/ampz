@@ -33,7 +33,7 @@ function SEO({ description, keywords, title, lang, image, url, author }) {
   const metaImage = image || site.siteMetadata.image;
   const metaKeywords = keywords || [
     "AMPZ",
-    "AMPZ sports",
+    "AMPZ Sports",
     "sports",
     "sports opportunities",
     "LinkedIn for sports",
@@ -50,6 +50,7 @@ function SEO({ description, keywords, title, lang, image, url, author }) {
     "sports scholarship",
     "sports profile",
     "Juventus academy",
+    "Juventus academy Nigeria",
     "Sports technology",
     "sports recruitment",
     "trials",
@@ -68,6 +69,7 @@ function SEO({ description, keywords, title, lang, image, url, author }) {
     "boxing competition",
     "FC Bayern youth cup",
     "FCB Escola",
+    "Barcelona Football Academy Nigeria",
     "Barcelona Football Academy",
   ];
 

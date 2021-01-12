@@ -32,11 +32,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `AMPZ`,
+        name: `AMPZSports`,
         short_name: `AMPZSports`,
         url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#5f0000`,
+        theme_color: `#5f0000`,
         display: `minimal-ui`,
         icon: `./src/img/logo.png`,
       },
@@ -60,7 +60,6 @@ module.exports = {
             }
         }`,
         resolveSiteUrl: ({ site }) => {
-          //Alternatively, you may also pass in an environment variable (or any location) at the beginning of your `gatsby-config.js`.
           return site.siteMetadata.url;
         },
         serialize: ({ site, allSitePage }) =>
@@ -73,8 +72,5 @@ module.exports = {
           }),
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
   ],
 };

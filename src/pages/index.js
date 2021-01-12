@@ -203,7 +203,7 @@ const IndexPage = ({ data }) => {
                   <Fan
                     fluid={data.fan.childImageSharp.fluid}
                     alt="Fan"
-                    style={{ borderRadius: "20px", Height: "315px" }}
+                    style={{ borderRadius: "20px", Height: "50px" }}
                   />
                 </div>
               </div>

@@ -44,7 +44,7 @@ ul {
 }
 .pdt-hero {
   height: 80vh;
-  background-image: url("../img/ProductsHero.png");
+  /* background-image: url("../img/ProductsHero.png"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
