@@ -16,6 +16,7 @@ const Layout = ({ children }) => {
       site {
         siteMetadata {
           title
+          description
         }
       }
     }
@@ -24,7 +25,10 @@ const Layout = ({ children }) => {
   return (
     <>
       <Seo />
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+      <Header
+        siteTitle={data.site.siteMetadata?.title || `Title`}
+        siteDescription={data.site.siteMetadata?.description || `Description`}
+      />
       <main>
         <ToastContainer
           position="top-center"

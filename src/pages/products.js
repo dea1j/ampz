@@ -89,7 +89,12 @@ const Products = ({ data }) => {
   }, []);
   return (
     <Layout>
-      <SEO title="Products" />
+      <SEO
+        title=" AMPZ – Sports innovation in Africa"
+        description="Description: AMPZ offers a range of sports solutions for the African market including technology, scouting services, talent incubation and management.  
+          "
+      />
+
       {/* START OF MODAL */}
       <Modal show={modalOpen} onHide={() => closeForm()}>
         <Modal.Header closeButton>

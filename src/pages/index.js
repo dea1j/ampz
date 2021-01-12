@@ -9,12 +9,10 @@ import ScoutModal from "./indexModals/scoutModal";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
 import { Carousel } from "react-bootstrap";
-import { graphql } from "gatsby";
+import { useStaticQuery, graphql } from "gatsby";
 import "../assets/index.css";
 import AOS from "aos";
 import "../../node_modules/aos/dist/aos.css";
-
-import Slide1 from "gatsby-image";
 
 // Partners Image
 import Partner1 from "gatsby-image";
@@ -22,6 +20,8 @@ import Partner2 from "gatsby-image";
 import Partner3 from "gatsby-image";
 import Partner4 from "gatsby-image";
 import Partner5 from "gatsby-image";
+
+// Carousel
 import Carousel1 from "gatsby-image";
 import Carousel2 from "gatsby-image";
 import Carousel3 from "gatsby-image";
@@ -58,7 +58,10 @@ const IndexPage = ({ data }) => {
         {/* Form 4 */}
         <ScoutModal setFormFour={setFormFour} formFour={formFour} />
 
-        <SEO title="Home" />
+        <SEO
+          title=" AMPZ – Where sports talents meet opportunities"
+          description="AMPZ is a sports management platform allowing African talents build their profiles while connecting with verified opportunities, scouts, academies, and fans. "
+        />
 
         {/* Carousel  */}
         <Carousel style={{ minHeight: "100vh" }}>
