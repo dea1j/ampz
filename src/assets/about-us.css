@@ -1,8 +1,9 @@
-.team {
+.team img {
   border-radius: 50%;
-  /* height: 15vh;
-  width: 200px; */
+  width: 125px;
+  height: 125px;
 }
+
 .caro-h3 {
   font-size: 20px !important;
   color: #db9a02;
