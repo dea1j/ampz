@@ -1,11 +1,11 @@
 @font-face {
   font-family: font1;
-  src: url('../fonts/segoeuibold.ttf');
+  src: url("../fonts/segoeuibold.ttf");
 }
 
 @font-face {
   font-family: font2;
-  src: url('../fonts/segoeuil.ttf');
+  src: url("../fonts/segoeuil.ttf");
 }
 
 html {
@@ -24,7 +24,7 @@ body {
   overflow-x: hidden !important;
 }
 .list {
-  list-style-image: url('../img/tick.png');
+  list-style-image: url("../img/tick.png");
 }
 
 h1 {
@@ -50,6 +50,8 @@ img {
   /* max-width: 100%; */
   margin: 0;
   padding: 0;
+  object-fit: cover;
+  object-position: top;
   /* display: block; */
 }
 
@@ -73,4 +75,3 @@ ul li {
   padding-left: 0;
   font-size: 16px;
 }
-
