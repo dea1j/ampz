@@ -1,38 +1,38 @@
-import React, { Fragment, useState, useEffect } from "react";
+import React, { Fragment, useState, useEffect } from 'react';
 
 // Modals
-import TalentModal from "./indexModals/talentModal";
-import FanModal from "./indexModals/fanModal";
-import CoachModal from "./indexModals/coachModal";
-import ScoutModal from "./indexModals/scoutModal";
+import TalentModal from './indexModals/talentModal';
+import FanModal from './indexModals/fanModal';
+import CoachModal from './indexModals/coachModal';
+import ScoutModal from './indexModals/scoutModal';
 
-import Layout from "../components/layout";
-import SEO from "../components/seo";
-import { Carousel } from "react-bootstrap";
-import { useStaticQuery, graphql } from "gatsby";
-import "../assets/index.css";
-import AOS from "aos";
-import "../../node_modules/aos/dist/aos.css";
+import Layout from '../components/layout';
+import SEO from '../components/seo';
+import { Carousel } from 'react-bootstrap';
+import { useStaticQuery, graphql } from 'gatsby';
+import '../assets/index.css';
+import AOS from 'aos';
+import '../../node_modules/aos/dist/aos.css';
 
 // Partners Image
-import Partner1 from "gatsby-image";
-import Partner2 from "gatsby-image";
-import Partner3 from "gatsby-image";
-import Partner4 from "gatsby-image";
-import Partner5 from "gatsby-image";
+import Partner1 from 'gatsby-image';
+import Partner2 from 'gatsby-image';
+import Partner3 from 'gatsby-image';
+import Partner4 from 'gatsby-image';
+import Partner5 from 'gatsby-image';
 
 // Carousel
-import Carousel1 from "gatsby-image";
-import Carousel2 from "gatsby-image";
-import Carousel3 from "gatsby-image";
-import Carousel4 from "gatsby-image";
-import Carousel5 from "gatsby-image";
+import Carousel1 from 'gatsby-image';
+import Carousel2 from 'gatsby-image';
+import Carousel3 from 'gatsby-image';
+import Carousel4 from 'gatsby-image';
+import Carousel5 from 'gatsby-image';
 
 // Products
-import Scout from "gatsby-image";
-import Fan from "gatsby-image";
-import Coach from "gatsby-image";
-import Talent from "gatsby-image";
+import Scout from 'gatsby-image';
+import Fan from 'gatsby-image';
+import Coach from 'gatsby-image';
+import Talent from 'gatsby-image';
 
 const IndexPage = ({ data }) => {
   const [formOne, setFormOne] = useState(false);
@@ -64,13 +64,13 @@ const IndexPage = ({ data }) => {
         />
 
         {/* Carousel  */}
-        <Carousel style={{ minHeight: "100vh" }}>
+        <Carousel style={{ minHeight: '100vh' }}>
           <Carousel.Item>
             <div className="slide1">
               <Carousel1
                 fluid={data.slide1.childImageSharp.fluid}
                 alt="Welcome"
-                style={{ backgroundSize: "contain", height: "100vh" }}
+                style={{ backgroundSize: 'contain', height: '100vh' }}
               />
               {/* <Carousel.Caption> */}
               <div className="hero-text text-center">
@@ -84,9 +84,9 @@ const IndexPage = ({ data }) => {
           <Carousel.Item>
             <div className="slide4">
               <Carousel2
-                fluid={data.slide2.childImageSharp.fluid}
+                fluid={data.slide4.childImageSharp.fluid}
                 alt="Welcome"
-                style={{ backgroundSize: "contain", height: "100vh" }}
+                style={{ backgroundSize: 'contain', height: '100vh' }}
               />
               {/* <Carousel.Caption> */}
               <div className="hero-text text-center">
@@ -100,9 +100,9 @@ const IndexPage = ({ data }) => {
           <Carousel.Item>
             <div className="slide2">
               <Carousel3
-                fluid={data.slide3.childImageSharp.fluid}
+                fluid={data.slide2.childImageSharp.fluid}
                 alt="Welcome"
-                style={{ backgroundSize: "contain", height: "100vh" }}
+                style={{ backgroundSize: 'contain', height: '100vh' }}
               />
               {/* <Carousel.Caption> */}
               <div className="hero-text text-center">
@@ -117,9 +117,9 @@ const IndexPage = ({ data }) => {
           <Carousel.Item>
             <div className="slide5">
               <Carousel4
-                fluid={data.slide4.childImageSharp.fluid}
+                fluid={data.slide5.childImageSharp.fluid}
                 alt="Welcome"
-                style={{ backgroundSize: "contain", height: "100vh" }}
+                style={{ backgroundSize: 'contain', height: '100vh' }}
               />
               {/* <Carousel.Caption> */}
               <div className="hero-text text-center">
@@ -134,9 +134,9 @@ const IndexPage = ({ data }) => {
           <Carousel.Item>
             <div className="slide3">
               <Carousel5
-                fluid={data.slide5.childImageSharp.fluid}
+                fluid={data.slide3.childImageSharp.fluid}
                 alt="Welcome"
-                style={{ backgroundSize: "contain", height: "100vh" }}
+                style={{ backgroundSize: 'contain', height: '100vh' }}
               />
               {/* <Carousel.Caption> */}
               <div className="hero-text text-center">
@@ -168,7 +168,7 @@ const IndexPage = ({ data }) => {
                   <Talent
                     fluid={data.talent.childImageSharp.fluid}
                     alt="Talent"
-                    style={{ borderRadius: "20px", height: "35vh" }}
+                    style={{ borderRadius: '20px', height: '35vh' }}
                   />
                 </div>
                 <div
@@ -176,7 +176,7 @@ const IndexPage = ({ data }) => {
                   className="col-lg-6 col-md-6 col-sm-12 about-a"
                 >
                   <h3 className="white_test">Talent</h3>
-                  <p className="about_part" style={{ fontSize: "17px" }}>
+                  <p className="about_part" style={{ fontSize: '17px' }}>
                     We are connecting African sports talents to a world of
                     verified opportunities.
                   </p>
@@ -206,7 +206,7 @@ const IndexPage = ({ data }) => {
                   className="col-lg-6 col-md-6 col-sm-12 about-a"
                 >
                   <h3 className="white_test">Fan</h3>
-                  <p className="about_part" style={{ fontSize: "17px" }}>
+                  <p className="about_part" style={{ fontSize: '17px' }}>
                     Connect with grassroot talents and enjoy authentic sports
                     content at your convenience.
                   </p>
@@ -236,7 +236,7 @@ const IndexPage = ({ data }) => {
                   <Fan
                     fluid={data.fan.childImageSharp.fluid}
                     alt="Fan"
-                    style={{ borderRadius: "20px", height: "35vh" }}
+                    style={{ borderRadius: '20px', height: '35vh' }}
                   />
                 </div>
               </div>
@@ -252,7 +252,7 @@ const IndexPage = ({ data }) => {
                   <Coach
                     fluid={data.coach.childImageSharp.fluid}
                     alt="Coach"
-                    style={{ borderRadius: "20px", height: "35vh" }}
+                    style={{ borderRadius: '20px', height: '35vh' }}
                   />
                 </div>
                 <div
@@ -260,7 +260,7 @@ const IndexPage = ({ data }) => {
                   className="col-lg-6 col-md-6 col-sm-12 about-a"
                 >
                   <h3 className="white_test">Coach & Academy</h3>
-                  <p className="about_part" style={{ fontSize: "17px" }}>
+                  <p className="about_part" style={{ fontSize: '17px' }}>
                     Do you want to amplify your reach and get your dream team
                     organized?
                   </p>
@@ -291,7 +291,7 @@ const IndexPage = ({ data }) => {
                   className="col-lg-6 col-md-6 col-sm-12 about-a"
                 >
                   <h3 className="white_test">Scout & Club</h3>
-                  <p className="about_part" style={{ fontSize: "17px" }}>
+                  <p className="about_part" style={{ fontSize: '17px' }}>
                     We are making scouting in Africa easier. Now you can own
                     your process.
                   </p>
@@ -319,18 +319,18 @@ const IndexPage = ({ data }) => {
                   <Scout
                     fluid={data.scout.childImageSharp.fluid}
                     alt="Scout"
-                    style={{ borderRadius: "20px", height: "35vh" }}
+                    style={{ borderRadius: '20px', height: '35vh' }}
                   />
                 </div>
               </div>
             </div>
           </section>
         </main>
-        <div style={{ width: "100%" }}>
+        <div style={{ width: '100%' }}>
           <div>
             <p
               className="d-flex justify-content-center pt-5"
-              style={{ fontSize: "30px", fontFamily: "font1" }}
+              style={{ fontSize: '30px', fontFamily: 'font1' }}
             >
               OUR PARTNERS
             </p>
