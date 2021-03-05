@@ -12,7 +12,8 @@ import { Carousel } from 'react-bootstrap';
 import { useStaticQuery, graphql } from 'gatsby';
 import '../assets/index.css';
 import AOS from 'aos';
-import '../../node_modules/aos/dist/aos.css';
+// import '../../node_modules/aos/dist/aos.css';
+import 'aos/dist/aos.css';
 
 // Partners Image
 import Partner1 from 'gatsby-image';
